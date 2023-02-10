@@ -23,7 +23,7 @@ export const Homepage = () => {
       <div className="text-white mt-10 py-10 px-4 md:px-48 text-center">
         <p className="px-6 md:px-40">
           Detect can provide you with insightful actions to improve your assets’
-          integrity at a lower cost.We are flexible in our support by offering
+          integrity at a lower cost. We are flexible in our support by offering
           your selection of data collection, annotation, and analysis.
         </p>
 
