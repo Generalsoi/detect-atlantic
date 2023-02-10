@@ -1,9 +1,9 @@
 import { Routes, Route } from "react-router-dom";
-import { Homepage } from "./components/Homepage";
-import { Solutions } from "./components/Solutions";
-import { Learn } from "./components/Learn";
-import { Team } from "./components/Team";
-import { Contact } from "./components/Contact";
+import { Contact } from "./routes/Contact";
+import { Homepage } from "./routes/Homepage";
+import { Solutions } from "./routes/Solutions";
+import { Learn } from "./routes/Learn";
+import { Team } from "./routes/Team";
 
 const App: React.FC = () => {
   return (

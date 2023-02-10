@@ -1,7 +1,7 @@
 import React, { FC } from "react";
-import { Navbar } from "./Navbar";
+import { Navbar } from "./../components/Navbar";
 
-export const Contact: FC = () => {
+export const Solutions: FC = () => {
   return (
     <div>
       <Navbar />

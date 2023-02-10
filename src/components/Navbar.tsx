@@ -47,7 +47,7 @@ export const Navbar: FC = () => {
             to={navlink.link}
             className={({ isActive }) =>
               isActive
-                ? "font-ibmPlexMono mt-0 border border-x-0 border-t-0 border-b-2 md:w-40 md:-translate-x-16 transition ease-in-out duration-500"
+                ? "font-ibmPlexMono mt-0 border border-x-0 border-t-0 border-b-2 md:w-40 md:-translate-x-16 transition duration-500 ease-in-out"
                 : "font-ibmPlexMono mt-0 border border-x-0 border-t-0 border-b-2 border-white md:w-24"
             }
           >
