@@ -1,6 +1,8 @@
-import React, { FC } from "react";
+import React, { FC, useState } from "react";
 import { NavLink } from "react-router-dom";
 import Dlogo from "../assets/images/Dlogo.png";
+import { AiOutlineCloseCircle } from "react-icons/ai";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 type navLink = {
   index: number;
@@ -9,6 +11,8 @@ type navLink = {
 };
 
 export const Navbar: FC = () => {
+  const [open, setOpen] = useState<boolean>(false);
+
   const navLinks: navLink[] = [
     { index: 1, name: "Home", link: "/" },
     { index: 2, name: "Solutions", link: "/solutions" },
@@ -17,19 +21,34 @@ export const Navbar: FC = () => {
     { index: 5, name: "Contact", link: "/contact" },
   ];
 
+  const handleClick = (): void => {
+    setOpen(!open);
+  };
+
   return (
-    <div className="text-[#fff] md:flex items-start justify-between md:px-20 py-4">
+    <div className="text-[#fff] md:flex items-start justify-between px-4 md:px-20 py-4">
       <img src={Dlogo} alt="d-logo" />
 
-      <span className="flex flex-col">
+      <span
+        className={`md:hidden text-3xl font-extrabold absolute top-6 right-4 transition-all duration-300`}
+        onClick={handleClick}
+      >
+        {open ? (
+          <AiOutlineCloseCircle className="text-white" />
+        ) : (
+          <RxHamburgerMenu />
+        )}
+      </span>
+
+      <span className={`flex flex-col  ${open ? "block" : "hidden md:flex"}`}>
         {navLinks.map((navlink) => (
           <NavLink
             key={navlink.index}
             to={navlink.link}
             className={({ isActive }) =>
               isActive
-                ? "font-ibmPlexMono mt-0 border border-x-0 border-t-0 border-b-2 w-40 -translate-x-16 transition ease-in-out duration-500"
-                : "font-ibmPlexMono mt-0 border border-x-0 border-t-0 border-b-2 border-white w-24"
+                ? "font-ibmPlexMono mt-0 border border-x-0 border-t-0 border-b-2 md:w-40 md:-translate-x-16 transition ease-in-out duration-500"
+                : "font-ibmPlexMono mt-0 border border-x-0 border-t-0 border-b-2 border-white md:w-24"
             }
           >
             {navlink.name}
