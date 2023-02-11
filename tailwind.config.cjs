@@ -13,7 +13,7 @@ module.exports = {
         },
       },
       animation: {
-        swipe: " swipe linear 200ms infinite backwards",
+        swipe: " swipe  5s linear infinite backwards",
       },
     },
   },
