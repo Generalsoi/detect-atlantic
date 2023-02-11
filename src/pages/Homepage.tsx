@@ -7,7 +7,7 @@ import { Infrastructurescroll } from "../layouts/homepage/infrastructurescroll";
 
 export const Homepage = () => {
   return (
-    <div className="font-ibmPlexMono">
+    <div className="font-ibmPlexMono scroll-smooth">
       <Navbar />
       <div className="text-left md:flex flex-col items-center justify-center text-white px-4 py-10">
         <span>
