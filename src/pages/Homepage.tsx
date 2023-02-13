@@ -4,6 +4,7 @@ import MediaOne from "../assets/images/media1.png";
 import UpArrow from "../assets/images/uparrow.png";
 import DownArrow from "../assets/images/downarrow.png";
 import { Infrastructurescroll } from "../layouts/homepage/infrastructurescroll";
+import { WhatWeDo } from "../layouts/homepage/whatWeDo";
 
 export const Homepage = () => {
   return (
@@ -33,13 +34,14 @@ export const Homepage = () => {
             learn more{" "}
             <img src={DownArrow} alt="down-arrow" className="animate-bounce" />
           </button>
-          <button className="mt-4 md:mt-0 w-56 md:w-fit px-3 md:px-16 py-6 md:py-5 border-none bg-[#FF6108] rounded-lg uppercase flex items-center justify-center gap-5 hover:-translate-y-3 transition-all duration-300">
+          <button className="mt-4 md:mt-0 w-56 md:w-fit px-3 md:px-16 py-6 md:py-5 border-none bg-[#FF6108] rounded-lg uppercase flex items-center justify-center gap-5 hover:translate-y-3 transition-all duration-300">
             try our platform <img src={UpArrow} alt="up-arrow" />
           </button>
         </span>
       </div>
 
       <Infrastructurescroll />
+      <WhatWeDo />
     </div>
   );
 };
