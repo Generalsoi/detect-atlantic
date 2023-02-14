@@ -1,12 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import { Navbar } from "../components/Navbar";
 import MediaOne from "../assets/images/media1.png";
 import UpArrow from "../assets/images/uparrow.png";
 import DownArrow from "../assets/images/downarrow.png";
 import { Infrastructurescroll } from "../layouts/homepage/infrastructurescroll";
 import { WhatWeDo } from "../layouts/homepage/whatWeDo";
+import MediaTwo from "../assets/images/media2.png";
+import { servicesList } from "../helpers/servicesList";
+import { MdKeyboardArrowRight, MdKeyboardArrowDown } from "react-icons/md";
 
 export const Homepage = () => {
+  const [openAccordion, setOpenAccordion] = useState<boolean>(false);
+  const [currentId, setCurrentId] = useState<number>(1);
+
+  const handleOpenAccordion = (id: number): void => {
+    setCurrentId(id);
+    if (id !== currentId) {
+      return;
+    }
+    setOpenAccordion(!openAccordion);
+  };
+
   return (
     <div className="font-ibmPlexMono scroll-smooth">
       <Navbar />
@@ -42,6 +56,38 @@ export const Homepage = () => {
 
       <Infrastructurescroll />
       <WhatWeDo />
+
+      <div className="md:flex md:pl-6 mt-10">
+        <div className="md:w-[50%]">
+          {servicesList.map((service) => (
+            <div
+              key={service.index}
+              className="py-8 border border-t-2 border-b-2 border-x-0 border-red cursor-pointer"
+              onClick={() => handleOpenAccordion(service.index)}
+            >
+              <h4 className="flex items-center gap-2">
+                {service.name}{" "}
+                {openAccordion ? (
+                  <MdKeyboardArrowDown />
+                ) : (
+                  <MdKeyboardArrowRight />
+                )}
+              </h4>
+              {openAccordion && (
+                <span>
+                  <p>{service.description}</p>
+                  <a href={service.link}>Learn More</a>
+                </span>
+              )}
+            </div>
+          ))}
+        </div>
+        <img
+          className="hidden md:block w-[50%]"
+          src={MediaTwo}
+          alt="mediatwo"
+        />
+      </div>
     </div>
   );
 };
