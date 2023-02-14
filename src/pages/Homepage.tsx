@@ -8,6 +8,8 @@ import { WhatWeDo } from "../layouts/homepage/whatWeDo";
 import MediaTwo from "../assets/images/media2.png";
 import { servicesList } from "../helpers/servicesList";
 import { MdKeyboardArrowRight, MdKeyboardArrowDown } from "react-icons/md";
+import ArrowRight from "../assets/images/arrow-right.png";
+import { ColletAnnotateScroll } from "../layouts/homepage/colletAnnotate";
 
 export const Homepage = () => {
   const [openAccordion, setOpenAccordion] = useState<boolean>(false);
@@ -15,9 +17,6 @@ export const Homepage = () => {
 
   const handleOpenAccordion = (id: number): void => {
     setCurrentId(id);
-    if (id !== currentId) {
-      return;
-    }
     setOpenAccordion(!openAccordion);
   };
 
@@ -33,7 +32,7 @@ export const Homepage = () => {
       </div>
 
       <div className="mt-8 pr-4 w-[100%]">
-        <img src={MediaOne} alt="" className="" />
+        <img src={MediaOne} alt="mediaone" />
       </div>
 
       <div className="text-white mt-10 py-10 px-4 md:px-48 text-center">
@@ -57,37 +56,44 @@ export const Homepage = () => {
       <Infrastructurescroll />
       <WhatWeDo />
 
-      <div className="md:flex md:pl-6 mt-10">
+      <div className="md:flex px-6 md:pl-6 md:pr-0 pb-8 mt-10 ">
         <div className="md:w-[50%]">
           {servicesList.map((service) => (
             <div
               key={service.index}
-              className="py-8 border border-t-2 border-b-2 border-x-0 border-red cursor-pointer"
+              className="py-8 border border-t-2 border-b-2 border-x-0 border-red cursor-pointer "
               onClick={() => handleOpenAccordion(service.index)}
             >
-              <h4 className="flex items-center gap-2">
-                {service.name}{" "}
-                {openAccordion ? (
+              <h4 className="flex items-center gap-2 uppercase text-2xl transition-all ease-in-out duration-300">
+                {service.name}
+                {currentId === service.index ? (
                   <MdKeyboardArrowDown />
                 ) : (
                   <MdKeyboardArrowRight />
                 )}
               </h4>
-              {openAccordion && (
-                <span>
-                  <p>{service.description}</p>
-                  <a href={service.link}>Learn More</a>
+              {currentId === service.index && (
+                <span className="transition-all ease-in-out duration-500">
+                  <p className="my-8 text-sm">{service.description}</p>
+                  <a
+                    href={service.link}
+                    className="text-[#FF6108] uppercase flex items-center gap-3"
+                  >
+                    Learn More <img src={ArrowRight} alt="arrow-right" />
+                  </a>
                 </span>
               )}
             </div>
           ))}
         </div>
         <img
-          className="hidden md:block w-[50%]"
+          className="hidden md:block w-[50%] h-[35rem]"
           src={MediaTwo}
           alt="mediatwo"
         />
       </div>
+
+      <ColletAnnotateScroll />
     </div>
   );
 };
