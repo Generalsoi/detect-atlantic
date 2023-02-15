@@ -1,18 +1,23 @@
 import React, { FC } from "react";
 import MediaThree from "../../assets/images/media3.png";
 import UpArrow from "../../assets/images/uparrow.png";
+import { motion } from "framer-motion";
 
 export const Platformsection: FC = () => {
   return (
     <div className="md:px-20 text-left flex flex-col items-center justify-center ">
-      <div>
+      <motion.div
+        whileInView={{ y: 0, opacity: 1 }}
+        initial={{ y: 100, opacity: 0 }}
+        transition={{ type: "spring", stiffness: 20 }}
+      >
         <h3 className="uppercase text-xl">Platform</h3>
         <span>
           <p className="md:text-6xl font-bold text-3xl">See your data come</p>
           <p className="md:text-6xl font-bold text-3xl">to life with our</p>
           <p className="md:text-6xl font-bold text-3xl">platform</p>
         </span>
-      </div>
+      </motion.div>
       <img src={MediaThree} alt="" className="mt-10" />
 
       <div className="flex items-center gap-4 mt-10 md:px-16 py-8">

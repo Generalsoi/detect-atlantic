@@ -11,6 +11,7 @@ import { MdKeyboardArrowRight, MdKeyboardArrowDown } from "react-icons/md";
 import ArrowRight from "../assets/images/arrow-right.png";
 import { ColletAnnotateScroll } from "../layouts/homepage/colletAnnotate";
 import { Platformsection } from "../layouts/homepage/platformsection";
+import { motion } from "framer-motion";
 
 export const Homepage = () => {
   const [openAccordion, setOpenAccordion] = useState<boolean>(false);
@@ -24,24 +25,34 @@ export const Homepage = () => {
   return (
     <div className="font-ibmPlexMono scroll-smooth">
       <Navbar />
-      <div className="text-left md:flex flex-col items-center justify-center text-white px-4 py-10 mt-20 md:mt-40">
+      <motion.div
+        className="text-left md:flex flex-col items-center justify-center text-white px-4 py-10 mt-20 md:mt-40"
+        whileInView={{ opacity: 1 }}
+        initial={{ opacity: 0 }}
+        transition={{ type: "spring", stiffness: 20 }}
+      >
         <span>
           <h1 className="text-5xl md:text-8xl">We see it</h1>
           <h1 className="text-5xl md:text-8xl">before it</h1>
           <h1 className="text-5xl md:text-8xl">happens</h1>
         </span>
-      </div>
+      </motion.div>
 
       <div className="mt-8 pr-4 w-[100%]">
         <img src={MediaOne} alt="mediaone" />
       </div>
 
       <div className="text-white mt-10 py-10 px-4 md:px-48 text-center">
-        <p className="px-6 md:px-40">
+        <motion.p
+          className="px-6 md:px-40"
+          whileInView={{ y: 0, opacity: 1 }}
+          initial={{ y: 80, opacity: 0 }}
+          transition={{ type: "spring", stiffness: 20 }}
+        >
           Detect can provide you with insightful actions to improve your assets’
           integrity at a lower cost. We are flexible in our support by offering
           your selection of data collection, annotation, and analysis.
-        </p>
+        </motion.p>
 
         <span className="flex flex-col md:flex-row items-center gap-8 justify-center mt-20">
           <button className="mt-4 md:mt-0 w-56 md:w-fit px-3 md:px-16 py-6 md:py-5 border border-white rounded-lg uppercase flex items-center justify-center gap-5 hover:translate-y-3 transition-all duration-300">
