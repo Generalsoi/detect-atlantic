@@ -24,7 +24,7 @@ export const Homepage = () => {
   return (
     <div className="font-ibmPlexMono scroll-smooth">
       <Navbar />
-      <div className="text-left md:flex flex-col items-center justify-center text-white px-4 py-10">
+      <div className="text-left md:flex flex-col items-center justify-center text-white px-4 py-10 mt-20 md:mt-40">
         <span>
           <h1 className="text-5xl md:text-8xl">We see it</h1>
           <h1 className="text-5xl md:text-8xl">before it</h1>
