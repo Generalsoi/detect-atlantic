@@ -57,15 +57,15 @@ export const Homepage = () => {
       <Infrastructurescroll />
       <WhatWeDo />
 
-      <div className="md:flex px-6 md:pl-6 md:pr-0 pb-8 mt-10 ">
+      <div className="md:flex px-6 md:pl-20 md:pr-0 pb-8 mt-10 ">
         <div className="md:w-[50%]">
           {servicesList.map((service) => (
             <div
               key={service.index}
-              className="py-8 border border-t-2 border-b-2 border-x-0 border-red cursor-pointer "
+              className="py-8 border border-t-2 border-b-2 border-x-0 border-red cursor-pointer transition ease-linear duration-500 "
               onClick={() => handleOpenAccordion(service.index)}
             >
-              <h4 className="flex items-center gap-2 uppercase text-2xl transition-all ease-in-out duration-300">
+              <h4 className="flex items-center gap-2 uppercase text-2xl">
                 {service.name}
                 {currentId === service.index ? (
                   <MdKeyboardArrowDown />
@@ -74,7 +74,7 @@ export const Homepage = () => {
                 )}
               </h4>
               {currentId === service.index && (
-                <span className="transition-all ease-in-out duration-500">
+                <span>
                   <p className="my-8 text-sm">{service.description}</p>
                   <a
                     href={service.link}
