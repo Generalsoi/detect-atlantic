@@ -10,6 +10,7 @@ import { servicesList } from "../helpers/servicesList";
 import { MdKeyboardArrowRight, MdKeyboardArrowDown } from "react-icons/md";
 import ArrowRight from "../assets/images/arrow-right.png";
 import { ColletAnnotateScroll } from "../layouts/homepage/colletAnnotate";
+import { Platformsection } from "../layouts/homepage/platformsection";
 
 export const Homepage = () => {
   const [openAccordion, setOpenAccordion] = useState<boolean>(false);
@@ -94,6 +95,7 @@ export const Homepage = () => {
       </div>
 
       <ColletAnnotateScroll />
+      <Platformsection />
     </div>
   );
 };

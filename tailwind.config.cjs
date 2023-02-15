@@ -8,8 +8,8 @@ module.exports = {
       },
       keyframes: {
         swipe: {
-          "0%": { transform: "translate(0)" },
-          "100%": { transform: "translate(-100%)" },
+          "0%": { transform: "translate(-100%)" },
+          "100%": { transform: "translate(0)" },
         },
       },
       animation: {
