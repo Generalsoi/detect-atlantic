@@ -25,7 +25,7 @@ export const Navbar: FC = () => {
   };
 
   return (
-    <div className="text-[#fff] md:flex items-start justify-between px-4 md:px-20 py-4 fixed top-0 bg-[#000000] w-full z-20">
+    <div className="text-[#fff] md:flex items-start justify-between px-4 md:px-20 py-4 fixed top-0 bg-[#000000] w-full z-20 transition-all ease-in-out duration-300">
       <img src={Dlogo} alt="d-logo" />
 
       <span
