@@ -11,8 +11,8 @@ export const Platformsection: FC = () => {
         initial={{ y: 100, opacity: 0 }}
         transition={{ type: "spring", stiffness: 20 }}
       >
-        <h3 className="uppercase text-xl">Platform</h3>
-        <span>
+        <h3 className="uppercase text-xl text-white">Platform</h3>
+        <span className="text-white">
           <p className="md:text-6xl font-bold text-3xl">See your data come</p>
           <p className="md:text-6xl font-bold text-3xl">to life with our</p>
           <p className="md:text-6xl font-bold text-3xl">platform</p>
