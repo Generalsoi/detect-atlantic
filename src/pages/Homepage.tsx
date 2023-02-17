@@ -13,6 +13,7 @@ import { ColletAnnotateScroll } from "../layouts/homepage/colletAnnotate";
 import { motion } from "framer-motion";
 import { Feedback } from "../layouts/homepage/feedback";
 import { Platformsection } from "../layouts/homepage/platformsection";
+import { Footer } from "../components/Footer";
 
 export const Homepage = () => {
   const [openAccordion, setOpenAccordion] = useState<boolean>(false);
@@ -33,9 +34,9 @@ export const Homepage = () => {
         transition={{ type: "spring", stiffness: 20 }}
       >
         <span>
-          <h1 className="text-5xl md:text-8xl">We see it</h1>
-          <h1 className="text-5xl md:text-8xl">before it</h1>
-          <h1 className="text-5xl md:text-8xl">happens</h1>
+          <h1 className="text-5xl md:text-8xl uppercase">We see it</h1>
+          <h1 className="text-5xl md:text-8xl uppercase">before it</h1>
+          <h1 className="text-5xl md:text-8xl uppercase">happens</h1>
         </span>
       </motion.div>
 
@@ -109,6 +110,7 @@ export const Homepage = () => {
       <ColletAnnotateScroll />
       <Platformsection />
       <Feedback />
+      <Footer />
     </div>
   );
 };
