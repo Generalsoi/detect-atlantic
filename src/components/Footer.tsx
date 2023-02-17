@@ -4,7 +4,7 @@ import InLogo from "../assets/images/inlogo.png";
 
 export const Footer: FC = () => {
   return (
-    <div className="px-4 md:px-20 py-16 ">
+    <div className="px-4 md:px-20 py-16 text-white ">
       <div className="md:flex items-center justify-between">
         <span className="flex items-center mt-10 md:mt-0 md:gap-20  gap-40">
           <img src={DLogo} alt="d-logo" />
