@@ -10,8 +10,9 @@ import { servicesList } from "../helpers/servicesList";
 import { MdKeyboardArrowRight, MdKeyboardArrowDown } from "react-icons/md";
 import ArrowRight from "../assets/images/arrow-right.png";
 import { ColletAnnotateScroll } from "../layouts/homepage/colletAnnotate";
-import { Platformsection } from "../layouts/homepage/platformsection";
 import { motion } from "framer-motion";
+import { Feedback } from "../layouts/homepage/feedback";
+import { Platformsection } from "../layouts/homepage/platformsection";
 
 export const Homepage = () => {
   const [openAccordion, setOpenAccordion] = useState<boolean>(false);
@@ -26,7 +27,7 @@ export const Homepage = () => {
     <div className="font-ibmPlexMono scroll-smooth">
       <Navbar />
       <motion.div
-        className="text-left md:flex flex-col items-center justify-center text-white px-4 py-10 mt-20 md:mt-40"
+        className="text-left md:flex flex-col items-center justify-center text-white px-4 py-10 mt-16 md:mt-32"
         whileInView={{ opacity: 1 }}
         initial={{ opacity: 0 }}
         transition={{ type: "spring", stiffness: 20 }}
@@ -73,7 +74,7 @@ export const Homepage = () => {
           {servicesList.map((service) => (
             <div
               key={service.index}
-              className="py-8 border border-t-2 border-b-2 border-x-0 border-red cursor-pointer transition ease-linear duration-500 "
+              className="py-8 border border-t-2 border-b-2 border-x-0 border-red cursor-pointer transition ease-linear duration-500 text-white"
               onClick={() => handleOpenAccordion(service.index)}
             >
               <h4 className="flex items-center gap-2 uppercase text-2xl">
@@ -107,6 +108,7 @@ export const Homepage = () => {
 
       <ColletAnnotateScroll />
       <Platformsection />
+      <Feedback />
     </div>
   );
 };

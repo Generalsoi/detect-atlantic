@@ -15,10 +15,9 @@ export const Navbar: FC = () => {
 
   const navLinks: navLink[] = [
     { index: 1, name: "Home", link: "/" },
-    { index: 2, name: "Solutions", link: "/solutions" },
-    { index: 3, name: "Learn", link: "/learn" },
-    { index: 4, name: "Team", link: "/team" },
-    { index: 5, name: "Contact", link: "/contact" },
+    { index: 2, name: "About", link: "/about" },
+    { index: 3, name: "Solutions", link: "/solutions" },
+    { index: 4, name: "Contact", link: "/contact" },
   ];
 
   const handleClick = (): void => {

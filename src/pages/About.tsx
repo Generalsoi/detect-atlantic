@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import { Navbar } from "../components/Navbar";
 
-export const Learn: FC = () => {
+export const About: FC = () => {
   return (
     <div>
       <Navbar />
