@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { AboutUs } from "../layouts/about/aboutus";
 import { Partnerships } from "../layouts/about/partnerships";
 import { Team } from "../layouts/about/team";
+import { Perspective } from "../layouts/about/perspective";
 
 export const About: FC = () => {
   return (
@@ -27,6 +28,7 @@ export const About: FC = () => {
       <AboutUs />
       <Partnerships />
       <Team />
+      <Perspective />
     </div>
   );
 };

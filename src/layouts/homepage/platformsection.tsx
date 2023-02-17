@@ -20,7 +20,7 @@ export const Platformsection: FC = () => {
       </motion.div>
       <img src={MediaThree} alt="" className="mt-10" />
 
-      <div className="hidden md:block overflow-auto w-[100%] relative flex items-center justify-center gap-4 mt-10 px-16 py-8">
+      <div className="hidden md:flex overflow-auto w-[100%] relative flex items-center justify-center gap-4 mt-10 px-16 py-8">
         <p className="ml-[10%] md:ml-0 w-[100%]">
           Store and manage inspections in a customer profile’s searchable
           database
