@@ -5,14 +5,14 @@ import { motion } from "framer-motion";
 
 export const Platformsection: FC = () => {
   return (
-    <div className="md:px-20 text-left flex flex-col items-center justify-center ">
+    <div className="md:px-20 text-left flex flex-col items-center justify-center text-white ">
       <motion.div
         whileInView={{ y: 0, opacity: 1 }}
         initial={{ y: 100, opacity: 0 }}
         transition={{ type: "spring", stiffness: 20 }}
       >
-        <h3 className="uppercase text-xl text-white">Platform</h3>
-        <span className="text-white">
+        <h3 className="uppercase text-xl ">Platform</h3>
+        <span className="">
           <p className="md:text-6xl font-bold text-3xl">See your data come</p>
           <p className="md:text-6xl font-bold text-3xl">to life with our</p>
           <p className="md:text-6xl font-bold text-3xl">platform</p>
