@@ -11,7 +11,6 @@ import { MdKeyboardArrowRight, MdKeyboardArrowDown } from "react-icons/md";
 import ArrowRight from "../assets/images/arrow-right.png";
 import { ColletAnnotateScroll } from "../layouts/homepage/colletAnnotate";
 import { motion } from "framer-motion";
-import { Feedback } from "../layouts/homepage/feedback";
 import { Platformsection } from "../layouts/homepage/platformsection";
 import { Footer } from "../components/Footer";
 
@@ -109,7 +108,6 @@ export const Homepage = () => {
 
       <ColletAnnotateScroll />
       <Platformsection />
-      <Feedback />
       <Footer />
     </div>
   );
