@@ -74,7 +74,7 @@ export const Homepage = () => {
           {servicesList.map((service) => (
             <div
               key={service.index}
-              className="py-8 border border-t-2 border-b-2 border-x-0 border-red cursor-pointer transition ease-linear duration-500 text-white"
+              className="py-8 border border-t-1 border-b-1 border-x-0 border-red cursor-pointer transition ease-linear duration-500 text-white"
               onClick={() => handleOpenAccordion(service.index)}
             >
               <h4 className="flex items-center gap-2 uppercase text-2xl">
