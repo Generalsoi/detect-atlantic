@@ -33,9 +33,13 @@ export const Homepage = () => {
         transition={{ type: "spring", stiffness: 20 }}
       >
         <span>
-          <h1 className="text-5xl md:text-8xl uppercase">We see it</h1>
-          <h1 className="text-5xl md:text-8xl uppercase">before it</h1>
-          <h1 className="text-5xl md:text-8xl uppercase">happens</h1>
+          <h1 className="text-5xl md:text-8xl uppercase font-bold">
+            We see it
+          </h1>
+          <h1 className="text-5xl md:text-8xl uppercase font-bold">
+            before it
+          </h1>
+          <h1 className="text-5xl md:text-8xl uppercase font-bold">happens</h1>
         </span>
       </motion.div>
 

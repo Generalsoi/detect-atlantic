@@ -12,7 +12,7 @@ export const AboutUs: FC = () => {
         initial={{ y: 100, opacity: 0 }}
         transition={{ type: "spring", stiffness: 20 }}
       >
-        <h2 className="text-2xl md:text-5xl mb-4 md:mb-8">About</h2>
+        <h2 className="text-2xl md:text-5xl mb-4 md:mb-8 font-bold">About</h2>
         <hr className="mt-1 mb-10 md:mb-16" />
         <p className="mb-8">
           Climate change will have a significant impact on the cost of

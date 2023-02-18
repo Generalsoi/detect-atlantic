@@ -1,9 +1,10 @@
 import React, { FC, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import Dlogo from "../assets/images/Dlogo.png";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoMdArrowDropdown } from "react-icons/io";
+import { motion } from "framer-motion";
 
 type sublink = {
   name: string;
@@ -30,9 +31,9 @@ export const Navbar: FC = () => {
       link: "/solutions",
       sublinks: [
         { name: "Power", sublink: "/solutions" },
-        { name: "Energy", sublink: "/energy" },
-        { name: "Platform", sublink: "/platform" },
-        { name: "On Demand", sublink: "/ondemand" },
+        { name: "Energy", sublink: "solutions/energy" },
+        { name: "Platform", sublink: "solutions/platform" },
+        { name: "On Demand", sublink: "solutions/ondemand" },
       ],
     },
     { index: 4, name: "Contact", link: "/contact", sublinks: [] },
@@ -48,6 +49,30 @@ export const Navbar: FC = () => {
     }
     return;
   };
+
+  // const subMenuAnimate = {
+  //   enter: {
+  //     opacity: 1,
+  //     rotateX: 0,
+  //     transition: {
+  //       type: "spring",
+  //       stiffness: 10,
+  //     },
+  //     display: "block",
+  //   },
+  //   exit: {
+  //     opacity: 0,
+  //     rotateX: -15,
+  //     transition: {
+  //       type: "spring",
+  //       stiffness: 10,
+  //       delay: 0.3,
+  //     },
+  //     transitionEnd: {
+  //       display: "none",
+  //     },
+  //   },
+  // };
 
   return (
     <div className="text-[#fff] md:flex items-start justify-between px-4 md:px-20 py-4 fixed top-0 bg-[#000000] w-full z-20 transition-all ease-in-out duration-300">
@@ -89,9 +114,9 @@ export const Navbar: FC = () => {
             {navlink.index === 3 && dropdown && (
               <div className="flex flex-col ml-10">
                 {navlink.sublinks.map((sublink) => (
-                  <a href={sublink.sublink} className="mt-4 md:mt-1">
+                  <Link to={sublink.sublink} className="mt-4 md:mt-1">
                     {sublink.name}
-                  </a>
+                  </Link>
                 ))}
               </div>
             )}

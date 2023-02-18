@@ -12,7 +12,7 @@ export const Partnerships: FC = () => {
       transition={{ type: "spring", stiffness: 20 }}
     >
       <div className="px-4 md:px-60 py-10 ">
-        <h4 className="text-3xl md:text-5xl">Partnerships</h4>
+        <h4 className="text-3xl md:text-5xl font-bold">Partnerships</h4>
         <p className="my-10 md:my-20">
           We work with Dalhousie University through the Emera ideaHUB residency
           program to deploy leading-edge research and design to the real world.

@@ -12,7 +12,7 @@ export const WhatWeDo: FC = () => {
         initial={{ y: 100, opacity: 0 }}
         transition={{ type: "spring", stiffness: 20 }}
       >
-        <h1 className="text-5xl md:text-7xl">What we do</h1>
+        <h1 className="text-5xl md:text-7xl font-bold">What we do</h1>
       </motion.span>
 
       <motion.div

@@ -20,9 +20,9 @@ export const About: FC = () => {
       >
         <span>
           <p className="uppercase md:text-3xl">our mission</p>
-          <h1 className="text-5xl md:text-8xl">To enable</h1>
-          <h1 className="text-5xl md:text-8xl">informed</h1>
-          <h1 className="text-5xl md:text-8xl">decisions.</h1>
+          <h1 className="text-5xl md:text-8xl font-bold">To enable</h1>
+          <h1 className="text-5xl md:text-8xl font-bold">informed</h1>
+          <h1 className="text-5xl md:text-8xl font-bold">decisions.</h1>
         </span>
       </motion.div>
 

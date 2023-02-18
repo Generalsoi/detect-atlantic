@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export const Team = () => {
   return (
     <div className="py-10 md:py-20 px-4 md:px-40 mt-20">
-      <h1 className="text-center uppercase text-4xl md:text-8xl">
+      <h1 className="text-center uppercase text-4xl md:text-8xl font-bold">
         meet the team
       </h1>
 
