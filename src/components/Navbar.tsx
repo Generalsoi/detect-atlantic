@@ -29,7 +29,7 @@ export const Navbar: FC = () => {
       name: "Solutions",
       link: "/solutions",
       sublinks: [
-        { name: "Power", sublink: "/power" },
+        { name: "Power", sublink: "/solutions" },
         { name: "Energy", sublink: "/energy" },
         { name: "Platform", sublink: "/platform" },
         { name: "On Demand", sublink: "/ondemand" },

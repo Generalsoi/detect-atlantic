@@ -18,21 +18,21 @@ export const servicesList: service[] = [
       index: 2,
       name: "Energy",
       description:
-        "Our team of certified Powerline Technicians can label your collected data rapidly",
+        "Automate your solar module monitoring with  RGB and infrared scans.",
       link: "/",
     },
     {
       index: 3,
       name: "Platform",
       description:
-        "Our team of certified Powerline Technicians can label your collected data rapidly",
+        "Using rich data and this story, Detect is able to determine long-term trends and extrapolate that to other structures/equipment, and fix defects before they become a critical risk to the network.",
       link: "/",
     },
     {
       index: 4,
       name: "On Demand",
       description:
-        "Our team of certified Powerline Technicians can label your collected data rapidly",
+        "Using rich data and this story, Detect is able to determine long-term trends and extrapolate that to other structures/equipment, and fix defects before they become a critical risk to the network.",
       link: "/",
     },
   ];
