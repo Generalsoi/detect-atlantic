@@ -3,6 +3,7 @@ import PerspectiveOne from "../../assets/images/perspectiveimg1.png";
 import PerspectiveTwo from "../../assets/images/perspectiveimg2.png";
 import Uparrow from "../../assets/images/uparrow.png";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export const Perspective: FC = () => {
   return (
@@ -20,10 +21,12 @@ export const Perspective: FC = () => {
           <h2 className="text-5xl font-bold">Perspective is</h2>
           <h2 className="text-5xl font-bold">everything</h2>
         </span>
-        <button className="bg-[#FF6108] px-10 py-4 mt-10 border-none rounded-xl uppercase flex items-center justify-center gap-4 hover:scale-105 transition-all ease-in-out duration-300">
-          services
-          <img src={Uparrow} alt="uparrow" className="animate-bounce" />
-        </button>
+        <Link to="/solutions">
+          <button className="bg-[#FF6108] px-10 py-4 mt-10 border-none rounded-xl uppercase flex items-center justify-center gap-4 hover:scale-105 transition-all ease-in-out duration-300">
+            services
+            <img src={Uparrow} alt="uparrow" className="animate-bounce" />
+          </button>
+        </Link>
       </motion.div>
     </div>
   );

@@ -27,7 +27,7 @@ export const Homepage = () => {
     <div className="font-ibmPlexMono scroll-smooth">
       <Navbar />
       <motion.div
-        className="text-left md:flex flex-col items-center justify-center text-white px-4 py-10 mt-16 md:mt-32"
+        className="text-left md:flex flex-col items-center justify-center text-white px-4 py-10 mt-16 md:mt-20"
         whileInView={{ opacity: 1 }}
         initial={{ opacity: 0 }}
         transition={{ type: "spring", stiffness: 20 }}

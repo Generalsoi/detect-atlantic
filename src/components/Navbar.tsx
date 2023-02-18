@@ -4,20 +4,36 @@ import Dlogo from "../assets/images/Dlogo.png";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { RxHamburgerMenu } from "react-icons/rx";
 
+type sublink = {
+  name: string;
+  sublink: string;
+};
+
 type navLink = {
   index: number;
   name: string;
   link: string;
+  sublinks: sublink[];
 };
 
 export const Navbar: FC = () => {
   const [open, setOpen] = useState<boolean>(false);
 
   const navLinks: navLink[] = [
-    { index: 1, name: "Home", link: "/" },
-    { index: 2, name: "About", link: "/about" },
-    { index: 3, name: "Solutions", link: "/solutions" },
-    { index: 4, name: "Contact", link: "/contact" },
+    { index: 1, name: "Home", link: "/", sublinks: [] },
+    { index: 2, name: "About", link: "/about", sublinks: [] },
+    {
+      index: 3,
+      name: "Solutions",
+      link: "/solutions",
+      sublinks: [
+        { name: "Power", sublink: "/power" },
+        { name: "Energy", sublink: "/energy" },
+        { name: "Platform", sublink: "/platform" },
+        { name: "On Demand", sublink: "/ondemand" },
+      ],
+    },
+    { index: 4, name: "Contact", link: "/contact", sublinks: [] },
   ];
 
   const handleClick = (): void => {
@@ -39,18 +55,21 @@ export const Navbar: FC = () => {
         )}
       </span>
 
-      <span className={`flex flex-col  ${open ? "block" : "hidden md:flex"}`}>
+      <span
+        className={`flex flex-col  ${open ? "block h-96" : "hidden md:flex"}`}
+      >
         {navLinks.map((navlink) => (
           <NavLink
             key={navlink.index}
             to={navlink.link}
             className={({ isActive }) =>
               isActive
-                ? "font-ibmPlexMono mt-0 border border-x-0 border-t-0 border-b-2 md:w-40 md:-translate-x-16 transition duration-500 ease-in-out"
-                : "font-ibmPlexMono mt-0 border border-x-0 border-t-0 border-b-2 border-white md:w-24"
+                ? "font-ibmPlexMono mt-0 border border-x-0 border-t-0 border-b-1 md:w-40 md:-translate-x-16 transition duration-500 ease-in-out text-xs"
+                : "font-ibmPlexMono mt-0 border border-x-0 border-t-0 border-b-1 border-white md:w-24 text-xs"
             }
           >
             {navlink.name}
+            {}
           </NavLink>
         ))}
       </span>
