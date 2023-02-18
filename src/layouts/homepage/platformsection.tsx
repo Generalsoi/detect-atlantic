@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export const Platformsection: FC = () => {
   return (
-    <div className="md:px-20 text-left md:h-screen flex flex-col items-center justify-center text-white mt-16 md:mt-20 ">
+    <div className="md:px-20 text-left md:h-screen flex flex-col items-center justify-center text-white mt-16 md:mt-60 ">
       <motion.div
         whileInView={{ y: 0, opacity: 1 }}
         initial={{ y: 100, opacity: 0 }}
@@ -18,9 +18,13 @@ export const Platformsection: FC = () => {
           <p className="md:text-6xl font-bold text-3xl">platform</p>
         </span>
       </motion.div>
-      <img src={MediaThree} alt="" className="mt-10 h-96 md:h-fit" />
+      <img
+        src={MediaThree}
+        alt=""
+        className="mt-10 md:mt-40 h-96 md:h-[45rem]"
+      />
 
-      <div className="hidden md:flex overflow-auto w-[100%] relative flex items-center justify-center gap-4 mt-10 px-16 py-8">
+      <div className="hidden md:flex  w-[100%] relative items-center justify-center gap-4 mt-10 px-16 py-8">
         <p className="ml-[10%] md:ml-0 w-[100%]">
           Store and manage inspections in a customer profile’s searchable
           database

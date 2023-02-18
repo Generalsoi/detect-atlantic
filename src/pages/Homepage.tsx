@@ -52,38 +52,39 @@ export const Homepage = () => {
         <img src={MediaOne} alt="mediaone" />
       </motion.div>
 
-      <div className="text-white md:h-screen mt-10 py-10  text-center">
+      <div className="text-white mt-10 py-10  text-center">
         <motion.p
           className="px-6 md:px-40 px-4 md:px-48"
           whileInView={{ y: 0, opacity: 1 }}
           initial={{ y: 80, opacity: 0 }}
           transition={{ type: "spring", stiffness: 20 }}
         >
-          Detect can provide you with insightful actions to improve your assets’
-          integrity at a lower cost. We are flexible in our support by offering
-          your selection of data collection, annotation, and analysis.
+          Detect can provide you with insightful actions to improve your <br />{" "}
+          assets’ integrity at a lower cost. We are flexible in our support
+          <br /> by offering your selection of data collection, annotation, and
+          <br /> analysis.
         </motion.p>
 
         <span className="flex flex-col md:flex-row items-center gap-8 justify-center my-20 px-4 md:px-48">
-          <button className="mt-4 md:mt-0 w-56 md:w-fit px-3 md:px-16 py-6 md:py-5 border border-white rounded-lg uppercase flex items-center justify-center gap-5 hover:translate-y-3 transition-all duration-300">
+          <button className="mt-4 md:mt-0 w-56 md:w-fit px-3 md:px-8 py-6 md:py-5 border border-white rounded-lg uppercase flex items-center justify-center gap-5 hover:translate-y-3 transition-all duration-300">
             learn more{" "}
             <img src={DownArrow} alt="down-arrow" className="animate-bounce" />
           </button>
-          <button className="mt-4 md:mt-0 w-56 md:w-fit px-3 md:px-16 py-6 md:py-5 border-none bg-[#FF6108] rounded-lg uppercase flex items-center justify-center gap-5 hover:translate-y-3 transition-all duration-300">
+          <button className="mt-4 md:mt-0 w-56 md:w-fit px-3 md:px-10 py-6 md:py-5 border-none bg-[#FF6108] rounded-lg uppercase flex items-center justify-center gap-5 hover:translate-y-3 transition-all duration-300">
             try our platform <img src={UpArrow} alt="up-arrow" />
           </button>
         </span>
-        <Infrastructurescroll />
       </div>
+      <Infrastructurescroll />
 
       <WhatWeDo />
 
-      <div className="md:flex px-6 md:pl-20 md:pr-0 pb-8 mt-32 ">
+      <div className="md:flex px-6 md:pl-20 md:pr-0 pb-8 mt-32 md:mb-40 ">
         <div className="md:w-[50%]">
           {servicesList.map((service) => (
             <div
               key={service.index}
-              className="py-8 border border-t-1 border-b-1 border-x-0 border-red cursor-pointer transition ease-linear duration-500 text-white"
+              className="py-8 border border-t-[0.5px] border-b-[0.5px] border-x-0 border-red cursor-pointer transition ease-linear duration-500 text-white"
               onClick={() => handleOpenAccordion(service.index)}
             >
               <h4 className="flex items-center gap-2 uppercase text-2xl">
@@ -109,7 +110,7 @@ export const Homepage = () => {
           ))}
         </div>
         <img
-          className="hidden md:block w-[50%] h-[35rem]"
+          className="hidden md:block w-[50%] h-[34rem]"
           src={MediaTwo}
           alt="mediatwo"
         />
