@@ -29,12 +29,12 @@ export const Platformsection: FC = () => {
           Store and manage inspections in a customer profile’s searchable
           database
         </p>
-        <span className="border border-l-2 border-t-0 border-r-0 border-b-0 h-16"></span>
+        <span className="border border-l-[0.5px] border-t-0 border-r-0 border-b-0 h-16"></span>
         <p className="w-[100%]">
           Filter detected issues by severity or type on a map-based
           visualization
         </p>
-        <span className="border border-l-2 border-t-0 border-r-0 border-b-0 h-16"></span>
+        <span className="border border-l-[0.5px] border-t-0 border-r-0 border-b-0 h-16"></span>
         <p className="w-[100%]">
           Automatically generate a PDF report for offline use
         </p>
