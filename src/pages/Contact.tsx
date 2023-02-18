@@ -7,7 +7,7 @@ export const Contact: FC = () => {
   return (
     <div className="font-ibmPlexMono scroll-smooth text-white">
       <Navbar />
-      <div className="text-center py-20 mt-16 md:mt-32">
+      <div className="text-center py-20 mt-16 md:mt-20">
         <h1 className="text-4xl md:text-8xl font-bold">We would love</h1>
         <h1 className="text-4xl md:text-8xl font-bold">to hear from</h1>
         <h1 className="text-4xl md:text-8xl font-bold">you!</h1>

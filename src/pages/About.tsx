@@ -13,7 +13,7 @@ export const About: FC = () => {
       <Navbar />
 
       <motion.div
-        className="text-left flex flex-col items-center justify-center text-white px-4 py-10 mt-16 md:mt-32"
+        className="text-left flex flex-col items-center justify-center text-white px-4 py-10 mt-16 md:mt-20"
         whileInView={{ opacity: 1 }}
         initial={{ opacity: 0 }}
         transition={{ type: "spring", stiffness: 20 }}
