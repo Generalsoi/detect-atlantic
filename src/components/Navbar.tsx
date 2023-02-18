@@ -1,5 +1,5 @@
 import React, { FC, useState } from "react";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink, Link, Outlet } from "react-router-dom";
 import Dlogo from "../assets/images/Dlogo.png";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -22,6 +22,17 @@ export const Navbar: FC = () => {
   const [open, setOpen] = useState<boolean>(false);
   const [dropdown, setDropDown] = useState<boolean>(false);
 
+  const handleClick = (): void => {
+    setOpen(!open);
+  };
+
+  const handleDropDown = (id: number): void => {
+    if (id === 3) {
+      setDropDown(!dropdown);
+    }
+    return;
+  };
+
   const navLinks: navLink[] = [
     { index: 1, name: "Home", link: "/", sublinks: [] },
     { index: 2, name: "About", link: "/about", sublinks: [] },
@@ -38,17 +49,6 @@ export const Navbar: FC = () => {
     },
     { index: 4, name: "Contact", link: "/contact", sublinks: [] },
   ];
-
-  const handleClick = (): void => {
-    setOpen(!open);
-  };
-
-  const handleDropDown = (id: number): void => {
-    if (id === 3) {
-      setDropDown(!dropdown);
-    }
-    return;
-  };
 
   // const subMenuAnimate = {
   //   enter: {
@@ -123,6 +123,7 @@ export const Navbar: FC = () => {
           </NavLink>
         ))}
       </span>
+      <Outlet />
     </div>
   );
 };
