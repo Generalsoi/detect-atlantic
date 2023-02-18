@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export const WhatWeDo: FC = () => {
   return (
-    <div className="text-white md:flex items-start justify-center px-4 py-24 md:gap-16 font-ibmPlexMono">
+    <div className="text-white md:flex items-start justify-center px-4  md:gap-16 font-ibmPlexMono">
       <h4 className=" md:hidden text-2xl uppercase mb-6">our services</h4>
       <motion.span
         className="md:w-[20%]"

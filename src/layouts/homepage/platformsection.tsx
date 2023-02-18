@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export const Platformsection: FC = () => {
   return (
-    <div className="md:px-20 text-left flex flex-col items-center justify-center text-white mt-16 md:mt-0 ">
+    <div className="md:px-20 text-left md:h-screen flex flex-col items-center justify-center text-white mt-16 md:mt-20 ">
       <motion.div
         whileInView={{ y: 0, opacity: 1 }}
         initial={{ y: 100, opacity: 0 }}

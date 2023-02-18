@@ -27,10 +27,10 @@ export const Homepage = () => {
     <div className="font-ibmPlexMono scroll-smooth">
       <Navbar />
       <motion.div
-        className="text-left md:flex flex-col items-center justify-center text-white px-4 py-10 mt-16 md:mt-20"
+        className="text-left md:flex flex-col md:h-screen items-center justify-center text-white px-4 py-10 mt-16 md:mt-20"
         whileInView={{ opacity: 1 }}
         initial={{ opacity: 0 }}
-        transition={{ type: "spring", stiffness: 20 }}
+        transition={{ type: "spring", stiffness: 10 }}
       >
         <span>
           <h1 className="text-5xl md:text-8xl uppercase font-bold">
@@ -43,13 +43,18 @@ export const Homepage = () => {
         </span>
       </motion.div>
 
-      <div className="mt-8 pr-4 w-[100%]">
+      <motion.div
+        className="mt-8 pr-4 w-[100%] md:h-screen"
+        whileInView={{ y: 0, opacity: 1 }}
+        initial={{ y: 100, opacity: 0 }}
+        transition={{ type: "spring", stiffness: 20 }}
+      >
         <img src={MediaOne} alt="mediaone" />
-      </div>
+      </motion.div>
 
-      <div className="text-white mt-10 py-10 px-4 md:px-48 text-center">
+      <div className="text-white md:h-screen mt-10 py-10  text-center">
         <motion.p
-          className="px-6 md:px-40"
+          className="px-6 md:px-40 px-4 md:px-48"
           whileInView={{ y: 0, opacity: 1 }}
           initial={{ y: 80, opacity: 0 }}
           transition={{ type: "spring", stiffness: 20 }}
@@ -59,7 +64,7 @@ export const Homepage = () => {
           your selection of data collection, annotation, and analysis.
         </motion.p>
 
-        <span className="flex flex-col md:flex-row items-center gap-8 justify-center mt-20">
+        <span className="flex flex-col md:flex-row items-center gap-8 justify-center my-20 px-4 md:px-48">
           <button className="mt-4 md:mt-0 w-56 md:w-fit px-3 md:px-16 py-6 md:py-5 border border-white rounded-lg uppercase flex items-center justify-center gap-5 hover:translate-y-3 transition-all duration-300">
             learn more{" "}
             <img src={DownArrow} alt="down-arrow" className="animate-bounce" />
@@ -68,12 +73,12 @@ export const Homepage = () => {
             try our platform <img src={UpArrow} alt="up-arrow" />
           </button>
         </span>
+        <Infrastructurescroll />
       </div>
 
-      <Infrastructurescroll />
       <WhatWeDo />
 
-      <div className="md:flex px-6 md:pl-20 md:pr-0 pb-8 mt-10 ">
+      <div className="md:flex px-6 md:pl-20 md:pr-0 pb-8 mt-32 ">
         <div className="md:w-[50%]">
           {servicesList.map((service) => (
             <div
