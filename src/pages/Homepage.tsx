@@ -26,22 +26,34 @@ export const Homepage = () => {
   return (
     <div className="font-ibmPlexMono scroll-smooth">
       <Navbar />
-      <motion.div
-        className="text-left md:flex flex-col md:h-screen items-center justify-center text-white px-4 py-10 mt-16 md:mt-20"
-        whileInView={{ opacity: 1 }}
-        initial={{ opacity: 0 }}
-        transition={{ type: "spring", stiffness: 10 }}
-      >
+      <div className="text-left md:flex flex-col md:h-screen items-center justify-center text-white px-4 py-10 mt-16 md:mt-20">
         <span>
-          <h1 className="text-5xl md:text-8xl uppercase font-bold">
+          <motion.h1
+            className="text-5xl md:text-8xl uppercase font-bold"
+            whileInView={{ height: 100, opacity: 1 }}
+            initial={{ height: 0, opacity: 0 }}
+            transition={{ type: "spring", stiffness: 20 }}
+          >
             We see it
-          </h1>
-          <h1 className="text-5xl md:text-8xl uppercase font-bold">
+          </motion.h1>
+          <motion.h1
+            className="text-5xl md:text-8xl uppercase font-bold"
+            whileInView={{ height: 100, opacity: 1 }}
+            initial={{ height: 0, opacity: 0 }}
+            transition={{ type: "spring", stiffness: 20 }}
+          >
             before it
-          </h1>
-          <h1 className="text-5xl md:text-8xl uppercase font-bold">happens</h1>
+          </motion.h1>
+          <motion.h1
+            className="text-5xl md:text-8xl uppercase font-bold"
+            whileInView={{ height: 100, opacity: 1 }}
+            initial={{ height: 0, opacity: 0 }}
+            transition={{ type: "spring", stiffness: 20 }}
+          >
+            happens
+          </motion.h1>
         </span>
-      </motion.div>
+      </div>
 
       <motion.div
         className="mt-8 pr-4 w-[100%] md:h-screen"

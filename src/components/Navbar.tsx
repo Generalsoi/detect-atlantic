@@ -21,12 +21,14 @@ type navLink = {
 export const Navbar: FC = () => {
   const [open, setOpen] = useState<boolean>(false);
   const [dropdown, setDropDown] = useState<boolean>(false);
+  const [activeSolutions, setActiveSolutions] = useState<boolean>(false);
 
   const handleClick = (): void => {
     setOpen(!open);
   };
 
   const handleDropDown = (id: number): void => {
+    // setDropDown(!dropdown);
     if (id === 3) {
       setDropDown(!dropdown);
     }
@@ -42,13 +44,24 @@ export const Navbar: FC = () => {
       link: "/solutions",
       sublinks: [
         { name: "Power", sublink: "/solutions" },
-        { name: "Energy", sublink: "solutions/energy" },
-        { name: "Platform", sublink: "solutions/platform" },
-        { name: "On Demand", sublink: "solutions/ondemand" },
+        { name: "Energy", sublink: "/energy" },
+        { name: "Platform", sublink: "/platform" },
+        { name: "On Demand", sublink: "/ondemand" },
       ],
     },
     { index: 4, name: "Contact", link: "/contact", sublinks: [] },
   ];
+
+  // const subLinks: sublink[] = [
+  //   { name: "Power", sublink: "/solutions" },
+  //   { name: "Energy", sublink: "solutions/energy" },
+  //   { name: "Platform", sublink: "solutions/platform" },
+  //   { name: "On Demand", sublink: "solutions/ondemand" },
+  // ];
+
+  // const handleActiveSolutions = (): void => {
+  //   setActiveSolutions(!activeSolutions);
+  // };
 
   // const subMenuAnimate = {
   //   enter: {

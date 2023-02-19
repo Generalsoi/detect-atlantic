@@ -5,6 +5,7 @@ import { Solutions } from "./pages/Solutions";
 import { About } from "./pages/About";
 import { Energy } from "./layouts/solutions/energy";
 import { useEffect } from "react";
+import { Platform } from "./layouts/solutions/platform";
 
 const App: React.FC = () => {
   const { pathname } = useLocation();
@@ -17,9 +18,9 @@ const App: React.FC = () => {
     <Routes>
       <Route element={<Homepage />} path="/" />
       <Route element={<About />} path="/about" />
-      <Route element={<Solutions />} path="/solutions">
-        <Route element={<Energy />} path="/solutions/energy" />
-      </Route>
+      <Route element={<Solutions />} path="/solutions"></Route>
+      <Route element={<Energy />} path="/energy" />
+      <Route element={<Platform />} path="/platform" />
       <Route element={<Contact />} path="/contact" />
     </Routes>
   );
