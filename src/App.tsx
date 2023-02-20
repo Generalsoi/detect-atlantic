@@ -6,6 +6,7 @@ import { About } from "./pages/About";
 import { Energy } from "./layouts/solutions/energy";
 import { useEffect } from "react";
 import { Platform } from "./layouts/solutions/platform";
+import { OnDemand } from "./layouts/solutions/onDemand";
 
 const App: React.FC = () => {
   const { pathname } = useLocation();
@@ -21,6 +22,7 @@ const App: React.FC = () => {
       <Route element={<Solutions />} path="/solutions"></Route>
       <Route element={<Energy />} path="/energy" />
       <Route element={<Platform />} path="/platform" />
+      <Route element={<OnDemand />} path="/ondemand" />
       <Route element={<Contact />} path="/contact" />
     </Routes>
   );

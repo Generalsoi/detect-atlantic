@@ -3,6 +3,7 @@ import { Navbar } from "./../../components/Navbar";
 import PlatformImgTwo from "../../assets/images/platformimgtwo.png";
 import { Footer } from "../../components/Footer";
 import { motion } from "framer-motion";
+import UpArrow from "../../assets/images/uparrow.png";
 
 export const Platform: FC = () => {
   return (
@@ -82,19 +83,23 @@ export const Platform: FC = () => {
             <li>Filter detected issues by severity or type</li>
             <li>Automatically generate a PDF report for offline use</li>
           </ul>
-          <div>
-            <p className="mt-10 w-full md:w-[80%]">
-              Any GPS-tagged imagery and notes can be used Using SCOPE, Detect
-              can build a timeline for each asset - its life story.
-            </p>
-            <p className="mt-10 w-full md:w-[80%]">
-              Using rich data and this story, Detect will be able to determine
-              long-term trends and extrapolate that to other
-              structures/equipment, and fix defects before they become a
-              critical risk to the network.
-            </p>
-          </div>
+          <p className="mt-10 w-full md:w-[80%]">
+            Any GPS-tagged imagery and notes can be used Using SCOPE, Detect can
+            build a timeline for each asset - its life story.
+          </p>
+          <p className="mt-10 w-full md:w-[80%]">
+            Using rich data and this story, Detect will be able to determine
+            long-term trends and extrapolate that to other structures/equipment,
+            and fix defects before they become a critical risk to the network.
+          </p>
         </motion.div>
+      </div>
+
+      <div className="px-4 md:px-32 py-20 ">
+        <button className="flex items-center justify-center gap-4 bg-[#FF6108] text-white px-6 py-4 border-none rounded-lg">
+          Book now{" "}
+          <img src={UpArrow} alt="up arrow" className="animate-bounce" />
+        </button>
       </div>
 
       <Footer />
