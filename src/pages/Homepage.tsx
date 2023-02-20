@@ -62,7 +62,7 @@ export const Homepage = () => {
         initial={{ y: 100, opacity: 0 }}
         transition={{ type: "spring", stiffness: 20 }}
       >
-        <video autoPlay loop>
+        <video autoPlay playsInline loop>
           <source src={HomePageVid} type="video/mp4" />
         </video>
       </motion.div>
