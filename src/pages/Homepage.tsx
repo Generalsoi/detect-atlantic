@@ -14,6 +14,7 @@ import { motion } from "framer-motion";
 import { Platformsection } from "../layouts/homepage/platformsection";
 import { Footer } from "../components/Footer";
 import HomePageVid from "../assets/videos/detecthomepagevid.mp4";
+import { BlogSection } from "../layouts/homepage/blogSection";
 
 export const Homepage = () => {
   const [openAccordion, setOpenAccordion] = useState<boolean>(false);
@@ -99,8 +100,14 @@ export const Homepage = () => {
           {servicesList.map((service) => (
             <div
               key={service.index}
-              className="py-8 border border-t-[0.5px] border-b-[0.5px] border-x-0 border-red cursor-pointer transition ease-linear duration-500 text-white"
+              className={`py-8 border border-x-0 border-red cursor-pointer border-neutral-400 ${
+                service.index === 4 ? "border-b-1" : "border-b-0"
+              } border-[#AAAAAA] transition ease-linear duration-500 text-white`}
               onClick={() => handleOpenAccordion(service.index)}
+              style={{
+                borderTopWidth: "0.1px",
+                borderColor: "#AAAAAA",
+              }}
             >
               <h4 className="flex items-center gap-2 uppercase text-2xl">
                 {service.name}
@@ -133,6 +140,7 @@ export const Homepage = () => {
 
       <ColletAnnotateScroll />
       <Platformsection />
+      <BlogSection />
       <Footer />
     </div>
   );
