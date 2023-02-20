@@ -1,16 +1,16 @@
 import React, { FC } from "react";
-import { Navbar } from "../../components/Navbar";
 import Media4 from "../../assets/images/media4.png";
-import UpArrow from "../../assets/images/uparrow.png";
-import { Footer } from "./../../components/Footer";
 import { motion } from "framer-motion";
-import { ColletAnnotateScroll } from "../homepage/colletAnnotate";
+import { Navbar } from "./../../components/Navbar";
+import { Footer } from "./../../components/Footer";
+import { Stormsupport } from "./stormsupport";
+import { Flightplanning } from "./flightplanning";
+import { ColletAnnotateScroll } from "./../homepage/colletAnnotate";
 
-export const OnDemand: FC = () => {
+export const Power: FC = () => {
   return (
     <div className="font-ibmPlexMono scroll-smooth text-white">
       <Navbar />
-
       <div className="flex flex-col items-center justify-center mt-16 md:mt-20 py-10 h-screen">
         <img
           src={Media4}
@@ -30,33 +30,20 @@ export const OnDemand: FC = () => {
       </div>
 
       <motion.div
-        className="my-10 md:my-28 text-center px-4 md:px-20 py-10"
+        className="px-4 md:px-20 mt-20 py-20"
         whileInView={{ y: 0, opacity: 1 }}
         initial={{ y: 100, opacity: 0 }}
         transition={{ type: "spring", stiffness: 20 }}
       >
-        <h2 className="text-2xl md:text-4xl font-bold">
-          Do you have an idea on how leveraging
+        <h2 className="md:w-[50%] text-5xl md:text-8xl font-bold">
+          Full Service Inspection
         </h2>
-        <h2 className="text-2xl md:text-4xl font-bold">
-          data with Detect could help your
-        </h2>
-        <h2 className="text-2xl md:text-4xl font-bold">business?</h2>
-      </motion.div>
-
-      <motion.div
-        className="flex items-center justify-center pb-20"
-        whileInView={{ y: 0, opacity: 1 }}
-        initial={{ y: 100, opacity: 0 }}
-        transition={{ type: "spring", stiffness: 20 }}
-      >
-        <button className="flex items-center justify-center gap-4 bg-[#FF6108] text-sm border-none rounded-lg px-6 py-4">
-          Let's chat{" "}
-          <img src={UpArrow} alt="up arrow" className="animate-bounce" />
-        </button>
       </motion.div>
 
       <ColletAnnotateScroll />
+
+      <Flightplanning />
+      <Stormsupport />
 
       <Footer />
     </div>

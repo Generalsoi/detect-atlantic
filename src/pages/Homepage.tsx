@@ -30,24 +30,24 @@ export const Homepage = () => {
         <span>
           <motion.h1
             className="text-5xl md:text-8xl uppercase font-bold"
-            whileInView={{ height: 100, opacity: 1 }}
-            initial={{ height: 0, opacity: 0 }}
-            transition={{ type: "spring", stiffness: 20 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            initial={{ y: 100, opacity: 0 }}
+            transition={{ type: "spring", stiffness: 30 }}
           >
             We see it
           </motion.h1>
           <motion.h1
             className="text-5xl md:text-8xl uppercase font-bold"
-            whileInView={{ height: 100, opacity: 1 }}
-            initial={{ height: 0, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            initial={{ y: 100, opacity: 0 }}
             transition={{ type: "spring", stiffness: 20 }}
           >
             before it
           </motion.h1>
           <motion.h1
             className="text-5xl md:text-8xl uppercase font-bold"
-            whileInView={{ height: 100, opacity: 1 }}
-            initial={{ height: 0, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            initial={{ y: 100, opacity: 0 }}
             transition={{ type: "spring", stiffness: 20 }}
           >
             happens
