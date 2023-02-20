@@ -13,6 +13,7 @@ import { ColletAnnotateScroll } from "../layouts/homepage/colletAnnotate";
 import { motion } from "framer-motion";
 import { Platformsection } from "../layouts/homepage/platformsection";
 import { Footer } from "../components/Footer";
+import HomePageVid from "../assets/videos/detecthomepagevid.mp4";
 
 export const Homepage = () => {
   const [openAccordion, setOpenAccordion] = useState<boolean>(false);
@@ -56,17 +57,19 @@ export const Homepage = () => {
       </div>
 
       <motion.div
-        className="mt-8 pr-4 w-[100%] md:h-screen"
+        className=" pr-4 w-full md:w-[80%] md:h-screen pl-0 relative overflow-hidden"
         whileInView={{ y: 0, opacity: 1 }}
         initial={{ y: 100, opacity: 0 }}
         transition={{ type: "spring", stiffness: 20 }}
       >
-        <img src={MediaOne} alt="mediaone" />
+        <video autoPlay loop controls>
+          <source src={HomePageVid} type="video/mp4" />
+        </video>
       </motion.div>
 
       <div className="text-white mt-10 py-10  text-center">
         <motion.p
-          className="px-6 md:px-40 px-4 md:px-48"
+          className=" md:px-40 px-4 "
           whileInView={{ y: 0, opacity: 1 }}
           initial={{ y: 80, opacity: 0 }}
           transition={{ type: "spring", stiffness: 20 }}
