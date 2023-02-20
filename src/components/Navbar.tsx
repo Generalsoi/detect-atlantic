@@ -33,10 +33,10 @@ export const NavLink: FC<navLink> = ({ name, link, sublinks }) => {
       to={sublinks.length ? "#" : link}
       className={
         isActive
-          ? "font-ibmPlexMono mt-16 md:mt-0 border border-x-0 border-t-0  md:w-40 md:-translate-x-16 transition duration-500 ease-in-out text-md md:text-xs"
-          : "font-ibmPlexMono mt-16 md:mt-0 border border-x-0 border-t-0  md:w-24 text-md md:text-xs"
+          ? "font-ibmPlexMono mt-16 md:mt-0 border border-x-0 border-t-0 border-neutral-500 md:w-40 md:-translate-x-16 transition duration-500 ease-in-out text-md md:text-xs"
+          : "font-ibmPlexMono mt-16 md:mt-0 border border-x-0 border-t-0 border-neutral-500 md:w-24 text-md md:text-xs"
       }
-      style={{ borderBottomWidth: "0.1px", borderColor: "#AAAAAA" }}
+      style={{ borderBottomWidth: "0.1px" }}
     >
       <span onClick={handleDropDown} className="flex items-center gap-1">
         {name}{" "}

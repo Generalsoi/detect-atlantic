@@ -18,7 +18,10 @@ export const Footer: FC = () => {
         </span>
       </div>
 
-      <hr className="mt-20 md:mt-16 mb-8 h-[0.5px]" />
+      <hr
+        className="mt-20 md:mt-16 mb-8 bg-neutral-400"
+        style={{ height: "0.1px" }}
+      />
 
       <p className="text-center">&copy; 2023 Detect Atlantic</p>
     </div>

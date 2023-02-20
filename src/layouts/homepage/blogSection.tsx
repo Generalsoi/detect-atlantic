@@ -1,8 +1,8 @@
 import React, { FC } from "react";
 import BlogImgOne from "../../assets/images/blogimg1.png";
 import BlogImgTwo from "../../assets/images/blogimg2.png";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from "react-responsive-carousel";
+import UpArrow from "../../assets/images/uparrow.png";
+import ArrowRight from "../../assets/images/arrow-right.png";
 
 type blogDeets = {
   image: string;
@@ -26,7 +26,7 @@ export const BlogSection: FC = () => {
   ];
   return (
     <div className="font-ibmPlexMono scroll-smooth text-white mt-20 md:mt-40">
-      <div className="md:flex items-start gap-10 md:pt-40 px-4 md:pl-[40%]">
+      <div className="md:flex items-start gap-20 md:pt-40 px-4 md:pl-[40%]">
         {blogDetails.map((blogDetail, index) => (
           <div className="w-full md:w-96 mt-10 md:mt-0">
             <img
@@ -41,6 +41,19 @@ export const BlogSection: FC = () => {
             </a>
           </div>
         ))}
+      </div>
+      <div className="flex items-center justify-end">
+        <div>
+          <img src="" alt="" />
+        </div>
+        <div></div>
+      </div>
+
+      <div className="flex items-center justify-center mt-32 ">
+        <button className="flex items-center justify-center gap-4 bg-[#FF6108] px-6 py-4 border-none rounded-lg">
+          Contact us{" "}
+          <img src={UpArrow} alt="up arrow" className="animate-bounce" />
+        </button>
       </div>
     </div>
   );
