@@ -19,7 +19,7 @@ export const OnDemand: FC = () => {
         />
 
         <div className="mt-20 md:px-20 px-4 flex items-center justify-center text-center">
-          <div className="w-full md:w-[50%] border border-x-0 border-y-1 border-white md:px-10 py-8 flex items-center justify-center">
+          <div className="w-full md:w-[50%] border border-x-0 border-y-1 border-neutral-400 md:px-10 py-8 flex items-center justify-center">
             <p className="w-full">
               We know that infrastructure maintenance is complicated - that’s
               why we’ve kept our services as flexible as possible to help
