@@ -49,7 +49,7 @@ export const BlogSection: FC = () => {
         <div></div>
       </div>
 
-      <div className="flex items-center justify-center mt-32 ">
+      <div className="flex items-center justify-center mt-32 md:mt-60 ">
         <button className="flex items-center justify-center gap-4 bg-[#FF6108] px-6 py-4 border-none rounded-lg">
           Contact us{" "}
           <img src={UpArrow} alt="up arrow" className="animate-bounce" />
