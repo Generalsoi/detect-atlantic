@@ -2,10 +2,16 @@ import React, { FC } from "react";
 import { Footer } from "../components/Footer";
 import { Navbar } from "../components/Navbar";
 import Uparrow from "../assets/images/uparrow.png";
+import { motion } from "framer-motion";
 
 export const Contact: FC = () => {
   return (
-    <div className="font-ibmPlexMono scroll-smooth text-white">
+    <motion.div
+      className="font-ibmPlexMono scroll-smooth text-white"
+      initial={{ width: 0 }}
+      animate={{ width: "100%" }}
+      exit={{ x: innerWidth, transition: { duration: 0.1 } }}
+    >
       <Navbar />
       <div className="text-center py-20 mt-16 md:mt-20">
         <h1 className="text-4xl md:text-8xl font-bold">We would love</h1>
@@ -84,6 +90,6 @@ export const Contact: FC = () => {
       </div>
 
       <Footer />
-    </div>
+    </motion.div>
   );
 };

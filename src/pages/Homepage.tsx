@@ -26,7 +26,12 @@ export const Homepage = () => {
   };
 
   return (
-    <div className="font-ibmPlexMono scroll-smooth">
+    <motion.div
+      className="font-ibmPlexMono scroll-smooth"
+      initial={{ width: 0 }}
+      animate={{ width: "100%" }}
+      exit={{ x: innerWidth, transition: { duration: 0.1 } }}
+    >
       <Navbar />
       <div className="text-left md:flex flex-col md:h-screen items-center justify-center text-white px-4 py-10 mt-16 md:mt-20">
         <span>
@@ -142,6 +147,6 @@ export const Homepage = () => {
       <Platformsection />
       <BlogSection />
       <Footer />
-    </div>
+    </motion.div>
   );
 };

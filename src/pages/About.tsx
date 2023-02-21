@@ -9,7 +9,12 @@ import { Footer } from "./../components/Footer";
 
 export const About: FC = () => {
   return (
-    <div className="font-ibmPlexMono scroll-smooth text-white">
+    <motion.div
+      className="font-ibmPlexMono scroll-smooth text-white"
+      initial={{ width: 0 }}
+      animate={{ width: "100%" }}
+      exit={{ x: innerWidth, transition: { duration: 0.1 } }}
+    >
       <Navbar />
 
       <motion.div
@@ -31,6 +36,6 @@ export const About: FC = () => {
       <Team />
       <Perspective />
       <Footer />
-    </div>
+    </motion.div>
   );
 };

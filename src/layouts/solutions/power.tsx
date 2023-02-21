@@ -9,7 +9,12 @@ import { ColletAnnotateScroll } from "./../homepage/colletAnnotate";
 
 export const Power: FC = () => {
   return (
-    <div className="font-ibmPlexMono scroll-smooth text-white">
+    <motion.div
+      className="font-ibmPlexMono scroll-smooth text-white"
+      initial={{ width: 0 }}
+      animate={{ width: "100%" }}
+      exit={{ x: innerWidth, transition: { duration: 0.1 } }}
+    >
       <Navbar />
       <div className="flex flex-col items-center justify-center mt-16 md:mt-20 py-10 h-screen">
         <img
@@ -49,6 +54,6 @@ export const Power: FC = () => {
       <Stormsupport />
 
       <Footer />
-    </div>
+    </motion.div>
   );
 };
