@@ -22,7 +22,7 @@ export const Perspective: FC = () => {
           className="md:w-[50%] h-[30rem]"
           style={{ background: `url(${PerspectiveTwo})` }}
         ></div>
-        <div className="flex flex-col items-center justify-center absolute top-[50%] left-[30%]">
+        <div className="flex flex-col items-center justify-center absolute top-[35%] left-[30%]">
           <span>
             <h2 className="text-5xl font-bold">Perspective is</h2>
             <h2 className="text-5xl font-bold">everything</h2>
