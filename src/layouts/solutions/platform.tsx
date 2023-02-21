@@ -4,6 +4,7 @@ import PlatformImgTwo from "../../assets/images/platformimgtwo.png";
 import { Footer } from "../../components/Footer";
 import { motion } from "framer-motion";
 import UpArrow from "../../assets/images/uparrow.png";
+import Earth from "../../assets/images/earth.png";
 
 export const Platform: FC = () => {
   return (
@@ -44,6 +45,10 @@ export const Platform: FC = () => {
           </p>
           <p> needs.</p>
         </motion.div>
+      </div>
+
+      <div className="flex items-center justify-center">
+        <img src={Earth} alt="earth " />
       </div>
 
       <div className="mt-10">
