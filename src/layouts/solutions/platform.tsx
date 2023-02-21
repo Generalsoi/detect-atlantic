@@ -60,52 +60,62 @@ export const Platform: FC = () => {
         >
           Data Command Center
         </motion.h2>
-        <motion.img
-          className="px-0 md:px-32 mt-20"
-          src={PlatformImgTwo}
-          alt="platform image two "
-          whileInView={{ y: 0, opacity: 1 }}
-          initial={{ y: 100, opacity: 0 }}
-          transition={{ type: "spring", stiffness: 20 }}
-        />
 
-        <motion.div
-          className="px-4 md:px-32 mt-20"
-          whileInView={{ y: 0, opacity: 1 }}
-          initial={{ y: 100, opacity: 0 }}
-          transition={{ type: "spring", stiffness: 20 }}
-        >
-          <p>Our functional web-based platforms can:</p>
-          <ul className="mt-10 list-disc px-4 md:px-10">
-            <li>
-              Store and manage inspections in a customer profile’s searchable
-              database
-            </li>
-            <li>
-              Show annotations from our certified Powerline Technicians for
-              every structure
-            </li>
-            <li>Filter detected issues by severity or type</li>
-            <li>Automatically generate a PDF report for offline use</li>
-          </ul>
-          <p className="mt-10 w-full md:w-[80%]">
-            Any GPS-tagged imagery and notes can be used Using SCOPE, Detect can
-            build a timeline for each asset - its life story.
-          </p>
-          <p className="mt-10 w-full md:w-[80%]">
-            Using rich data and this story, Detect will be able to determine
-            long-term trends and extrapolate that to other structures/equipment,
-            and fix defects before they become a critical risk to the network.
-          </p>
-        </motion.div>
+        <div className="md:flex items-start justify-center gap-10 w-full">
+          <div className=" w-full md:w-[50%] ">
+            <motion.img
+              className="px-0 md:px-32 mt-20 w-full aspect-auto"
+              src={PlatformImgTwo}
+              alt="platform image two "
+              whileInView={{ y: 0, opacity: 1 }}
+              initial={{ y: 100, opacity: 0 }}
+              transition={{ type: "spring", stiffness: 20 }}
+            />
+          </div>
+
+          <motion.div
+            className="text-sm px-4 md:px-32 mt-20 w-full md:w-[50%]"
+            whileInView={{ y: 0, opacity: 1 }}
+            initial={{ y: 100, opacity: 0 }}
+            transition={{ type: "spring", stiffness: 20 }}
+          >
+            <p>Our functional web-based platforms can:</p>
+            <ul className="mt-10 list-disc px-4 md:px-10">
+              <li>
+                Store and manage inspections in a customer profile’s searchable
+                database
+              </li>
+              <li>
+                Show annotations from our certified Powerline Technicians for
+                every structure
+              </li>
+              <li>Filter detected issues by severity or type</li>
+              <li>Automatically generate a PDF report for offline use</li>
+            </ul>
+            <p className="mt-10 w-full md:w-[80%]">
+              Any GPS-tagged imagery and notes can be used Using SCOPE, Detect
+              can build a timeline for each asset - its life story.
+            </p>
+            <p className="mt-10 w-full md:w-[80%]">
+              Using rich data and this story, Detect will be able to determine
+              long-term trends and extrapolate that to other
+              structures/equipment, and fix defects before they become a
+              critical risk to the network.
+            </p>
+            <button className="flex items-center justify-center gap-4 bg-[#FF6108] text-white px-6 py-4 border-none rounded-lg mt-10">
+              Book now{" "}
+              <img src={UpArrow} alt="up arrow" className="animate-bounce" />
+            </button>
+          </motion.div>
+        </div>
       </div>
 
-      <div className="px-4 md:px-32 py-20 ">
+      {/* <div className="px-4 md:px-32 py-20 ">
         <button className="flex items-center justify-center gap-4 bg-[#FF6108] text-white px-6 py-4 border-none rounded-lg">
           Book now{" "}
           <img src={UpArrow} alt="up arrow" className="animate-bounce" />
         </button>
-      </div>
+      </div> */}
 
       <Footer />
     </div>
