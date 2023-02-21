@@ -38,18 +38,39 @@ export const NavLink: FC<navLink> = ({ name, link, sublinks }) => {
       }
       style={{ borderBottomWidth: "0.1px" }}
     >
-      <span onClick={handleDropDown} className="flex items-center gap-1">
+      <span
+        onClick={handleDropDown}
+        className="flex items-center gap-1 relative"
+      >
         {name}{" "}
         {!!sublinks.length && <IoMdArrowDropdown className="text-[#FF6108]" />}
       </span>
       {sublinks.length && dropdown ? (
-        <div className="flex flex-col ml-10">
+        <motion.div
+          className="flex flex-col ml-10"
+          initial={{ height: "100%", opacity: 0 }}
+          animate={
+            dropdown
+              ? {
+                  height: "100%",
+                  opacity: 1,
+                  y: 0,
+                  transition: { type: "spring", stiffness: 20 },
+                }
+              : {
+                  opacity: 0,
+                  y: "100px",
+                  transition: { type: "spring", stiffness: 20 },
+                }
+          }
+          exit={{ height: "100%" }}
+        >
           {sublinks.map((sublink) => (
             <Link to={sublink.sublink} className="mt-4 md:mt-1">
               {sublink.name}
             </Link>
           ))}
-        </div>
+        </motion.div>
       ) : null}
     </Link>
   );

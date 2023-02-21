@@ -26,7 +26,7 @@ export const BlogSection: FC = () => {
   ];
   return (
     <div className="font-ibmPlexMono scroll-smooth text-white mt-20 md:mt-40">
-      <div className="md:flex items-start gap-20 md:pt-40 px-4 md:pl-[40%]">
+      <div className="md:flex items-start justify-center gap-20 md:pt-40 px-4 md:px-20">
         {blogDetails.map((blogDetail, index) => (
           <div className="w-full md:w-96 mt-10 md:mt-0">
             <img
