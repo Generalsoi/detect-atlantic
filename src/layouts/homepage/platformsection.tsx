@@ -2,10 +2,11 @@ import React, { FC } from "react";
 import MediaThree from "../../assets/images/media3.png";
 import UpArrow from "../../assets/images/uparrow.png";
 import { motion } from "framer-motion";
+import HomePagePlatformVid from "../../assets/videos/detecthomepageplatformvid.mp4";
 
 export const Platformsection: FC = () => {
   return (
-    <div className="md:px-20 text-left md:h-screen flex flex-col items-center justify-center text-white mt-16 md:mt-60 ">
+    <div className="md:px-20 text-left flex flex-col items-center justify-center text-white mt-16 md:mt-60 ">
       <motion.div
         whileInView={{ y: 0, opacity: 1 }}
         initial={{ y: 100, opacity: 0 }}
@@ -18,11 +19,16 @@ export const Platformsection: FC = () => {
           <p className="md:text-6xl font-bold text-3xl">platform</p>
         </span>
       </motion.div>
-      <img
-        src={MediaThree}
-        alt=""
-        className="mt-10 md:mt-40 h-96 md:h-[45rem]"
-      />
+      <motion.div
+        className=" w-full md:w-[80%] md:h-screen overflow-hidden mt-8"
+        whileInView={{ y: 0, opacity: 1 }}
+        initial={{ y: 100, opacity: 0 }}
+        transition={{ type: "spring", stiffness: 20 }}
+      >
+        <video autoPlay muted playsInline loop>
+          <source src={HomePagePlatformVid} type="video/mp4" />
+        </video>
+      </motion.div>
 
       <div className="hidden md:flex  w-[100%] relative items-center justify-center gap-4 mt-10 px-16 py-8">
         <p className="ml-[10%] md:ml-0 w-[100%]">
