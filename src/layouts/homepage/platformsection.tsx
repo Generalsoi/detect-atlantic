@@ -20,7 +20,7 @@ export const Platformsection: FC = () => {
         </span>
       </motion.div>
       <motion.div
-        className=" w-full md:w-[80%] md:h-screen overflow-hidden mt-8"
+        className=" w-full md:w-[80%]  overflow-hidden mt-8"
         whileInView={{ y: 0, opacity: 1 }}
         initial={{ y: 100, opacity: 0 }}
         transition={{ type: "spring", stiffness: 20 }}
