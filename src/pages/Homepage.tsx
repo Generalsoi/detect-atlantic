@@ -123,7 +123,11 @@ export const Homepage = () => {
                 )}
               </h4>
               {currentId === service.index && (
-                <span>
+                <motion.span
+                  initial={{ opacity: 0, y: 0 }}
+                  animate={{ opacity: 1, y: "100%" }}
+                  transition={{ type: "spring", stiffness: 20 }}
+                >
                   <p className="my-8 text-sm">{service.description}</p>
                   <a
                     href={service.link}
@@ -131,7 +135,7 @@ export const Homepage = () => {
                   >
                     Learn More <img src={ArrowRight} alt="arrow-right" />
                   </a>
-                </span>
+                </motion.span>
               )}
             </div>
           ))}
