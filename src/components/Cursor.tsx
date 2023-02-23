@@ -1,9 +1,21 @@
-import React, { FC } from "react";
+import React, { FC, useEffect, useState } from "react";
 
 export const Cursor: FC = () => {
+  const [cursorx, setCursorx] = useState<any>();
+  const [cursory, setCursory] = useState<any>();
+
+  window.addEventListener("mousemove", (e) => {
+    setCursorx(e.pageX);
+    setCursory(e.pageY);
+  });
+
   return (
-    <div className="w-[64px] h-[64px] border rounded-full bg-white z-10">
-      <div className="w-[16px] h-[16px] border rounded-full bg-red-500"></div>
+    <div
+      className="cursor-dot-outline"
+      id="cursor"
+      style={{ left: cursorx + "px", top: cursory + "px" }}
+    >
+      {/* <div className="cursor-dot"></div> */}
     </div>
   );
 };
