@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React, { FC, useState } from "react";
 import Media4 from "../../assets/images/media4.png";
 import { motion } from "framer-motion";
 import { Navbar } from "./../../components/Navbar";
@@ -6,8 +6,19 @@ import { Footer } from "./../../components/Footer";
 import { Stormsupport } from "./stormsupport";
 import { Flightplanning } from "./flightplanning";
 import { ColletAnnotateScroll } from "./../homepage/colletAnnotate";
+import { powerServicesList } from "../../helpers/powerServicesList";
+import { MdKeyboardArrowRight, MdKeyboardArrowDown } from "react-icons/md";
+import ArrowRight from "../../assets/images/arrow-right.png";
+import MediaTwo from "../../assets/images/media2.png";
 
 export const Power: FC = () => {
+  const [openAccordion, setOpenAccordion] = useState<boolean>(false);
+  const [currentId, setCurrentId] = useState<number>(1);
+
+  const handleOpenAccordion = (id: number): void => {
+    setCurrentId(id);
+    setOpenAccordion(!openAccordion);
+  };
   return (
     <motion.div
       className="font-ibmPlexMono scroll-smooth text-white"
@@ -49,6 +60,45 @@ export const Power: FC = () => {
       </motion.div>
 
       <ColletAnnotateScroll />
+
+      <div className="md:flex px-6 md:px-20 pb-8 mt-32 md:mb-40 ">
+        <div className="w-full">
+          {powerServicesList.map((service) => (
+            <div
+              key={service.index}
+              className={`py-8 border border-x-0 border-red cursor-pointer border-neutral-400 ${
+                service.index === 4 ? "border-b-1" : "border-b-0"
+              } border-[#AAAAAA] transition ease-linear duration-500 text-white`}
+              onClick={() => handleOpenAccordion(service.index)}
+              style={{
+                borderTopWidth: "0.1px",
+                borderColor: "#AAAAAA",
+              }}
+            >
+              <h4 className="flex items-center gap-2 uppercase text-2xl">
+                {service.name}
+                {currentId === service.index ? (
+                  <MdKeyboardArrowDown />
+                ) : (
+                  <MdKeyboardArrowRight />
+                )}
+              </h4>
+              {currentId === service.index && (
+                <div className="md:flex items-start gap-10">
+                  <motion.span className="w-full md:w-[50%]">
+                    <p className="my-8 text-sm">{service.description}</p>
+                  </motion.span>
+                  <img
+                    className="w-full md:w-[40%] h-[20rem] md:h-[25rem] mt-8 md:mt-0"
+                    src={service.image}
+                    alt="mediatwo"
+                  />
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
 
       <Flightplanning />
       <Stormsupport />
