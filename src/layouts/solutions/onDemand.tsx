@@ -44,6 +44,8 @@ export const OnDemand: FC = () => {
         <h2 className="text-2xl md:text-4xl font-bold">business?</h2>
       </motion.div>
 
+      <ConstructionMonitoringScroll />
+
       <motion.div
         className="flex items-center justify-center pb-20"
         whileInView={{ y: 0, opacity: 1 }}
@@ -55,8 +57,6 @@ export const OnDemand: FC = () => {
           <img src={UpArrow} alt="up arrow" className="animate-bounce" />
         </button>
       </motion.div>
-
-      <ConstructionMonitoringScroll />
 
       <motion.div
         className="flex flex-col items-center justify-center mt-16 md:mt-20 py-10 h-screen"
