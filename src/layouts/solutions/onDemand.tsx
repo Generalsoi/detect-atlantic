@@ -4,7 +4,7 @@ import Media4 from "../../assets/images/media4.png";
 import UpArrow from "../../assets/images/uparrow.png";
 import { Footer } from "./../../components/Footer";
 import { motion } from "framer-motion";
-import { ColletAnnotateScroll } from "../homepage/colletAnnotate";
+import { ConstructionMonitoringScroll } from "./constructionMonitoringScroll";
 
 export const OnDemand: FC = () => {
   return (
@@ -56,7 +56,7 @@ export const OnDemand: FC = () => {
         </button>
       </motion.div>
 
-      <ColletAnnotateScroll />
+      <ConstructionMonitoringScroll />
 
       <motion.div
         className="flex flex-col items-center justify-center mt-16 md:mt-20 py-10 h-screen"
