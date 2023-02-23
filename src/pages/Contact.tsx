@@ -3,7 +3,6 @@ import { Footer } from "../components/Footer";
 import { Navbar } from "../components/Navbar";
 import Uparrow from "../assets/images/uparrow.png";
 import { motion } from "framer-motion";
-import { Map } from "google-maps-react";
 
 export const Contact: FC = () => {
   return (
