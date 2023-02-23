@@ -80,7 +80,7 @@ export const Platform: FC = () => {
             transition={{ type: "spring", stiffness: 20 }}
           >
             <p>Our functional web-based platforms can:</p>
-            <ul className="mt-10 list-disc px-4 md:px-10">
+            <ul className="mt-4 list-disc px-4 md:px-10">
               <li>
                 Store and manage inspections in a customer profile’s searchable
                 database
@@ -92,11 +92,11 @@ export const Platform: FC = () => {
               <li>Filter detected issues by severity or type</li>
               <li>Automatically generate a PDF report for offline use</li>
             </ul>
-            <p className="mt-10 w-full md:w-[80%]">
+            <p className="mt-4 w-full md:w-[80%]">
               Any GPS-tagged imagery and notes can be used Using SCOPE, Detect
               can build a timeline for each asset - its life story.
             </p>
-            <p className="mt-10 w-full md:w-[80%]">
+            <p className="mt-4 w-full md:w-[80%]">
               Using rich data and this story, Detect will be able to determine
               long-term trends and extrapolate that to other
               structures/equipment, and fix defects before they become a

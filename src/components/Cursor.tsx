@@ -1,8 +1,8 @@
 import React, { FC, useEffect, useState } from "react";
 
 export const Cursor: FC = () => {
-  const [cursorx, setCursorx] = useState<any>();
-  const [cursory, setCursory] = useState<any>();
+  const [cursorx, setCursorx] = useState<number>();
+  const [cursory, setCursory] = useState<number>();
 
   window.addEventListener("mousemove", (e) => {
     setCursorx(e.pageX);

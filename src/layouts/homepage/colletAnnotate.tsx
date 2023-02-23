@@ -14,62 +14,67 @@ export const ColletAnnotateScroll: FC = () => {
       >
         <section className="flex items-center gap-4 py-4 w-[50%] animate-swipe">
           <span className="border border-l-2 border-t-0 border-r-0 border-b-0 h-8 "></span>
+          <p className="uppercase text-xs font-bold text-[#AAAAAA]">plan</p>
+          <img src={ArrowRight} alt="arrow-right" />
+          <p className="uppercase text-xs font-bold text-[#AAAAAA]">collect</p>
+          <img src={ArrowRight} alt="arrow-right" />
+          <p className="uppercase text-xs font-bold text-[#AAAAAA]">annotate</p>
+          <img src={ArrowRight} alt="arrow-right" />
+          <p className="uppercase text-xs font-bold text-[#AAAAAA]">analyze</p>
+
+          <span className="border border-l-2 border-t-0 border-r-0 border-b-0 h-8 "></span>
+          <p className="uppercase text-xs font-bold text-[#AAAAAA]">plan</p>
+          <img src={ArrowRight} alt="arrow-right" />
           <p className="uppercase text-xs font-bold text-[#AAAAAA]">collect</p>
           <img src={ArrowRight} alt="arrow-right" />
           <p className="uppercase text-xs font-bold text-[#AAAAAA]">annotate</p>
           <img src={ArrowRight} alt="arrow-right" />
           <p className="uppercase text-xs font-bold text-[#AAAAAA]">analyze</p>
           <span className="border border-l-2 border-t-0 border-r-0 border-b-0 h-8 "></span>
+          <p className="uppercase text-xs font-bold text-[#AAAAAA]">plan</p>
+          <img src={ArrowRight} alt="arrow-right" />
           <p className="uppercase text-xs font-bold text-[#AAAAAA]">collect</p>
           <img src={ArrowRight} alt="arrow-right" />
           <p className="uppercase text-xs font-bold text-[#AAAAAA]">annotate</p>
           <img src={ArrowRight} alt="arrow-right" />
           <p className="uppercase text-xs font-bold text-[#AAAAAA]">analyze</p>
           <span className="border border-l-2 border-t-0 border-r-0 border-b-0 h-8 "></span>
-          <p className="uppercase text-xs font-bold text-[#AAAAAA]">collect</p>
+          <p className="uppercase text-xs font-bold text-[#AAAAAA]">plan</p>
           <img src={ArrowRight} alt="arrow-right" />
-          <p className="uppercase text-xs font-bold text-[#AAAAAA]">annotate</p>
-          <img src={ArrowRight} alt="arrow-right" />
-          <p className="uppercase text-xs font-bold text-[#AAAAAA]">analyze</p>
-          <span className="border border-l-2 border-t-0 border-r-0 border-b-0 h-8 "></span>
-          <p className="uppercase text-xs font-bold text-[#AAAAAA]">collect</p>
-          <img src={ArrowRight} alt="arrow-right" />
-          <p className="uppercase text-xs font-bold text-[#AAAAAA]">annotate</p>
-          <img src={ArrowRight} alt="arrow-right" />
-          <p className="uppercase text-xs font-bold text-[#AAAAAA]">analyze</p>
-          <span className="border border-l-2 border-t-0 border-r-0 border-b-0 h-8 "></span>
           <p className="uppercase text-xs font-bold text-[#AAAAAA]">collect</p>
           <img src={ArrowRight} alt="arrow-right" />
           <p className="uppercase text-xs font-bold text-[#AAAAAA]">annotate</p>
           <img src={ArrowRight} alt="arrow-right" />
           <p className="uppercase text-xs font-bold text-[#AAAAAA]">analyze</p>
         </section>
-        <section className="flex items-center gap-4 py-4 w-[50%] animate-swipe">
+        <section className="flex items-center gap-4 ml-10 py-4 w-[50%] animate-swipe">
           <span className="border border-l-2 border-t-0 border-r-0 border-b-0 h-8 "></span>
+          <p className="uppercase text-xs font-bold text-[#AAAAAA]">plan</p>
+          <img src={ArrowRight} alt="arrow-right" />
           <p className="uppercase text-xs font-bold text-[#AAAAAA]">collect</p>
           <img src={ArrowRight} alt="arrow-right" />
           <p className="uppercase text-xs font-bold text-[#AAAAAA]">annotate</p>
           <img src={ArrowRight} alt="arrow-right" />
           <p className="uppercase text-xs font-bold text-[#AAAAAA]">analyze</p>
           <span className="border border-l-2 border-t-0 border-r-0 border-b-0 h-8 "></span>
+          <p className="uppercase text-xs font-bold text-[#AAAAAA]">plan</p>
+          <img src={ArrowRight} alt="arrow-right" />
           <p className="uppercase text-xs font-bold text-[#AAAAAA]">collect</p>
           <img src={ArrowRight} alt="arrow-right" />
           <p className="uppercase text-xs font-bold text-[#AAAAAA]">annotate</p>
           <img src={ArrowRight} alt="arrow-right" />
           <p className="uppercase text-xs font-bold text-[#AAAAAA]">analyze</p>
           <span className="border border-l-2 border-t-0 border-r-0 border-b-0 h-8 "></span>
+          <p className="uppercase text-xs font-bold text-[#AAAAAA]">plan</p>
+          <img src={ArrowRight} alt="arrow-right" />
           <p className="uppercase text-xs font-bold text-[#AAAAAA]">collect</p>
           <img src={ArrowRight} alt="arrow-right" />
           <p className="uppercase text-xs font-bold text-[#AAAAAA]">annotate</p>
           <img src={ArrowRight} alt="arrow-right" />
           <p className="uppercase text-xs font-bold text-[#AAAAAA]">analyze</p>
           <span className="border border-l-2 border-t-0 border-r-0 border-b-0 h-8 "></span>
-          <p className="uppercase text-xs font-bold text-[#AAAAAA]">collect</p>
+          <p className="uppercase text-xs font-bold text-[#AAAAAA]">plan</p>
           <img src={ArrowRight} alt="arrow-right" />
-          <p className="uppercase text-xs font-bold text-[#AAAAAA]">annotate</p>
-          <img src={ArrowRight} alt="arrow-right" />
-          <p className="uppercase text-xs font-bold text-[#AAAAAA]">analyze</p>
-          <span className="border border-l-2 border-t-0 border-r-0 border-b-0 h-8 "></span>
           <p className="uppercase text-xs font-bold text-[#AAAAAA]">collect</p>
           <img src={ArrowRight} alt="arrow-right" />
           <p className="uppercase text-xs font-bold text-[#AAAAAA]">annotate</p>
