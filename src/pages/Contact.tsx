@@ -90,7 +90,7 @@ export const Contact: FC = () => {
       </div>
       <div className="flex items-center justify-center px-4 md:px-40">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2838.797285222194!2d-63.57615404871976!3d44.64205997899727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b5a223414266c19%3A0xfc639809513b8892!2s1345%20Norma%20Eddy%20Ln%2C%20Halifax%2C%20NS%20B3J%201B6%2C%20Canada!5e0!3m2!1sen!2sng!4v1677147024837!5m2!1sen!2sng"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3119.7199332389737!2d-63.57615404871976!3d44.64205997899727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b5a223414266c19%3A0xfc639809513b8892!2s1345%20Norma%20Eddy%20Ln%2C%20Halifax%2C%20NS%20B3J%201B6%2C%20Canada!5e1!3m2!1sen!2sng!4v1677191143257!5m2!1sen!2sng"
           width="600"
           height="450"
           style={{ border: 0, width: "100%" }}
