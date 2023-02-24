@@ -20,12 +20,23 @@ export const Energy: FC = () => {
           <img src={EnergyImgOne} alt="energy-image-one" />
           <span>
             <h2 className="mt-16 text-3xl font-bold">Wind Energy</h2>
-            <h2 className="mb-10 text-3xl font-bold">Monitoring</h2>
+            <h2 className="mb-10 text-3xl font-bold">Asset Monitoring</h2>
           </span>
           <span>
             <p className=" text-sm">Inspect your wind energy assets quickly,</p>
             <p className=" text-sm">safely and fix your issues, before they </p>
-            <p className=" text-sm">fail.</p>
+            <p className=" text-sm">
+              fail. Using repeatable drone flight paths,
+            </p>
+            <p className=" text-sm">
+              reduce inspection downtime with safer, faster
+            </p>
+            <p className=" text-sm">
+              and more cost effective drone inspections.
+            </p>
+            <p className=" text-sm">All data is stored and visualized on our</p>
+            <p className=" text-sm">proprietary platform where data can be</p>
+            <p className=" text-sm">leveraged to determine trends.</p>
           </span>
         </motion.div>
         <motion.div
@@ -35,17 +46,20 @@ export const Energy: FC = () => {
         >
           <span>
             <h2 className="text-3xl font-bold">Solar Energy</h2>
-            <h2 className="mb-10 text-3xl font-bold">Monitoring</h2>
+            <h2 className="mb-10 text-3xl font-bold">Asset Monitoring</h2>
           </span>
           <span>
             <p className=" text-sm">
               Automate your solar module monitoring with
             </p>
             <p className=" text-sm">
-              RGB and infrared scans. Find defects and{" "}
+              RGB and infrared scans using programmed drone
             </p>
             <p className=" text-sm">
-              underperforming solar modules instantly and
+              flight paths and geo-tagged imager. Find defects{" "}
+            </p>
+            <p className=" text-sm">
+              and underperforming solar modules instantly and
             </p>
             <p className=" text-sm">
               quickly remediate them for maximum system{" "}

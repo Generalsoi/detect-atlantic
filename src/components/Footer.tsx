@@ -7,16 +7,17 @@ export const Footer: FC = () => {
   return (
     <div className="px-4 md:px-20 py-16 text-white md:mt-[10rem]">
       <div className="md:flex items-center justify-between">
-        <span className="flex items-center mt-10 md:mt-0 md:gap-20  gap-36">
-          <img src={DLogo} alt="d-logo" />
-          <p className="w-[40%] md:w-fit">
+        <span className="md:flex items-center mt-10 md:mt-0 md:gap-20  gap-36">
+          <p className="w-[90%] md:w-fit">
             1345 Norma Eddy Ln, Halifax, NS B3J 1B6
           </p>
+          <img src={InLogo} alt="d-logo" className="mt-6 md:mt-0" />
         </span>
-        <img src={InLogo} alt="d-logo" />
-        <span className="flex items-center mt-10 md:mt-0 md:gap-20  gap-36">
-          <img src={MediumLogo} alt="mediumlogo" />
-          <p className="w-[40%] md:w-fit">(555) 555-5555 contact@detect.ca</p>
+        <span className="md:flex items-center mt-10 md:mt-0 md:gap-20  gap-36">
+          <img src={MediumLogo} alt="mediumlogo" className="mt-6 md:mt-0" />
+          <p className="w-[40%] md:w-fit mt-6 md:mt-0">
+            contact@detectinspections.com
+          </p>
         </span>
       </div>
 
@@ -25,7 +26,10 @@ export const Footer: FC = () => {
         style={{ height: "0.1px" }}
       />
 
-      <p className="text-center">&copy; 2023 Detect Atlantic</p>
+      <div className="flex items-center justify-between">
+        <p className="text-center">&copy; 2023 Detect</p>
+        <img src={DLogo} alt="d-logo" />
+      </div>
     </div>
   );
 };

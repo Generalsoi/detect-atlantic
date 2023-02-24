@@ -1,6 +1,4 @@
 import React, { FC } from "react";
-import CausLogo from "../../assets/images/causlogo.png";
-import PilotWaveHoldingsLogo from "../../assets/images/pilotwaveholdings.png";
 import { motion } from "framer-motion";
 
 export const AboutUs: FC = () => {
@@ -16,9 +14,9 @@ export const AboutUs: FC = () => {
         <hr className="mt-1 mb-10 md:mb-16" />
         <p className="mb-8">
           Climate change will have a significant impact on the cost of
-          maintaining North America's electrical power system in the coming
-          years. It will increase the frequency and severity of extreme weather
-          events, such as hurricanes, floods, and heat waves, which can damage
+          maintaining the World’s electrical power system in the coming years.
+          It will increase the frequency and severity of extreme weather events,
+          such as hurricanes, floods, and heat waves, which can damage
           electrical infrastructure and disrupt power supply. Repairing and
           rebuilding this infrastructure can be costly, and the costs are likely
           to increase over time as the effects of climate change intensify.{" "}
@@ -34,18 +32,13 @@ export const AboutUs: FC = () => {
         </p>
         <p className="mb-8">
           New perspectives on how we maintain these systems are required. Detect
-          Atlantic Inspection Services is the result of a research & development
-          partnership between Connect Atlantic Utility Services and Pilot Wave
-          Holdings to address these needs.
+          is a cutting edge AI platform that was designed and built with the
+          purpose to counter these global trends to minimize downtime.
         </p>
-        <div className="flex items-center gap-8 mt-20">
-          <img src={CausLogo} alt="causlogo" />
-          <img
-            src={PilotWaveHoldingsLogo}
-            alt="pilotwaveholdingslogo"
-            className="w-[50%] md:w-fit"
-          />
-        </div>
+        <p className="mb-8">
+          Detect was established as a partnership between Connect Atlantic
+          Utility Services and Pilot Wave Holdings to address these needs.
+        </p>
       </motion.div>
     </div>
   );

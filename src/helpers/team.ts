@@ -5,29 +5,29 @@ import Brandon from '../assets/images/brandon.png'
 
 interface teamDetails {
     name: string,
-    description: string,
+    linkedin: string,
     image: string
 }
 
 export const team = [
     {
         name: "Justin Lee",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+        linkedin: "https://www.linkedin.com/in/justin-lee-626a69116/",
         image: Justin
     },
     {
         name: "Matt Sattler",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+        linkedin: "https://www.linkedin.com/in/matthew-sattler-879a6258/",
         image: Matt
     },
     {
         name: "Joe Richard",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+        linkedin: "https://www.linkedin.com/in/joe-richard/",
         image: Joe
     },
     {
         name: "Brandon Biron",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+        linkedin: "https://www.linkedin.com/in/brandon-biron-b52275110/",
         image: Brandon
     },
 ]

@@ -33,8 +33,8 @@ export const NavLink: FC<navLink> = ({ name, link, sublinks }) => {
       to={sublinks.length ? "#" : link}
       className={
         isActive
-          ? "font-ibmPlexMono mt-16 md:mt-0 border border-x-0 border-t-0 border-neutral-500 md:w-40 md:-translate-x-16 transition duration-500 ease-in-out text-md md:text-xs"
-          : "font-ibmPlexMono mt-16 md:mt-0 border border-x-0 border-t-0 border-neutral-500 md:w-24 text-md md:text-xs"
+          ? "font-ibmPlexMono mt-16 md:mt-0 border border-x-0 border-t-0 border-neutral-500 w-full md:w-44 md:-translate-x-16 transition duration-500 ease-in-out text-md md:text-xs"
+          : "font-ibmPlexMono mt-16 md:mt-0 border border-x-0 border-t-0 border-neutral-500 w-full md:w-28 text-md md:text-xs"
       }
       style={{ borderBottomWidth: "0.1px" }}
     >
@@ -90,12 +90,15 @@ export const Navbar: FC = () => {
     { index: 2, name: "About", link: "/about", sublinks: [] },
     {
       index: 3,
-      name: "Solutions",
+      name: "Our Services",
       link: "/solutions",
       sublinks: [
-        { name: "Power", sublink: "/solutions/power" },
-        { name: "Energy", sublink: "/solutions/energy" },
-        { name: "Platform", sublink: "/solutions/platform" },
+        { name: "Power", sublink: "/solutions/powerlineinspectionservices" },
+        {
+          name: "Energy",
+          sublink: "/solutions/solarandwindinspectionservices",
+        },
+        { name: "Platform", sublink: "/solutions/aisoftware" },
         { name: "On Demand", sublink: "/solutions/ondemand" },
       ],
     },

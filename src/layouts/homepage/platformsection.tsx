@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import MediaThree from "../../assets/images/media3.png";
 import UpArrow from "../../assets/images/uparrow.png";
 import { motion } from "framer-motion";
-import HomePagePlatformVid from "../../assets/videos/detecthomepageplatformvid.mp4";
+import HomePagePlatformVid from "../../assets/videos/homepageplatformvid.mp4";
 
 export const Platformsection: FC = () => {
   return (

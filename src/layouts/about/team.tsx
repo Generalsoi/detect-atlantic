@@ -1,6 +1,7 @@
 import React from "react";
 import { team } from "../../helpers/team";
 import { motion } from "framer-motion";
+import { FaLinkedinIn } from "react-icons/fa";
 
 export const Team = () => {
   return (
@@ -9,11 +10,11 @@ export const Team = () => {
         meet the team
       </h1>
 
-      <div className="md:flex items-start justify-center gap-20 flex-wrap mt-20">
+      <div className="md:flex items-start justify-center gap-20 mt-20">
         {team.map((member, index) => (
           <motion.div
             key={index}
-            className="md:w-[38%] mb-20"
+            className="md:w-[23%] mb-20"
             whileInView={{ y: 0, opacity: 1 }}
             initial={{ y: 100, opacity: 0 }}
             transition={{ type: "spring", stiffness: 20 }}
@@ -22,7 +23,9 @@ export const Team = () => {
             <h4 className="my-10 uppercase text-xl md:text-3xl">
               {member.name}
             </h4>
-            <p>{member.description}</p>
+            <a href={member.linkedin} target="_blank" rel="noreferrer">
+              <FaLinkedinIn className="md:text-3xl" />
+            </a>
           </motion.div>
         ))}
       </div>

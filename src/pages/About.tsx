@@ -18,16 +18,22 @@ export const About: FC = () => {
       <Navbar />
 
       <motion.div
-        className="text-left flex flex-col items-center justify-center text-white px-4 py-10 mt-16 md:mt-20"
+        className="text-left flex flex-col items-center justify-center text-white px-4 py-16 md:py-32 mt-16 md:mt-20"
         whileInView={{ opacity: 1 }}
         initial={{ opacity: 0 }}
         transition={{ type: "spring", stiffness: 20 }}
       >
         <span>
           <p className="uppercase md:text-3xl">our mission</p>
-          <h1 className="text-5xl md:text-8xl font-bold">To enable</h1>
-          <h1 className="text-5xl md:text-8xl font-bold">informed</h1>
-          <h1 className="text-5xl md:text-8xl font-bold">decisions.</h1>
+          <h1 className="text-xl md:text-6xl font-bold">
+            To radically transform
+          </h1>
+          <h1 className="text-xl md:text-6xl font-bold">
+            infrastructure maintenance
+          </h1>
+          <h1 className="text-xl md:text-6xl font-bold">
+            from reactive to proactive.
+          </h1>
         </span>
       </motion.div>
 

@@ -31,7 +31,7 @@ export const WhatWeDo: FC = () => {
           <br /> address your specific needs.
         </p>
         <button className="flex items-center gap-4 bg-[#FF6108] border-none rounded-lg px-6 py-4 hover:translate-y-3 transition-all duration-300">
-          Solutions{" "}
+          Learn More{" "}
           <img src={UpArrow} alt="up-arrow" className="animate-bounce" />{" "}
         </button>
       </motion.div>

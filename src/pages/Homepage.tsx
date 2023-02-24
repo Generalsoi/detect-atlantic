@@ -63,7 +63,7 @@ export const Homepage = () => {
       </div>
 
       <motion.div
-        className=" pr-4 w-full md:w-[80%] md:h-screen pl-0 relative overflow-hidden"
+        className="md:px-20 w-full md:h-screen flex items-center  relative overflow-hidden"
         whileInView={{ y: 0, opacity: 1 }}
         initial={{ y: 100, opacity: 0 }}
         transition={{ type: "spring", stiffness: 20 }}
@@ -75,7 +75,7 @@ export const Homepage = () => {
 
       <div className="text-white mt-10 py-10  text-center">
         <motion.p
-          className=" md:px-40 px-4 "
+          className=" md:px-40 px-4 md:text-xl"
           whileInView={{ y: 0, opacity: 1 }}
           initial={{ y: 80, opacity: 0 }}
           transition={{ type: "spring", stiffness: 20 }}
@@ -149,7 +149,6 @@ export const Homepage = () => {
 
       <ColletAnnotateScroll />
       <Platformsection />
-      <BlogSection />
       <Footer />
     </motion.div>
   );

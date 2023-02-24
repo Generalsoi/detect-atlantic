@@ -27,6 +27,16 @@ export const Power: FC = () => {
       exit={{ x: innerWidth, transition: { duration: 0.1 } }}
     >
       <Navbar />
+      <motion.div
+        className="px-4 md:px-20 mt-16 md:mt-20 py-20 flex items-center justify-center"
+        whileInView={{ y: 0, opacity: 1 }}
+        initial={{ y: 100, opacity: 0 }}
+        transition={{ type: "spring", stiffness: 20 }}
+      >
+        <h2 className="md:w-[50%] text-5xl md:text-8xl font-bold">
+          Full Service Inspection
+        </h2>
+      </motion.div>
       <div className="flex flex-col items-center justify-center mt-16 md:mt-20 py-10 h-screen">
         <img
           src={Media4}
@@ -47,17 +57,6 @@ export const Power: FC = () => {
           </div>
         </div>
       </div>
-
-      <motion.div
-        className="px-4 md:px-20 mt-20 py-20"
-        whileInView={{ y: 0, opacity: 1 }}
-        initial={{ y: 100, opacity: 0 }}
-        transition={{ type: "spring", stiffness: 20 }}
-      >
-        <h2 className="md:w-[50%] text-5xl md:text-8xl font-bold">
-          Full Service Inspection
-        </h2>
-      </motion.div>
 
       <ColletAnnotateScroll />
 

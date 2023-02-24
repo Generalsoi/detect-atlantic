@@ -18,9 +18,9 @@ export const AnimatedPages: FC = () => {
         <Route element={<Homepage />} path="/" />
         <Route element={<About />} path="/about" />
         <Route element={<Solutions />} path="/solutions">
-          <Route element={<Power />} path="power" />
-          <Route element={<Energy />} path="energy" />
-          <Route element={<Platform />} path="platform" />
+          <Route element={<Power />} path="powerlineinspectionservices" />
+          <Route element={<Energy />} path="solarandwindinspectionservices" />
+          <Route element={<Platform />} path="aisoftware" />
           <Route element={<OnDemand />} path="ondemand" />
         </Route>
 
