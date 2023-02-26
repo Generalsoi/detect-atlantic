@@ -34,7 +34,7 @@ export const Cursor: FC = () => {
 
   return (
     <div
-      className="cursor-dot-outline"
+      className="hidden md:block cursor-dot-outline"
       id="cursor"
       // style={{ left: cursorx + "px", top: cursory + "px" }}
       style={{

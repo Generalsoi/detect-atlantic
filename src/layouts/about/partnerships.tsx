@@ -16,19 +16,19 @@ export const Partnerships: FC = () => {
       <div className="px-4 md:px-60 py-10 ">
         <h4 className="text-3xl md:text-5xl font-bold">Partnerships</h4>
 
-        <span className="flex items-center justify-center flex-wrap md:flex-nowrap gap-16 md:gap-20 mt-20">
+        <span className="hidden md:flex items-center justify-center flex-wrap md:flex-nowrap gap-16 md:gap-20 mt-20">
           <a href="https://dalideahub.ca/" target="_blank" rel="noreferrer">
             <img
               src={IdeaHub}
               alt="idea-hub logo"
-              className="w-[30%] md:w-fit"
+              className="w-[50%] md:w-fit"
             />
           </a>
           <a href="https://www.dal.ca/" target="_blank" rel="noreferrer">
             <img
               src={DalLogo}
               alt="dal university logo"
-              className="w-[30%] md:w-fit"
+              className="w-[50%] md:w-fit"
             />
           </a>
           <a href="https://www.causltd.com/" target="_blank" rel="noreferrer">
@@ -45,6 +45,32 @@ export const Partnerships: FC = () => {
               className="w-[50%] md:w-fit"
             />
           </a>
+        </span>
+        <span className="flex flex-col md:hidden items-center justify-center gap-16 mt-20">
+          <span className="flex items-center justify-between w-full">
+            <a href="https://dalideahub.ca/" target="_blank" rel="noreferrer">
+              <img src={IdeaHub} alt="idea-hub logo" className="w-[80%]" />
+            </a>
+            <a href="https://www.dal.ca/" target="_blank" rel="noreferrer">
+              <img src={DalLogo} alt="dal university logo" className="" />
+            </a>
+          </span>
+          <span className="flex items-center justify-between w-full">
+            <a href="https://www.causltd.com/" target="_blank" rel="noreferrer">
+              <img src={CausLogo} alt="causlogo" className="" />
+            </a>
+            <a
+              href="https://www.pilotwaveholdings.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src={PilotWaveHoldingsLogo}
+                alt="pilotwaveholdingslogo"
+                className=""
+              />
+            </a>
+          </span>
         </span>
       </div>
     </motion.div>

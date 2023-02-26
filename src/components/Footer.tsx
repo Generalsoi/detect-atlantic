@@ -14,14 +14,26 @@ export const Footer: FC = () => {
           <img
             src={InLogo}
             alt="d-logo"
-            className="mt-6 md:mt-0 cursor-pointer"
+            className="mt-6 md:mt-0 cursor-pointer hidden md:block"
+          />
+        </span>
+        <span className=" md:hidden flex items-center justify-between w-full pr-8 my-4">
+          <img
+            src={InLogo}
+            alt="d-logo"
+            className="mt-6 md:mt-0 cursor-pointer "
+          />
+          <img
+            src={MediumLogo}
+            alt="mediumlogo"
+            className="mt-6 md:mt-0 cursor-pointer "
           />
         </span>
         <span className="md:flex items-center mt-10 md:mt-0 md:gap-20  gap-36">
           <img
             src={MediumLogo}
             alt="mediumlogo"
-            className="mt-6 md:mt-0 cursor-pointer"
+            className="mt-6 md:mt-0 cursor-pointer hidden md:block"
           />
           <p className="w-[40%] md:w-fit mt-6 md:mt-0">
             contact@detectinspections.com
