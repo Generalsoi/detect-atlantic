@@ -20,11 +20,10 @@ export const Team = () => {
             transition={{ type: "spring", stiffness: 20 }}
           >
             <img src={member.image} alt={member.image} />
-            <h4 className="my-10 uppercase text-xl md:text-3xl">
-              {member.name}
-            </h4>
             <a href={member.linkedin} target="_blank" rel="noreferrer">
-              <FaLinkedinIn className="md:text-3xl" />
+              <h4 className="my-10 uppercase text-xl md:text-3xl hover:underline transition-all ease-in-out duration-300 ">
+                {member.name}
+              </h4>
             </a>
           </motion.div>
         ))}
