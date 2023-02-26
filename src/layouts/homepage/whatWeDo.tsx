@@ -1,10 +1,14 @@
 import React, { FC } from "react";
 import UpArrow from "../../assets/images/uparrow.png";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export const WhatWeDo: FC = () => {
   return (
-    <div className="text-white md:mt-40 md:flex items-start justify-center px-4 md:pl-20  md:gap-16 font-ibmPlexMono">
+    <div
+      className="text-white md:mt-40 md:flex items-start justify-center px-4 md:pl-20  md:gap-16 font-ibmPlexMono"
+      id="whatwedo"
+    >
       <h4 className=" md:hidden text-2xl uppercase mb-6">our services</h4>
       <motion.span
         className="md:w-[50%] md:text-center"
@@ -30,10 +34,12 @@ export const WhatWeDo: FC = () => {
           <br /> services as flexible as possible to help
           <br /> address your specific needs.
         </p>
-        <button className="flex items-center gap-4 bg-[#FF6108] border-none rounded-lg px-6 py-4 hover:translate-y-3 transition-all duration-300">
-          Learn More{" "}
-          <img src={UpArrow} alt="up-arrow" className="animate-bounce" />{" "}
-        </button>
+        <Link to="/solutions/powerlineinspectionservices">
+          <button className="flex items-center gap-4 bg-[#FF6108] border-none rounded-lg px-6 py-4 hover:translate-y-3 transition-all duration-300">
+            Learn More{" "}
+            <img src={UpArrow} alt="up-arrow" className="animate-bounce" />{" "}
+          </button>
+        </Link>
       </motion.div>
     </div>
   );

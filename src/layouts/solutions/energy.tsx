@@ -5,6 +5,7 @@ import EnergyImgTwo from "../../assets/images/energyimg2.png";
 import { motion } from "framer-motion";
 import UpArrow from "../../assets/images/uparrow.png";
 import { Footer } from "../../components/Footer";
+import { Link } from "react-router-dom";
 
 export const Energy: FC = () => {
   return (
@@ -114,10 +115,12 @@ export const Energy: FC = () => {
       </div>
 
       <div className="flex items-center justify-center py-20 ">
-        <button className="flex items-center justify-center gap-4 bg-[#FF6108] text-white px-6 py-4 border-none rounded-lg">
-          Book now{" "}
-          <img src={UpArrow} alt="up arrow" className="animate-bounce" />
-        </button>
+        <Link to="/contact">
+          <button className="flex items-center justify-center gap-4 bg-[#FF6108] text-white px-6 py-4 border-none rounded-lg">
+            Book now{" "}
+            <img src={UpArrow} alt="up arrow" className="animate-bounce" />
+          </button>
+        </Link>
       </div>
 
       <Footer />

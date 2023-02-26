@@ -14,7 +14,8 @@ import { motion } from "framer-motion";
 import { Platformsection } from "../layouts/homepage/platformsection";
 import { Footer } from "../components/Footer";
 import HomePageVid from "../assets/videos/detecthomepagevid.mp4";
-import { BlogSection } from "../layouts/homepage/blogSection";
+import { HashLink } from "react-router-hash-link";
+import { Link } from "react-router-dom";
 
 export const Homepage = () => {
   const [openAccordion, setOpenAccordion] = useState<boolean>(false);
@@ -87,10 +88,17 @@ export const Homepage = () => {
         </motion.p>
 
         <span className="flex flex-col md:flex-row items-center gap-8 justify-center my-20 px-4 md:px-48">
-          <button className="mt-4 md:mt-0 w-56 md:w-fit px-3 md:px-8 py-6 md:py-5 border border-white rounded-lg uppercase flex items-center justify-center gap-5 hover:translate-y-3 transition-all duration-300">
-            learn more{" "}
-            <img src={DownArrow} alt="down-arrow" className="animate-bounce" />
-          </button>
+          <HashLink smooth="true" to="#whatwedo">
+            <button className="mt-4 md:mt-0 w-56 md:w-fit px-3 md:px-8 py-6 md:py-5 border border-white rounded-lg uppercase flex items-center justify-center gap-5 hover:translate-y-3 transition-all duration-300">
+              learn more{" "}
+              <img
+                src={DownArrow}
+                alt="down-arrow"
+                className="animate-bounce"
+              />
+            </button>
+          </HashLink>
+
           <button className="mt-4 md:mt-0 w-56 md:w-fit px-3 md:px-10 py-6 md:py-5 border-none bg-[#FF6108] rounded-lg uppercase flex items-center justify-center gap-5 hover:translate-y-3 transition-all duration-300">
             try our platform <img src={UpArrow} alt="up-arrow" />
           </button>
@@ -129,6 +137,7 @@ export const Homepage = () => {
                   transition={{ type: "spring", stiffness: 20 }}
                 >
                   <p className="my-8 text-sm">{service.description}</p>
+
                   <a
                     href={service.link}
                     className="text-[#FF6108] uppercase flex items-center gap-3"

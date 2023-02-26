@@ -5,6 +5,7 @@ import { Footer } from "../../components/Footer";
 import { motion } from "framer-motion";
 import UpArrow from "../../assets/images/uparrow.png";
 import Earth from "../../assets/images/earth.png";
+import { Link } from "react-router-dom";
 
 export const Platform: FC = () => {
   return (
@@ -102,10 +103,12 @@ export const Platform: FC = () => {
               structures/equipment, and fix defects before they become a
               critical risk to the network.
             </p>
-            <button className="flex items-center justify-center gap-4 bg-[#FF6108] text-white px-6 py-4 border-none rounded-lg mt-10">
-              Book now{" "}
-              <img src={UpArrow} alt="up arrow" className="animate-bounce" />
-            </button>
+            <Link to="/contact">
+              <button className="flex items-center justify-center gap-4 bg-[#FF6108] text-white px-6 py-4 border-none rounded-lg mt-10">
+                Book now{" "}
+                <img src={UpArrow} alt="up arrow" className="animate-bounce" />
+              </button>
+            </Link>
           </motion.div>
         </div>
       </div>

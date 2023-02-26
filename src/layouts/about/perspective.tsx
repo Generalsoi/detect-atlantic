@@ -27,7 +27,7 @@ export const Perspective: FC = () => {
             <h2 className="text-5xl font-bold">Perspective is</h2>
             <h2 className="text-5xl font-bold">everything</h2>
           </span>
-          <Link to="/solutions">
+          <Link to="/solutions/powerlineinspectionservices">
             <button className="bg-[#FF6108] px-10 py-4 mt-10 border-none rounded-xl uppercase flex items-center justify-center gap-4 hover:scale-105 transition-all ease-in-out duration-300">
               services
               <img src={Uparrow} alt="uparrow" className="animate-bounce" />
