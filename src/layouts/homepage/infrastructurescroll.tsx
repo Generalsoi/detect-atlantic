@@ -5,7 +5,7 @@ export const Infrastructurescroll: FC = () => {
   return (
     <div className="hidden md:block relative  overflow-hidden h-40 font-ibmPlexMono text-[#AAAAAA] my-10">
       <div
-        className="absolute w-[200%] top-0 left-0 right-0 flex h-24 border border-x-0"
+        className="absolute w-[200%] top-0 left-0 right-0 flex h-24 border-dotted border-x-0"
         style={{
           borderTopWidth: "0.1px",
           borderBottomWidth: "0.1px",

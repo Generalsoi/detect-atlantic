@@ -37,7 +37,7 @@ export const Power: FC = () => {
           Full Service Inspection
         </h2>
       </motion.div>
-      <div className="flex flex-col items-center justify-center mt-16 md:mt-20 py-10 h-screen">
+      <div className="flex flex-col items-center justify-center mt-8 md:mt-20 py-10 h-screen">
         <img
           src={Media4}
           alt="mediafour"
@@ -83,7 +83,12 @@ export const Power: FC = () => {
                 )}
               </h4>
               {currentId === service.index && (
-                <div className="md:flex items-start gap-10">
+                <motion.div
+                  className="md:flex items-start gap-10"
+                  initial={{ opacity: 0, y: "-10%" }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ type: "spring", stiffness: 40 }}
+                >
                   <motion.span className="w-full md:w-[50%]">
                     <p className="my-8 text-sm">{service.description}</p>
                   </motion.span>
@@ -92,7 +97,7 @@ export const Power: FC = () => {
                     src={service.image}
                     alt="mediatwo"
                   />
-                </div>
+                </motion.div>
               )}
             </div>
           ))}

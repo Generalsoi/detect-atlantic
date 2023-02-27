@@ -83,15 +83,12 @@ export const Energy: FC = () => {
             <h2 className="mb-10 text-3xl font-bold">Monitoring</h2>
           </div>
           <div className="px-4">
-            <p className=" text-xs">Automate your solar module monitoring</p>
-            <p className=" text-xs">with RGB and infrared scans. Find </p>
-            <p className=" text-xs">
-              defects and underperforming solar modules
+            <p className=" text-sm">
+              Automate your solar module monitoring with RGB and infrared scans
+              using programmed drone flight paths and geo-tagged imager. Find
+              defects and underperforming solar modules instantly and quickly
+              remediate them for maximum system performance.
             </p>
-            <p className=" text-xs">
-              instantly and quickly remediate them for{" "}
-            </p>
-            <p className="mb-10 text-xs"> maximum system performance.</p>
           </div>
         </motion.div>
 
@@ -107,9 +104,14 @@ export const Energy: FC = () => {
             <h2 className="mb-10 text-3xl font-bold">Monitoring</h2>
           </div>
           <div className="px-4">
-            <p className=" text-xs">Inspect your wind energy assets quickly,</p>
-            <p className=" text-xs">safely and fix your issues, before they </p>
-            <p className=" text-xs">fail.</p>
+            <p className=" text-sm">Inspect your wind energy assets quickly,</p>
+            <p className=" text-sm">
+              safely and fix your issues, before they fail. Using repeatable
+              drone flight paths, reduce inspection downtime with safer, faster
+              and more cost effective drone inspections. All data is stored and
+              visualized on our proprietary platform where data can be leveraged
+              to determine trends.
+            </p>
           </div>
         </motion.div>
       </div>
