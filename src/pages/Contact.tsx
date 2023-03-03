@@ -86,7 +86,7 @@ export const Contact: FC = () => {
           </div>
         </form>
       </div>
-      <div className="flex items-center justify-center px-4 md:px-40">
+      <div className="flex items-center justify-center px-4 md:px-20 mt-8 md:mt-40">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2838.7972850504084!2d-63.57596229028401!3d44.642059982508044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b5a223414266c19%3A0xfc639809513b8892!2s1345%20Norma%20Eddy%20Ln%2C%20Halifax%2C%20NS%20B3J%201B6%2C%20Canada!5e0!3m2!1sen!2sng!4v1677445065168!5m2!1sen!2sng"
           width="600"

@@ -65,8 +65,8 @@ export const NavLink: FC<navLink> = ({ name, link, sublinks }) => {
           }
           exit={{ height: "100%" }}
         >
-          {sublinks.map((sublink) => (
-            <Link to={sublink.sublink} className="mt-4 md:mt-1">
+          {sublinks.map((sublink, index) => (
+            <Link key={index} to={sublink.sublink} className="mt-4 md:mt-1">
               {sublink.name}
             </Link>
           ))}
