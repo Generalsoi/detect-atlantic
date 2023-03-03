@@ -34,7 +34,7 @@ export const Contact: FC = () => {
               <input
                 type="text"
                 id="first-name"
-                className="w-full h-12 mt-4 bg-[#1A1A1A]"
+                className="w-full h-12 mt-4 bg-[#1A1A1A] px-4"
               />
             </div>
             <div className="w-full md:w-[50%] mt-8 md:mt-0">
@@ -44,7 +44,7 @@ export const Contact: FC = () => {
               <input
                 type="text"
                 id="last-name"
-                className="w-full h-12 mt-4 bg-[#1A1A1A]"
+                className="w-full h-12 mt-4 bg-[#1A1A1A] px-4"
               />
             </div>
           </div>
@@ -55,7 +55,7 @@ export const Contact: FC = () => {
             <input
               type="email"
               id="email"
-              className="w-full h-12 mt-4 bg-[#1A1A1A]"
+              className="w-full h-12 mt-4 bg-[#1A1A1A] px-4"
             />
           </div>
           <div className="w-full mt-8">
@@ -65,7 +65,7 @@ export const Contact: FC = () => {
             <input
               type="text"
               id="subject"
-              className="w-full h-12 mt-4 bg-[#1A1A1A]"
+              className="w-full h-12 mt-4 bg-[#1A1A1A] px-4"
             />
           </div>
           <div className="w-full mt-8">
@@ -75,12 +75,12 @@ export const Contact: FC = () => {
             <textarea
               name="message"
               id="message"
-              className="w-full h-32 mt-4 bg-[#1A1A1A]"
+              className="w-full h-32 mt-4 bg-[#1A1A1A] px-4"
             ></textarea>
           </div>
           <div>
             <button className="w-full py-4 mt-20 uppercase bg-[#FF6108] border-none rounded-lg flex items-center justify-center gap-6 hover:scale-105 transition-all ease-in-out duration-300">
-              send{" "}
+              send
               <img src={Uparrow} alt="up-arrow" className="animate-bounce" />
             </button>
           </div>
