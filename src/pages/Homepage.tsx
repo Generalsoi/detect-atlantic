@@ -108,7 +108,7 @@ export const Homepage = () => {
 
       <WhatWeDo />
 
-      <div className="md:flex px-6 md:pl-20 md:pr-0 pb-8 mt-32 md:mb-40 ">
+      {/* <div className="md:flex px-6 md:pl-20 md:pr-0 pb-8 mt-32 md:mb-40 ">
         <div className="md:w-[50%]">
           {servicesList.map((service) => (
             <div
@@ -154,6 +154,56 @@ export const Homepage = () => {
           src={MediaTwo}
           alt="mediatwo"
         />
+      </div> */}
+
+      <div className="md:flex px-6 md:pl-20 md:pr-0 pb-8 mt-32 md:mb-40  ">
+        <div className="w-full">
+          {servicesList.map((service) => (
+            <div
+              key={service.index}
+              className={`py-8 border border-x-0 border-red cursor-pointer border-neutral-400 ${
+                service.index === 4 ? "border-b-1" : "border-b-0"
+              } border-[#AAAAAA] transition ease-linear duration-500 text-white`}
+              onClick={() => handleOpenAccordion(service.index)}
+              style={{
+                borderTopWidth: "0.1px",
+                borderColor: "#AAAAAA",
+              }}
+            >
+              <h4 className="flex items-center gap-2 uppercase text-2xl">
+                {service.name}
+                {currentId === service.index ? (
+                  <MdKeyboardArrowDown />
+                ) : (
+                  <MdKeyboardArrowRight />
+                )}
+              </h4>
+              {currentId === service.index && (
+                <motion.div
+                  className="md:flex items-start gap-10"
+                  initial={{ opacity: 0, y: "-10%" }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ type: "spring", stiffness: 40 }}
+                >
+                  <motion.span className="w-full md:w-[50%]">
+                    <p className="my-8 text-sm">{service.description}</p>
+                    <a
+                      href={service.link}
+                      className="text-[#FF6108] uppercase flex items-center gap-3"
+                    >
+                      Learn More <img src={ArrowRight} alt="arrow-right" />
+                    </a>
+                  </motion.span>
+                  <img
+                    className="w-full md:w-[40%] h-[20rem] md:h-[25rem] mt-8 md:mt-0"
+                    src={service.img}
+                    alt="mediatwo"
+                  />
+                </motion.div>
+              )}
+            </div>
+          ))}
+        </div>
       </div>
 
       <ColletAnnotateScroll />

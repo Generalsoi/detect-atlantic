@@ -33,8 +33,8 @@ export const NavLink: FC<navLink> = ({ name, link, sublinks }) => {
       to={sublinks.length ? "#" : link}
       className={
         isActive
-          ? "font-ibmPlexMono mt-16 md:mt-0 border border-x-0 border-t-0 border-neutral-500 w-full md:w-44 md:-translate-x-16 transition duration-500 ease-in-out text-md md:text-xs"
-          : "font-ibmPlexMono mt-16 md:mt-0 border border-x-0 border-t-0 border-neutral-500 w-full md:w-28 text-md md:text-xs"
+          ? "font-ibmPlexMono mt-16 md:mt-0 border border-x-0 border-t-0 border-neutral-500 w-full md:w-44 md:-translate-x-16 transition duration-500 ease-in-out text-md md:text-xs uppercase"
+          : "font-ibmPlexMono mt-16 md:mt-0 border border-x-0 border-t-0 border-neutral-500 w-full md:w-28 text-md md:text-xs uppercase"
       }
       style={{ borderBottomWidth: "0.1px" }}
     >
