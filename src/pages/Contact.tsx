@@ -14,7 +14,7 @@ export const Contact: FC = () => {
     >
       <Navbar />
       <div className="text-center py-20 mt-16 md:mt-20">
-        <h1 className="text-4xl md:text-8xl font-bold">Let's chat</h1>
+        <h1 className="text-4xl md:text-8xl font-bold uppercase">Let's chat</h1>
       </div>
 
       <div className="text-center flex items-center justify-center px-4 md:px-20">

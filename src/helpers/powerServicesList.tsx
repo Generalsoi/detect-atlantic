@@ -11,7 +11,7 @@ type service = {
 export const powerServicesList: service[] = [
   {
     index: 1,
-    name: "On Board",
+    name: "OnBoard",
     description:
       "Provide existing geospatial data, inspection data, train pilots, set inspection criteria​",
     image: mediaTwo,
