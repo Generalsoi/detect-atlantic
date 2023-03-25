@@ -197,7 +197,7 @@ export const Homepage = () => {
                   <img
                     className="w-full md:w-[40%] h-[20rem] md:h-[25rem] mt-8 md:mt-0"
                     src={service.img}
-                    alt="mediatwo"
+                    alt={service.img}
                   />
                 </motion.div>
               )}
@@ -208,6 +208,7 @@ export const Homepage = () => {
 
       <ColletAnnotateScroll />
       <Platformsection />
+
       <Footer />
     </motion.div>
   );

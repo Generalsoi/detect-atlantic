@@ -5,20 +5,24 @@ import UpArrow from "../../assets/images/uparrow.png";
 import { Footer } from "./../../components/Footer";
 import { motion } from "framer-motion";
 import { ConstructionMonitoringScroll } from "./constructionMonitoringScroll";
+import OnDemandVid from "../../assets/videos/ondemand.mp4";
 
 export const OnDemand: FC = () => {
   return (
     <div className="font-ibmPlexMono scroll-smooth text-white">
       <Navbar />
 
-      <div className="flex flex-col items-center justify-center mt-16 md:mt-20 py-10 h-screen">
-        <img
-          src={Media4}
-          alt="mediafour"
-          className="h-60 md:h-[32rem] w-full md:w-fit"
-        />
+      <motion.div
+        className="md:px-20 md:mt-40 w-full md:h-screen flex items-center  relative overflow-hidden"
+        whileInView={{ y: 0, opacity: 1 }}
+        initial={{ y: 100, opacity: 0 }}
+        transition={{ type: "spring", stiffness: 20 }}
+      >
+        <video autoPlay muted playsInline loop>
+          <source src={OnDemandVid} type="video/mp4" />
+        </video>
 
-        <div className="mt-20 md:px-20 px-4 flex items-center justify-center text-center">
+        {/* <div className="mt-20 md:px-20 px-4 flex items-center justify-center text-center">
           <div className="w-full md:w-[50%] border border-x-0 border-y-1 border-neutral-400 md:px-10 py-8 flex items-center justify-center">
             <p className="w-full">
               We know that infrastructure maintenance is complicated - that’s
@@ -26,8 +30,8 @@ export const OnDemand: FC = () => {
               address your specific needs.
             </p>
           </div>
-        </div>
-      </div>
+        </div> */}
+      </motion.div>
 
       <motion.div
         className="my-10 md:my-28 text-center px-4 md:px-20 py-10"

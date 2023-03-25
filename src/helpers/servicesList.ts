@@ -1,3 +1,9 @@
+import Power from '../assets/images/powerimg.png'
+import Energy from '../assets/images/energyimg.jpg'
+import Platform from '../assets/images/platformimg.png'
+import Ondemand from '../assets/images/ondemandimg.jpg'
+
+
 type service = {
     index: number;
     name: string;
@@ -5,6 +11,13 @@ type service = {
     link: string;
     img: string;
   };
+
+  type platformService = {
+    index: number;
+    name: string;
+    description: string;
+    img: string;
+  }
 
 
 export const servicesList: service[] = [
@@ -14,7 +27,7 @@ export const servicesList: service[] = [
       description:
         "Our team of certified Powerline Technicians can label your collected data rapidly",
       link: "/solutions/powerlineinspectionservices",
-      img: ""
+      img: Power
     },
     {
       index: 2,
@@ -22,7 +35,7 @@ export const servicesList: service[] = [
       description:
         "Automate your solar module monitoring with  RGB and infrared scans.",
       link: "/solutions/solarandwindinspectionservices",
-      img: ""
+      img: Energy
     },
     {
       index: 3,
@@ -30,7 +43,7 @@ export const servicesList: service[] = [
       description:
         "Using rich data and this story, Detect is able to determine long-term trends and extrapolate that to other structures/equipment, and fix defects before they become a critical risk to the network.",
       link: "/solutions/aisoftware",
-      img: ""
+      img: Platform
     },
     {
       index: 4,
@@ -38,6 +51,46 @@ export const servicesList: service[] = [
       description:
         "Using rich data and this story, Detect is able to determine long-term trends and extrapolate that to other structures/equipment, and fix defects before they become a critical risk to the network.",
       link: "/solutions/ondemand",
-      img: ""
+      img: Ondemand
     },
   ];
+
+
+  export const platformServicesList: platformService[] = [
+    {
+      index: 1,
+      name: "Onboard",
+      description: "Provide raw existing geospatial data, inspection data and set inspection criteria",
+      img: ""
+    },
+    {
+      index: 2,
+      name: "Plan",
+      description: "Using this (and other) data, auto–generate optimal takeoff points to minimize field time and determine access trails and potential hazard",
+      img: ""
+    },
+    {
+      index: 3,
+      name: "Collect",
+      description: "HD imagery and video, all weather capability, 200X zoom, infrared, Lidar mapping, live-streaming data collection, geospatial data",
+      img: ""
+    },
+    {
+      index: 4,
+      name: "Refine",
+      description: "Transform raw data across different types into clean data assets ready for use ",
+      img: ""
+    },
+    {
+      index: 5,
+      name: "Enhance",
+      description: "Label newly transformed data to match inspection criteria",
+      img: ""
+    },
+    {
+      index: 7,
+      name: "Analyze",
+      description: "Run models and analytics to identify critical areas",
+      img: ""
+    },
+  ]

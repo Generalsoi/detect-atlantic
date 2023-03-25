@@ -44,7 +44,7 @@ export const Power: FC = () => {
           className="h-60 md:h-[32rem] w-full md:w-fit"
         />
 
-        <div className="mt-20 md:px-20 px-4 flex items-center justify-center text-center">
+        <div className="mt-20 md:px-20 px-4 flex items-center justify-center text-center md:mb-20">
           <div
             className="w-full md:w-[50%] border border-x-0 border-neutral-400 md:px-10 py-8 flex items-center justify-center"
             style={{ borderTopWidth: "0.1px", borderBottomWidth: "0.1px" }}
@@ -60,7 +60,7 @@ export const Power: FC = () => {
 
       <ColletAnnotateScroll />
 
-      <div className="md:flex px-6 md:px-20 pb-8 mt-32 md:mb-40 ">
+      <div className="md:flex px-6 md:px-20 pb-8 md:mt-32 md:mb-40 ">
         <div className="w-full">
           {powerServicesList.map((service) => (
             <div
