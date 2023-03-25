@@ -87,7 +87,7 @@ export const Platform: FC = () => {
         </motion.div>
       </div>
 
-      <div className="md:flex px-6 md:pl-20 md:pr-0 pb-8 mt-32 md:mb-40  ">
+      <div className="md:flex px-6 md:px-20 pb-8 mt-32 md:mb-40  ">
         <div className="w-full">
           {platformServicesList.map((service) => (
             <div
@@ -111,16 +111,16 @@ export const Platform: FC = () => {
               </h4>
               {currentId === service.index && (
                 <motion.div
-                  className="md:flex items-start gap-10"
+                  className="md:flex items-center gap-20"
                   initial={{ opacity: 0, y: "-10%" }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ type: "spring", stiffness: 40 }}
                 >
-                  <motion.span className="w-full md:w-[50%]">
+                  <motion.span className="w-full md:w-[40%]">
                     <p className="my-8 text-sm">{service.description}</p>
                   </motion.span>
                   <img
-                    className="w-full md:w-[40%] h-[20rem] md:h-[25rem] mt-8 md:mt-0"
+                    className="w-full md:w-[50%] h-[20rem] md:h-[20rem] mt-8 md:mt-0"
                     src={service.img}
                     alt={service.img}
                   />

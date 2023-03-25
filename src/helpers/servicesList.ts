@@ -2,6 +2,10 @@ import Power from '../assets/images/powerimg.png'
 import Energy from '../assets/images/energyimg.jpg'
 import Platform from '../assets/images/platformimg.png'
 import Ondemand from '../assets/images/ondemandimg.jpg'
+import Analyze from '../assets/images/platformimg.png'
+import Plan from '../assets/images/plan.png'
+import Onboard from '../assets/images/onboard.png'
+import Collect from '../assets/images/collect.jpg'
 
 
 type service = {
@@ -61,19 +65,19 @@ export const servicesList: service[] = [
       index: 1,
       name: "Onboard",
       description: "Provide raw existing geospatial data, inspection data and set inspection criteria",
-      img: ""
+      img: Onboard
     },
     {
       index: 2,
       name: "Plan",
       description: "Using this (and other) data, auto–generate optimal takeoff points to minimize field time and determine access trails and potential hazard",
-      img: ""
+      img: Plan
     },
     {
       index: 3,
       name: "Collect",
       description: "HD imagery and video, all weather capability, 200X zoom, infrared, Lidar mapping, live-streaming data collection, geospatial data",
-      img: ""
+      img: Collect
     },
     {
       index: 4,
@@ -91,6 +95,6 @@ export const servicesList: service[] = [
       index: 7,
       name: "Analyze",
       description: "Run models and analytics to identify critical areas",
-      img: ""
+      img: Analyze
     },
   ]
