@@ -13,7 +13,7 @@ export const OnDemand: FC = () => {
       <Navbar />
 
       <motion.div
-        className="md:px-20 md:mt-40 w-full md:h-screen flex items-center  relative overflow-hidden"
+        className="md:px-20 mt-20 md:mt-40 w-full md:h-screen flex items-center  relative overflow-hidden"
         whileInView={{ y: 0, opacity: 1 }}
         initial={{ y: 100, opacity: 0 }}
         transition={{ type: "spring", stiffness: 20 }}
