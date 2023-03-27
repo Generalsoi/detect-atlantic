@@ -1,11 +1,14 @@
 import React, { FC } from "react";
 import { Navbar } from "../../components/Navbar";
-import Media4 from "../../assets/images/media4.png";
 import UpArrow from "../../assets/images/uparrow.png";
 import { Footer } from "./../../components/Footer";
 import { motion } from "framer-motion";
 import { ConstructionMonitoringScroll } from "./constructionMonitoringScroll";
 import OnDemandVid from "../../assets/videos/ondemand.mp4";
+import OnDemandImg from "../../assets/images/ondemandimg.jpg";
+import OnDemandImg2 from "../../assets/images/ondemandimg2.jpg";
+import OnDemandImg3 from "../../assets/images/ondemandimg3.jpg";
+import OnDemandImg4 from "../../assets/images/ondemandimg4.jpg";
 
 export const OnDemand: FC = () => {
   return (
@@ -58,11 +61,28 @@ export const OnDemand: FC = () => {
         initial={{ y: 100, opacity: 0 }}
         transition={{ type: "spring", stiffness: 20 }}
       >
-        <img
-          src={Media4}
-          alt="mediafour"
-          className="h-60 md:h-[32rem] w-full md:w-fit"
-        />
+        <div className="flex items-center w-full md:w-[90%]">
+          <img
+            src={OnDemandImg}
+            alt="mediafour"
+            className="h-60 md:h-[23rem] w-[25%]"
+          />
+          <img
+            src={OnDemandImg2}
+            alt="mediafour"
+            className="h-60 md:h-[23rem] w-[25%]"
+          />
+          <img
+            src={OnDemandImg3}
+            alt="mediafour"
+            className="h-60 md:h-[23rem] w-[25%]"
+          />
+          <img
+            src={OnDemandImg4}
+            alt="mediafour"
+            className="h-60 md:h-[23rem] w-[25%]"
+          />
+        </div>
 
         <div className="mt-20 md:px-20 px-4 flex items-center justify-center text-center">
           <p className="text-lg md:text-2xl">Curious to learn more?</p>
