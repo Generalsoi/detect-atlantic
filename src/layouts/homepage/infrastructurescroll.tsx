@@ -12,8 +12,8 @@ export const Infrastructurescroll: FC = () => {
           borderColor: "#AAAAAA",
         }}
       >
-        <section className="flex items-center gap-4 py-4 w-[50%] animate-swipe">
-          <img src={ArrowRight} alt="arrow-right" className="ml-6" />
+        <section className="flex items-center gap-3 py-3 w-[50%] animate-swipe">
+          <img src={ArrowRight} alt="arrow-right" />
           <p className="uppercase text-xs text-[#AAAAAA] font-bold">
             infrastructure inspections
           </p>
@@ -21,7 +21,7 @@ export const Infrastructurescroll: FC = () => {
           <p className="uppercase text-xs text-[#AAAAAA] font-bold">
             a new perspective on data
           </p>
-          <img src={ArrowRight} alt="arrow-right" className="ml-6" />
+          <img src={ArrowRight} alt="arrow-right" />
           <p className="uppercase text-xs text-[#AAAAAA] font-bold">
             infrastructure inspections
           </p>
@@ -29,33 +29,7 @@ export const Infrastructurescroll: FC = () => {
           <p className="uppercase text-xs text-[#AAAAAA] font-bold">
             a new perspective on data
           </p>
-          <img src={ArrowRight} alt="arrow-right" className="ml-6" />
-          <p className="uppercase text-xs text-[#AAAAAA] font-bold">
-            infrastructure inspections
-          </p>
           <img src={ArrowRight} alt="arrow-right" />
-          <p className="uppercase text-xs text-[#AAAAAA] font-bold">
-            a new perspective on data
-          </p>
-        </section>
-        <section className="flex items-center gap-4 py-4 w-[50%] animate-swipe">
-          <img src={ArrowRight} alt="arrow-right" className="ml-6" />
-          <p className="uppercase text-xs text-[#AAAAAA] font-bold">
-            infrastructure inspections
-          </p>
-          <img src={ArrowRight} alt="arrow-right" />
-          <p className="uppercase text-xs text-[#AAAAAA] font-bold">
-            a new perspective on data
-          </p>
-          <img src={ArrowRight} alt="arrow-right" className="ml-6" />
-          <p className="uppercase text-xs text-[#AAAAAA] font-bold">
-            infrastructure inspections
-          </p>
-          <img src={ArrowRight} alt="arrow-right" />
-          <p className="uppercase text-xs text-[#AAAAAA] font-bold">
-            a new perspective on data
-          </p>
-          <img src={ArrowRight} alt="arrow-right" className="ml-6" />
           <p className="uppercase text-xs text-[#AAAAAA] font-bold">
             infrastructure inspections
           </p>
@@ -64,6 +38,59 @@ export const Infrastructurescroll: FC = () => {
             a new perspective on data
           </p>
         </section>
+        <section className="flex items-center gap-3 py-3 w-[50%] animate-swipe">
+          <img src={ArrowRight} alt="arrow-right" />
+          <p className="uppercase text-xs text-[#AAAAAA] font-bold">
+            infrastructure inspections
+          </p>
+          <img src={ArrowRight} alt="arrow-right" />
+          <p className="uppercase text-xs text-[#AAAAAA] font-bold">
+            a new perspective on data
+          </p>
+          <img src={ArrowRight} alt="arrow-right" />
+          <p className="uppercase text-xs text-[#AAAAAA] font-bold">
+            infrastructure inspections
+          </p>
+          <img src={ArrowRight} alt="arrow-right" />
+          <p className="uppercase text-xs text-[#AAAAAA] font-bold">
+            a new perspective on data
+          </p>
+          <img src={ArrowRight} alt="arrow-right" />
+          <p className="uppercase text-xs text-[#AAAAAA] font-bold">
+            infrastructure inspections
+          </p>
+          <img src={ArrowRight} alt="arrow-right" />
+          <p className="uppercase text-xs text-[#AAAAAA] font-bold">
+            a new perspective on data
+          </p>
+        </section>
+
+        {/* <section className="flex items-center gap-4 py-4 w-[50%] animate-swipe">
+          <img src={ArrowRight} alt="arrow-right" className="ml-6" />
+          <p className="uppercase text-xs text-[#AAAAAA] font-bold">
+            infrastructure inspections
+          </p>
+          <img src={ArrowRight} alt="arrow-right" />
+          <p className="uppercase text-xs text-[#AAAAAA] font-bold">
+            a new perspective on data
+          </p>
+          <img src={ArrowRight} alt="arrow-right" className="ml-6" />
+          <p className="uppercase text-xs text-[#AAAAAA] font-bold">
+            infrastructure inspections
+          </p>
+          <img src={ArrowRight} alt="arrow-right" />
+          <p className="uppercase text-xs text-[#AAAAAA] font-bold">
+            a new perspective on data
+          </p>
+          <img src={ArrowRight} alt="arrow-right" className="ml-6" />
+          <p className="uppercase text-xs text-[#AAAAAA] font-bold">
+            infrastructure inspections
+          </p>
+          <img src={ArrowRight} alt="arrow-right" />
+          <p className="uppercase text-xs text-[#AAAAAA] font-bold">
+            a new perspective on data
+          </p>
+        </section> */}
       </div>
     </div>
   );
