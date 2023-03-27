@@ -13,73 +13,86 @@ export const ColletAnnotateScroll: FC = () => {
         }}
       >
         <section className="flex items-center gap-4 py-4 w-[50%] animate-swipe">
-          <span className="border border-l-2 border-t-0 border-r-0 border-b-0 h-8 "></span>
-          <p className="uppercase text-xs font-bold text-[#AAAAAA]">plan</p>
+          {/* <span className="border border-l-2 border-t-0 border-r-0 border-b-0 h-8 "></span> */}
+          <p className="uppercase text-xs font-bold text-[#AAAAAA]">Onboard</p>
+          <img src={ArrowRight} alt="arrow-right" />
+          <p className="uppercase text-xs font-bold text-[#AAAAAA]">Plan</p>
           <img src={ArrowRight} alt="arrow-right" />
           <p className="uppercase text-xs font-bold text-[#AAAAAA]">collect</p>
           <img src={ArrowRight} alt="arrow-right" />
-          <p className="uppercase text-xs font-bold text-[#AAAAAA]">annotate</p>
+          <p className="uppercase text-xs font-bold text-[#AAAAAA]">
+            Transform
+          </p>
           <img src={ArrowRight} alt="arrow-right" />
-          <p className="uppercase text-xs font-bold text-[#AAAAAA]">analyze</p>
+          <p className="uppercase text-xs font-bold text-[#AAAAAA]">Analyze</p>
 
           <span className="border border-l-2 border-t-0 border-r-0 border-b-0 h-8 "></span>
-          <p className="uppercase text-xs font-bold text-[#AAAAAA]">plan</p>
+          <p className="uppercase text-xs font-bold text-[#AAAAAA]">Onboard</p>
+          <img src={ArrowRight} alt="arrow-right" />
+          <p className="uppercase text-xs font-bold text-[#AAAAAA]">Plan</p>
           <img src={ArrowRight} alt="arrow-right" />
           <p className="uppercase text-xs font-bold text-[#AAAAAA]">collect</p>
           <img src={ArrowRight} alt="arrow-right" />
-          <p className="uppercase text-xs font-bold text-[#AAAAAA]">annotate</p>
+          <p className="uppercase text-xs font-bold text-[#AAAAAA]">
+            Transform
+          </p>
           <img src={ArrowRight} alt="arrow-right" />
-          <p className="uppercase text-xs font-bold text-[#AAAAAA]">analyze</p>
+          <p className="uppercase text-xs font-bold text-[#AAAAAA]">Analyze</p>
           <span className="border border-l-2 border-t-0 border-r-0 border-b-0 h-8 "></span>
-          <p className="uppercase text-xs font-bold text-[#AAAAAA]">plan</p>
+          <p className="uppercase text-xs font-bold text-[#AAAAAA]">Onboard</p>
+          <img src={ArrowRight} alt="arrow-right" />
+          <p className="uppercase text-xs font-bold text-[#AAAAAA]">Plan</p>
           <img src={ArrowRight} alt="arrow-right" />
           <p className="uppercase text-xs font-bold text-[#AAAAAA]">collect</p>
           <img src={ArrowRight} alt="arrow-right" />
-          <p className="uppercase text-xs font-bold text-[#AAAAAA]">annotate</p>
-          <img src={ArrowRight} alt="arrow-right" />
-          <p className="uppercase text-xs font-bold text-[#AAAAAA]">analyze</p>
-          <span className="border border-l-2 border-t-0 border-r-0 border-b-0 h-8 "></span>
-          <p className="uppercase text-xs font-bold text-[#AAAAAA]">plan</p>
-          <img src={ArrowRight} alt="arrow-right" />
-          <p className="uppercase text-xs font-bold text-[#AAAAAA]">collect</p>
-          <img src={ArrowRight} alt="arrow-right" />
-          <p className="uppercase text-xs font-bold text-[#AAAAAA]">annotate</p>
+          <p className="uppercase text-xs font-bold text-[#AAAAAA]">
+            Transform
+          </p>
+          {/* <img src={ArrowRight} alt="arrow-right" />
+          <p className="uppercase text-xs font-bold text-[#AAAAAA]">Analyze</p> */}
           {/* <img src={ArrowRight} alt="arrow-right" /> */}
           {/* <p className="uppercase text-xs font-bold text-[#AAAAAA]">analyze</p> */}
         </section>
-        <section className="flex items-center gap-4 ml-10 py-4 w-[50%] animate-swipe">
-          {/* <span className="border border-l-2 border-t-0 border-r-0 border-b-0 h-8 "></span> */}
-          {/* <p className="uppercase text-xs font-bold text-[#AAAAAA]">plan</p>
-          <img src={ArrowRight} alt="arrow-right" /> */}
-          {/* <p className="uppercase text-xs font-bold text-[#AAAAAA]">collect</p>
-          <img src={ArrowRight} alt="arrow-right" /> */}
-          {/* <p className="uppercase text-xs font-bold text-[#AAAAAA]">annotate</p> */}
-          <img src={ArrowRight} alt="arrow-right" className="ml-8" />
-          <p className="uppercase text-xs font-bold text-[#AAAAAA]">analyze</p>
+        <section className="flex items-center gap-4 ml-4 py-4 w-[50%] animate-swipe">
+          <img src={ArrowRight} alt="arrow-right" />
+          <p className="uppercase text-xs font-bold text-[#AAAAAA]">Analyze</p>
           <span className="border border-l-2 border-t-0 border-r-0 border-b-0 h-8 "></span>
-          <p className="uppercase text-xs font-bold text-[#AAAAAA]">plan</p>
+          <p className="uppercase text-xs font-bold text-[#AAAAAA]">Onboard</p>
+          <img src={ArrowRight} alt="arrow-right" />
+          <p className="uppercase text-xs font-bold text-[#AAAAAA]">Plan</p>
           <img src={ArrowRight} alt="arrow-right" />
           <p className="uppercase text-xs font-bold text-[#AAAAAA]">collect</p>
           <img src={ArrowRight} alt="arrow-right" />
-          <p className="uppercase text-xs font-bold text-[#AAAAAA]">annotate</p>
+          <p className="uppercase text-xs font-bold text-[#AAAAAA]">
+            Transform
+          </p>
           <img src={ArrowRight} alt="arrow-right" />
-          <p className="uppercase text-xs font-bold text-[#AAAAAA]">analyze</p>
+          <p className="uppercase text-xs font-bold text-[#AAAAAA]">Analyze</p>
           <span className="border border-l-2 border-t-0 border-r-0 border-b-0 h-8 "></span>
-          <p className="uppercase text-xs font-bold text-[#AAAAAA]">plan</p>
+          <p className="uppercase text-xs font-bold text-[#AAAAAA]">Onboard</p>
+          <img src={ArrowRight} alt="arrow-right" />
+          <p className="uppercase text-xs font-bold text-[#AAAAAA]">Plan</p>
           <img src={ArrowRight} alt="arrow-right" />
           <p className="uppercase text-xs font-bold text-[#AAAAAA]">collect</p>
           <img src={ArrowRight} alt="arrow-right" />
-          <p className="uppercase text-xs font-bold text-[#AAAAAA]">annotate</p>
+          <p className="uppercase text-xs font-bold text-[#AAAAAA]">
+            Transform
+          </p>
           <img src={ArrowRight} alt="arrow-right" />
-          <p className="uppercase text-xs font-bold text-[#AAAAAA]">analyze</p>
+          <p className="uppercase text-xs font-bold text-[#AAAAAA]">Analyze</p>
           <span className="border border-l-2 border-t-0 border-r-0 border-b-0 h-8 "></span>
-          <p className="uppercase text-xs font-bold text-[#AAAAAA]">plan</p>
+          <p className="uppercase text-xs font-bold text-[#AAAAAA]">Onboard</p>
+          <img src={ArrowRight} alt="arrow-right" />
+          <p className="uppercase text-xs font-bold text-[#AAAAAA]">Plan</p>
           <img src={ArrowRight} alt="arrow-right" />
           <p className="uppercase text-xs font-bold text-[#AAAAAA]">collect</p>
           <img src={ArrowRight} alt="arrow-right" />
-          <p className="uppercase text-xs font-bold text-[#AAAAAA]">annotate</p>
+          <p className="uppercase text-xs font-bold text-[#AAAAAA]">
+            Transform
+          </p>
           <img src={ArrowRight} alt="arrow-right" />
-          <p className="uppercase text-xs font-bold text-[#AAAAAA]">analyze</p>
+          <p className="uppercase text-xs font-bold text-[#AAAAAA]">Analyze</p>
+          <span className="border border-l-2 border-t-0 border-r-0 border-b-0 h-8 "></span>
         </section>
       </div>
     </div>
