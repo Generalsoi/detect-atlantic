@@ -73,16 +73,14 @@ export const Platform: FC = () => {
             on three core principles:
           </p>
 
-          <p className="text-justify mt-4 md:pl-8">
-            <ol className="list-decimal">
-              <li>Automation... To keep your cost low</li>
-              <li>Real-time... to make decisions when it's happening</li>
-              <li>
-                Connectivity... so information can be seamlessly transferred
-                into your current workflow.
-              </li>
-            </ol>
-          </p>
+          <ol className="list-decimal text-justify mt-4 md:pl-8">
+            <li>Automation... To keep your cost low</li>
+            <li>Real-time... to make decisions when it's happening</li>
+            <li>
+              Connectivity... so information can be seamlessly transferred into
+              your current workflow.
+            </li>
+          </ol>
           <p className="text-justify mt-4">Here's how it works:</p>
         </motion.div>
       </div>

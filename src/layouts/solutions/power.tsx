@@ -6,10 +6,8 @@ import { Footer } from "./../../components/Footer";
 import { Stormsupport } from "./stormsupport";
 import { Flightplanning } from "./flightplanning";
 import { ColletAnnotateScroll } from "./../homepage/colletAnnotate";
-import { powerServicesList } from "../../helpers/powerServicesList";
-import { MdKeyboardArrowRight, MdKeyboardArrowDown } from "react-icons/md";
-import ArrowRight from "../../assets/images/arrow-right.png";
-import MediaTwo from "../../assets/images/media2.png";
+import { Link } from "react-router-dom";
+import UpArrow from "../../assets/images/uparrow.png";
 
 export const Power: FC = () => {
   const [openAccordion, setOpenAccordion] = useState<boolean>(false);
@@ -103,6 +101,54 @@ export const Power: FC = () => {
           ))}
         </div>
       </div> */}
+      <motion.div
+        className="mb-32 md:mb-40 md:px-40 text-sm md:text-lg px-4"
+        whileInView={{ y: 0, opacity: 1 }}
+        initial={{ y: 100, opacity: 0 }}
+        transition={{ type: "spring", stiffness: 20 }}
+      >
+        <p className="text-justify">
+          Traditionally, powerline inspections are done using helicopters or by
+          physically climbing the towers. These methods are not only expensive
+          but also pose safety risks for the inspectors. Our drone inspection
+          service mitigates these risks and provides a cost-effective solution
+          for energy providers{" "}
+        </p>
+        <ul className="list-disc mt-4 pl-8 text-justify">
+          <li>200X zoom</li>
+          <li>4k video</li>
+          <li>cm-level lidar data capture</li>
+          <li>Infrared imagery</li>
+          <li>3.5km inspection radius</li>
+          <li>Flying in 50 - 60 km/h wind</li>
+          <li>-20 to 40 deg C (-4 to 104 deg F)</li>
+        </ul>
+        <p className="text-justify mt-4">
+          Our drone inspection service can detect issues before they become
+          critical. Our infrared imaging sensors can detect hotspots that may
+          indicate potential equipment failure or damaged wires. We can identify
+          other potential problems such as corrosion, rust, bent members or
+          cracks in the towers or insulators.
+        </p>
+        <p className="text-justify mt-4">
+          Our team of experienced pilots and technicians ensure that our drones
+          are operated safely and efficiently. We adhere to all safety
+          regulations and guidelines set forth by country regulatory bodies such
+          as Transport Canada and the Federal Aviation Administration (FAA).
+        </p>
+
+        <p className="text-justify mt-4">
+          See your data come to life on our next-generation platform
+        </p>
+        <div className="w-full flex items-center justify-center mt-10">
+          <Link to="/solutions/aisoftware">
+            <button className="flex items-center justify-center gap-4 bg-[#FF6108] text-white px-6 py-4 border-none rounded-lg mt-10">
+              Learn More
+              <img src={UpArrow} alt="up arrow" className="animate-bounce" />
+            </button>
+          </Link>
+        </div>
+      </motion.div>
 
       <Flightplanning />
       <Stormsupport />
