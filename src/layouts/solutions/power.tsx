@@ -60,7 +60,7 @@ export const Power: FC = () => {
 
       <ColletAnnotateScroll />
 
-      <div className="md:flex px-6 md:px-20 pb-8 md:mt-32 md:mb-40 ">
+      {/* <div className="md:flex px-6 md:px-20 pb-8 md:mt-32 md:mb-40 ">
         <div className="w-full">
           {powerServicesList.map((service) => (
             <div
@@ -102,7 +102,7 @@ export const Power: FC = () => {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
 
       <Flightplanning />
       <Stormsupport />

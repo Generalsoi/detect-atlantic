@@ -121,7 +121,7 @@ export const Platform: FC = () => {
                   </motion.span>
                   <div className="w-full md:w-[50%] h-[20rem] md:h-[20rem] mt-8 md:mt-0 flex items-center justify-center md:px-10">
                     <img
-                      className="w-full h-full "
+                      className="w-full md:w-[22rem] h-full aspect-square "
                       src={service.img}
                       alt={service.img}
                     />
