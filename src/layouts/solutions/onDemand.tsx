@@ -9,6 +9,7 @@ import OnDemandImg from "../../assets/images/ondemandimg.jpg";
 import OnDemandImg2 from "../../assets/images/ondemandimg2.jpg";
 import OnDemandImg3 from "../../assets/images/ondemandimg3.jpg";
 import OnDemandImg4 from "../../assets/images/ondemandimg4.jpg";
+import { Link } from "react-router-dom";
 
 export const OnDemand: FC = () => {
   return (
@@ -49,10 +50,12 @@ export const OnDemand: FC = () => {
         initial={{ y: 100, opacity: 0 }}
         transition={{ type: "spring", stiffness: 20 }}
       >
-        <button className="flex items-center justify-center gap-4 bg-[#FF6108] text-sm border-none rounded-lg px-6 py-4">
-          Let's chat{" "}
-          <img src={UpArrow} alt="up arrow" className="animate-bounce" />
-        </button>
+        <Link to="/contact">
+          <button className="flex items-center justify-center gap-4 bg-[#FF6108] text-sm border-none rounded-lg px-6 py-4">
+            Let's chat{" "}
+            <img src={UpArrow} alt="up arrow" className="animate-bounce" />
+          </button>
+        </Link>
       </motion.div>
 
       <motion.div
@@ -95,10 +98,12 @@ export const OnDemand: FC = () => {
         initial={{ y: 100, opacity: 0 }}
         transition={{ type: "spring", stiffness: 20 }}
       >
-        <button className="flex items-center justify-center gap-4 bg-[#FF6108] text-sm border-none rounded-lg px-6 py-4">
-          Learn More
-          <img src={UpArrow} alt="up arrow" className="animate-bounce" />
-        </button>
+        <Link to="/contact">
+          <button className="flex items-center justify-center gap-4 bg-[#FF6108] text-sm border-none rounded-lg px-6 py-4">
+            Learn More
+            <img src={UpArrow} alt="up arrow" className="animate-bounce" />
+          </button>
+        </Link>
       </motion.div>
 
       <Footer />

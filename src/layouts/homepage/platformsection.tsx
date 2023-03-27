@@ -3,6 +3,7 @@ import MediaThree from "../../assets/images/media3.png";
 import UpArrow from "../../assets/images/uparrow.png";
 import { motion } from "framer-motion";
 import HomePagePlatformVid from "../../assets/videos/homepageplatformvid.mp4";
+import { Link } from "react-router-dom";
 
 export const Platformsection: FC = () => {
   return (
@@ -52,9 +53,11 @@ export const Platformsection: FC = () => {
         </p>
       </div>
 
-      <button className="uppercase bg-[#FF6108] px-8 py-3 border-none rounded-lg flex items-center gap-3 mt-8">
-        try now <img src={UpArrow} alt="uparrow" className="animate-bounce" />
-      </button>
+      <Link to="/solutions/aisoftware">
+        <button className="uppercase bg-[#FF6108] px-8 py-3 border-none rounded-lg flex items-center gap-3 mt-8">
+          try now <img src={UpArrow} alt="uparrow" className="animate-bounce" />
+        </button>
+      </Link>
     </div>
   );
 };

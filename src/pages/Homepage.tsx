@@ -99,9 +99,11 @@ export const Homepage = () => {
             </button>
           </HashLink>
 
-          <button className="mt-4 md:mt-0 w-56 md:w-fit px-3 md:px-10 py-6 md:py-5 border-none bg-[#FF6108] rounded-lg uppercase flex items-center justify-center gap-5 hover:translate-y-3 transition-all duration-300">
-            try our platform <img src={UpArrow} alt="up-arrow" />
-          </button>
+          <Link to="/solutions/aisoftware">
+            <button className="mt-4 md:mt-0 w-56 md:w-fit px-3 md:px-10 py-6 md:py-5 border-none bg-[#FF6108] rounded-lg uppercase flex items-center justify-center gap-5 hover:translate-y-3 transition-all duration-300">
+              try our platform <img src={UpArrow} alt="up-arrow" />
+            </button>
+          </Link>
         </span>
       </div>
       <Infrastructurescroll />
