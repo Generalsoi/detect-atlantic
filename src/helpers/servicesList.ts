@@ -2,10 +2,14 @@ import Power from '../assets/images/powerimg.png'
 import Energy from '../assets/images/energyimg.jpg'
 import Platform from '../assets/images/platformimg.png'
 import Ondemand from '../assets/images/ondemandimg.jpg'
-import Analyze from '../assets/images/platformimg.png'
 import Plan from '../assets/images/plan.png'
 import Onboard from '../assets/images/onboard.png'
-import Collect from '../assets/images/collect.jpg'
+import Collect from '../assets/images/collect.png'
+import Refine from '../assets/images/refine.png'
+import Analyze from '../assets/images/analyze.png'
+import Enhance from '../assets/images/enhance.png'
+import Visualize from '../assets/images/visualize.png'
+
 
 
 type service = {
@@ -83,13 +87,19 @@ export const servicesList: service[] = [
       index: 4,
       name: "Refine",
       description: "Transform raw data across different types into clean data assets ready for use ",
-      img: ""
+      img: Refine
     },
     {
       index: 5,
       name: "Enhance",
       description: "Label newly transformed data to match inspection criteria",
-      img: ""
+      img: Enhance
+    },
+    {
+      index: 6,
+      name: "Visualize",
+      description: "View, query and inspect results in a scalable, searchable database",
+      img: Visualize
     },
     {
       index: 7,

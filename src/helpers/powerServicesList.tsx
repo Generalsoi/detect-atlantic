@@ -42,7 +42,7 @@ export const powerServicesList: service[] = [
     name: "Transform",
     description:
       "Refine raw data across different types into clean data assets ready for use. Label newly transformed data to match inspection criteria​",
-    image: Transform,
+    image: Power,
   },
   {
     index: 5,

@@ -119,11 +119,13 @@ export const Platform: FC = () => {
                   <motion.span className="w-full md:w-[40%]">
                     <p className="my-8 text-sm">{service.description}</p>
                   </motion.span>
-                  <img
-                    className="w-full md:w-[50%] h-[20rem] md:h-[20rem] mt-8 md:mt-0"
-                    src={service.img}
-                    alt={service.img}
-                  />
+                  <div className="w-full md:w-[50%] h-[20rem] md:h-[20rem] mt-8 md:mt-0 flex items-center justify-center md:px-10">
+                    <img
+                      className="w-full h-full "
+                      src={service.img}
+                      alt={service.img}
+                    />
+                  </div>
                 </motion.div>
               )}
             </div>
