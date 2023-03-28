@@ -3,6 +3,7 @@ import { Footer } from "../components/Footer";
 import { Navbar } from "../components/Navbar";
 import Uparrow from "../assets/images/uparrow.png";
 import { motion } from "framer-motion";
+import { InlineWidget } from "react-calendly";
 
 export const Contact: FC = () => {
   return (
@@ -25,7 +26,15 @@ export const Contact: FC = () => {
       </div>
 
       <div className="px-4 md:px-20 flex items-center justify-center my-20 md:mt-40">
-        <form className="w-full md:w-[60%] ">
+        <InlineWidget
+          url="https://calendly.com/ikhinobelesuccess"
+          styles={{
+            height: "30rem",
+            width: "50rem",
+            scrollbarColor: "#000000",
+          }}
+        />
+        {/* <form className="w-full md:w-[60%] ">
           <div className="w-full mt-8 md:flex items-center gap-4">
             <div className="w-full md:w-[48%]">
               <label htmlFor="first-name" className="uppercase">
@@ -84,7 +93,7 @@ export const Contact: FC = () => {
               <img src={Uparrow} alt="up-arrow" className="animate-bounce" />
             </button>
           </div>
-        </form>
+        </form> */}
       </div>
       <div className="flex items-center justify-center px-4 md:px-20 mt-8 md:mt-40">
         <iframe
