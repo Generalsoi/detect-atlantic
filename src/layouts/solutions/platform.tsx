@@ -22,7 +22,7 @@ export const Platform: FC = () => {
     <div className="font-ibmPlexMono scroll-smooth text-white">
       <Navbar />
 
-      <div className="mt-20 md:mt-20 md:px-32 py-10 md:py-20 flex flex-col">
+      <div className="mt-20 md:mt-20 md:px-20 lg:px-[15%] py-10 md:py-20 flex flex-col">
         <div className="mb-10 md:mb-20 text-left px-4">
           <motion.h1
             className="text-4xl md:text-7xl font-bold uppercase"
