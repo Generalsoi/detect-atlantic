@@ -25,7 +25,7 @@ export const Platform: FC = () => {
       <div className="mt-20 md:mt-20 md:px-20 lg:px-[15%] py-10 md:py-20 flex flex-col">
         <div className="mb-10 md:mb-20 text-left px-4">
           <motion.h1
-            className="text-4xl md:text-7xl font-bold uppercase"
+            className="text-4xl md:text-6xl font-bold uppercase"
             whileInView={{ y: 0, opacity: 1 }}
             initial={{ y: 100, opacity: 0 }}
             transition={{ type: "spring", stiffness: 20 }}
@@ -33,7 +33,7 @@ export const Platform: FC = () => {
             Introducing
           </motion.h1>
           <motion.h1
-            className="text-4xl md:text-7xl font-bold uppercase"
+            className="text-4xl md:text-6xl font-bold uppercase"
             whileInView={{ y: 0, opacity: 1 }}
             initial={{ y: 100, opacity: 0 }}
             transition={{ type: "spring", stiffness: 20 }}
@@ -41,7 +41,7 @@ export const Platform: FC = () => {
             Detect's asset
           </motion.h1>
           <motion.h1
-            className="text-4xl md:text-7xl font-bold uppercase"
+            className="text-4xl md:text-6xl font-bold uppercase"
             whileInView={{ y: 0, opacity: 1 }}
             initial={{ y: 100, opacity: 0 }}
             transition={{ type: "spring", stiffness: 20 }}
