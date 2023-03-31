@@ -6,13 +6,25 @@ import { motion } from "framer-motion";
 import UpArrow from "../../assets/images/uparrow.png";
 import { Footer } from "../../components/Footer";
 import { Link } from "react-router-dom";
+import EnergyVid from "../../assets/videos/energyvid.mp4";
 
 export const Energy: FC = () => {
   return (
     <div className="font-ibmPlexMono scroll-smooth text-white">
       <Navbar />
 
-      <div className="md:px-20 hidden md:flex items-center justify-center gap-20 mt-16 md:mt-20 md:py-40">
+      <motion.div
+        className="md:px-20 w-full md:h-screen flex items-center  relative overflow-hidden mt-16 md:mt-20"
+        whileInView={{ y: 0, opacity: 1 }}
+        initial={{ y: 100, opacity: 0 }}
+        transition={{ type: "spring", stiffness: 20 }}
+      >
+        <video autoPlay muted playsInline loop>
+          <source src={EnergyVid} type="video/mp4" />
+        </video>
+      </motion.div>
+
+      <div className="md:px-20 hidden md:flex items-center justify-center gap-20  md:py-40">
         <motion.div
           whileInView={{ y: 0, opacity: 1 }}
           initial={{ y: 100, opacity: 0 }}
