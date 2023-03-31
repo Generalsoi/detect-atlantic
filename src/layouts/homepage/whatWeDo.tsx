@@ -29,10 +29,10 @@ export const WhatWeDo: FC = () => {
           our services
         </h4>
         <p className="text-lg my-8">
-          We know that infrastructure maintenance is <br />
-          complicated - that’s why we’ve kept our
-          <br /> services as flexible as possible to help
-          <br /> address your specific needs.
+          We offer a combination of expert drone
+          <br /> pilots & flight missions; certified <br /> inspection analysis
+          and a data & <br /> artificial intelligence platform <br />
+          as a service.
         </p>
         <Link to="/solutions/powerlineinspectionservices">
           <button className="flex items-center gap-4 bg-[#FF6108] border-none rounded-lg px-6 py-4 hover:translate-y-3 transition-all duration-300">

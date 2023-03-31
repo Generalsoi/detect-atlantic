@@ -19,10 +19,11 @@ export const Flightplanning: FC = () => {
         <h3 className="font-bold text-2xl md:text-4xl mt-8 md:mt-0">
           Flight Planning Engine
         </h3>
-        <p className="mt-8 md:mt-16">
-          Use our proprietary Flight Planning Engine to automate your flight
-          planning. Topography, GPS coordinates of structures, access, and
-          restrictions, and nearby roads are all used to plan flights.
+        <p className="mt-8 md:mt-16 text-justify">
+          Use our proprietary Flight Planning Engine to automate the cumbersome
+          flight planning process. Using your pertinent information about
+          hazards and access in combination with our database, we enable robust,
+          safe and quick plans ready for pilot use in the field.
         </p>
       </div>
     </motion.div>

@@ -182,12 +182,12 @@ export const Homepage = () => {
               </h4>
               {currentId === service.index && (
                 <motion.div
-                  className="md:flex items-start gap-20"
+                  className="md:flex items-start gap-32"
                   initial={{ opacity: 0, y: "-10%" }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ type: "spring", stiffness: 40 }}
                 >
-                  <motion.span className="w-full md:w-[45%]">
+                  <motion.span className="w-full md:w-[40%]">
                     <p className="my-8 text-sm">{service.description}</p>
                     <a
                       href={service.link}

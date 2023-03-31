@@ -56,14 +56,13 @@ export const Platform: FC = () => {
           initial={{ y: 100, opacity: 0 }}
           transition={{ type: "spring", stiffness: 20 }}
         >
-          <p className="text-justify">
-            Digital energy providers are built on using 100% of their data at
-            absolute scale. The most successful ones know everything about their
-            assets, environment, weather, vegetation — and how to use that
-            intelligence to prevent issues from occurring. Especially when
-            storms cause major power outages.{" "}
+          <p className="text-justify md:text-xl">
+            Through our decades of IP building world-class data & artificial
+            intelligence software while meeting the strictest level of data
+            security; we built a platform in record pace to monitor and protect
+            the digital version of your critical physical infrastructure.{" "}
           </p>
-          <p className="text-justify mt-4">
+          {/* <p className="text-justify mt-4">
             We believe that knowing the health of every energy transmission and
             distribution source is table stakes in today’s data age. It’s why we
             built SCOPE. Architected with AI and machine learning technologies
@@ -80,12 +79,12 @@ export const Platform: FC = () => {
               Connectivity... so information can be seamlessly transferred into
               your current workflow.
             </li>
-          </ol>
+          </ol> */}
           <p className="text-justify mt-4">Here's how it works:</p>
         </motion.div>
       </div>
 
-      <div className="md:flex px-6 md:px-20 pb-8 mt-32 md:mb-40  ">
+      <div className="md:flex px-6 md:px-20 pb-8 mt-8 md:mt-20 md:mb-40  ">
         <div className="w-full">
           {platformServicesList.map((service) => (
             <div

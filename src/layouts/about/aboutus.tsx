@@ -12,16 +12,18 @@ export const AboutUs: FC = () => {
       >
         <h2 className="text-2xl md:text-5xl mb-4 md:mb-8 font-bold">About</h2>
         <hr className="mt-1 mb-10 md:mb-16" />
-        <p className="mb-8">
-          Climate change will have a significant impact on the cost of
-          maintaining the World’s electrical power system in the coming years.
-          It will increase the frequency and severity of extreme weather events,
-          such as hurricanes, floods, and heat waves, which can damage
-          electrical infrastructure and disrupt power supply. Repairing and
-          rebuilding this infrastructure can be costly, and the costs are likely
-          to increase over time as the effects of climate change intensify.{" "}
+        <p className="mb-8 text-lg text-justify">
+          Inspecting and monitoring large distances of critical infrastructure
+          is not only challenging but expensive and poses safety hazards. The
+          same goes for collecting and managing usable data to fix issues when
+          they are needed most. As the demand for electricity grows and
+          infrastructure ages, the current methods pose a great threat to
+          increase the cost of maintenance and longer downtime in major events
+          like storms. We founded Detect with a singular focus to reduce these
+          costs over time while providing better quality information to achieve
+          actionable intelligence in real time.{" "}
         </p>
-        <p className="mb-8">
+        {/* <p className="mb-8">
           In addition, the demand for electricity is expected to continue to
           grow in the coming years, driven by population growth, economic
           development, and the increasing use of electrified transportation and
@@ -38,7 +40,7 @@ export const AboutUs: FC = () => {
         <p className="mb-8">
           Detect was established as a partnership between Connect Atlantic
           Utility Services and Pilot Wave Holdings to address these needs.
-        </p>
+        </p> */}
       </motion.div>
     </div>
   );

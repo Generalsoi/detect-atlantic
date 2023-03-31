@@ -107,14 +107,15 @@ export const Power: FC = () => {
         initial={{ y: 100, opacity: 0 }}
         transition={{ type: "spring", stiffness: 20 }}
       >
-        <p className="text-justify">
-          Traditionally, powerline inspections are done using helicopters or by
-          physically climbing the towers. These methods are not only expensive
-          but also pose safety risks for the inspectors. Our drone inspection
-          service mitigates these risks and provides a cost-effective solution
-          for energy providers{" "}
+        <p className="text-justify md:text-lg">
+          Our team of experienced pilots and technicians capture high quality
+          imagery and videos required to properly assess the health of your most
+          critical infrastructure while adhering to safety regulations and
+          guidelines. We accomplish this goal through our proprietary
+          integration of skills accumulated from years of fixing all powerline
+          types with matched pilot experience in the most difficult terrains.{" "}
         </p>
-        <ul className="list-disc mt-4 pl-8 text-justify">
+        {/* <ul className="list-disc mt-4 pl-8 text-justify">
           <li>200X zoom</li>
           <li>4k video</li>
           <li>cm-level lidar data capture</li>
@@ -135,7 +136,7 @@ export const Power: FC = () => {
           are operated safely and efficiently. We adhere to all safety
           regulations and guidelines set forth by country regulatory bodies such
           as Transport Canada and the Federal Aviation Administration (FAA).
-        </p>
+        </p> */}
 
         <p className="text-justify mt-4">
           See your data come to life on our next-generation platform
