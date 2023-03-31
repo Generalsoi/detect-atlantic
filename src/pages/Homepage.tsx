@@ -62,9 +62,8 @@ export const Homepage = () => {
           </motion.h1>
         </span>
       </div>
-
       <motion.div
-        className="md:px-20 w-full md:h-screen flex items-center  relative overflow-hidden"
+        className="md:px-20 w-full lg:h-screen flex items-center  relative overflow-hidden"
         whileInView={{ y: 0, opacity: 1 }}
         initial={{ y: 100, opacity: 0 }}
         transition={{ type: "spring", stiffness: 20 }}
@@ -76,7 +75,7 @@ export const Homepage = () => {
 
       <div className="text-white mt-10 py-10  text-center">
         <motion.p
-          className=" md:px-40 px-4 md:text-xl"
+          className="md:px-20 lg:px-40 px-4 md:text-xl"
           whileInView={{ y: 0, opacity: 1 }}
           initial={{ y: 80, opacity: 0 }}
           transition={{ type: "spring", stiffness: 20 }}
@@ -89,7 +88,7 @@ export const Homepage = () => {
 
         <span className="flex flex-col md:flex-row items-center gap-8 justify-center my-20 px-4 md:px-48">
           <HashLink smooth={true} to="#whatwedo">
-            <button className="mt-4 md:mt-0 w-56 md:w-fit px-3 md:px-8 py-6 md:py-5 border border-white rounded-lg uppercase flex items-center justify-center gap-5 hover:translate-y-3 transition-all duration-300">
+            <button className="mt-4 md:mt-0 w-56 md:w-fit px-3 md:px-6 lg:px-8 py-6 md:py-5 border border-white rounded-lg uppercase flex items-center justify-center gap-5 hover:translate-y-3 transition-all duration-300">
               learn more{" "}
               <img
                 src={DownArrow}
@@ -158,7 +157,7 @@ export const Homepage = () => {
         />
       </div> */}
 
-      <div className="md:flex px-6 md:pl-20 md:pr-0 pb-8 mt-32 md:mb-40  ">
+      <div className="md:flex px-6 md:px-20  pb-8 mt-32 md:mb-40  ">
         <div className="w-full">
           {servicesList.map((service) => (
             <div
@@ -182,7 +181,7 @@ export const Homepage = () => {
               </h4>
               {currentId === service.index && (
                 <motion.div
-                  className="md:flex items-start gap-32"
+                  className="md:flex items-start gap-32 justify-between"
                   initial={{ opacity: 0, y: "-10%" }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ type: "spring", stiffness: 40 }}
