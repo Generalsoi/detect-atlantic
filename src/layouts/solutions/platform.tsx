@@ -84,7 +84,7 @@ export const Platform: FC = () => {
         </motion.div>
       </div>
 
-      <div className="md:flex px-6 md:px-20 pb-8 mt-8 md:mt-20 md:mb-40  ">
+      <div className="md:flex px-6 md:px-10 lg:px-20 pb-8 mt-8 md:mt-20 md:mb-40  ">
         <div className="w-full">
           {platformServicesList.map((service) => (
             <div
@@ -116,7 +116,7 @@ export const Platform: FC = () => {
                   <motion.span className="w-full md:w-[40%]">
                     <p className="my-8 text-sm">{service.description}</p>
                   </motion.span>
-                  <div className="w-full md:w-[50%] h-[20rem] md:h-[20rem] mt-8 md:mt-0 flex items-center justify-center md:px-10">
+                  <div className="w-full md:w-[50%] h-[20rem] md:h-[15rem] lg:h-[20rem] mt-8 md:mt-0 flex items-center justify-center md:px-10">
                     <img
                       className="w-full md:w-[22rem] h-full aspect-square "
                       src={service.img}
@@ -132,7 +132,7 @@ export const Platform: FC = () => {
 
       <div className="mt-10">
         <motion.h2
-          className="px-4 md:px-32 text-3xl md:text-7xl"
+          className="px-4 md:px-20 lg:px-32 text-3xl md:text-7xl"
           whileInView={{ y: 0, opacity: 1 }}
           initial={{ y: 100, opacity: 0 }}
           transition={{ type: "spring", stiffness: 20 }}
@@ -140,7 +140,7 @@ export const Platform: FC = () => {
           Data Command Center
         </motion.h2>
 
-        <div className="md:flex flex-col items-center justify-center gap-10 w-full">
+        <div className="lg:flex flex-col items-center justify-center gap-10 w-full">
           <div className=" w-full ">
             <motion.img
               className="px-0 md:px-32 mt-20 w-full aspect-auto"
@@ -153,7 +153,7 @@ export const Platform: FC = () => {
           </div>
 
           <motion.div
-            className="text-sm px-4 md:px-32 mt-20 w-full md:w-[70%] text-justify"
+            className="text-sm px-4 md:px-20 lg:px-32 mt-20 w-full lg:w-[70%] text-justify"
             whileInView={{ y: 0, opacity: 1 }}
             initial={{ y: 100, opacity: 0 }}
             transition={{ type: "spring", stiffness: 20 }}
@@ -171,11 +171,11 @@ export const Platform: FC = () => {
               <li>Filter detected issues by severity or type</li>
               <li>Automatically generate a PDF report for offline use</li>
             </ul>
-            <p className="mt-4 w-full md:w-[80%]">
+            <p className="mt-4 w-full lg:w-[80%]">
               Any GPS-tagged imagery and notes can be used Using SCOPE, Detect
               can build a timeline for each asset - its life story.
             </p>
-            <p className="mt-4 w-full md:w-[80%]">
+            <p className="mt-4 w-full lg:w-[80%]">
               Using rich data and this story, Detect will be able to determine
               long-term trends and extrapolate that to other
               structures/equipment, and fix defects before they become a

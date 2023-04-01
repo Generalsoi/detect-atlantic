@@ -17,7 +17,7 @@ export const OnDemand: FC = () => {
       <Navbar />
 
       <motion.div
-        className="md:px-20 mt-32 md:mt-40 w-full md:h-screen flex items-center  relative overflow-hidden"
+        className="md:px-20 mt-32 md:mt-40 w-full lg:h-screen flex items-center  relative overflow-hidden"
         whileInView={{ y: 0, opacity: 1 }}
         initial={{ y: 100, opacity: 0 }}
         transition={{ type: "spring", stiffness: 20 }}
@@ -33,19 +33,21 @@ export const OnDemand: FC = () => {
         initial={{ y: 100, opacity: 0 }}
         transition={{ type: "spring", stiffness: 20 }}
       >
-        <h2 className="text-2xl md:text-4xl font-bold">
+        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold">
           Do you have an idea on how leveraging
         </h2>
-        <h2 className="text-2xl md:text-4xl font-bold">
+        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold">
           data with Detect could help your
         </h2>
-        <h2 className="text-2xl md:text-4xl font-bold">business?</h2>
+        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold">
+          business?
+        </h2>
       </motion.div>
 
       <ConstructionMonitoringScroll />
 
       <motion.div
-        className="flex items-center justify-center pb-20"
+        className="flex items-center justify-center lg:pb-20"
         whileInView={{ y: 0, opacity: 1 }}
         initial={{ y: 100, opacity: 0 }}
         transition={{ type: "spring", stiffness: 20 }}
@@ -93,7 +95,7 @@ export const OnDemand: FC = () => {
       </motion.div>
 
       <motion.div
-        className="flex items-center justify-center pb-20"
+        className="flex items-center justify-center lg:pb-20"
         whileInView={{ y: 0, opacity: 1 }}
         initial={{ y: 100, opacity: 0 }}
         transition={{ type: "spring", stiffness: 20 }}
