@@ -5,19 +5,19 @@ import MediumLogo from "../assets/images/mediumlogo.png";
 
 export const Footer: FC = () => {
   return (
-    <div className="px-4 md:px-20 py-16 text-white md:mt-[10rem]">
+    <div className="px-4 md:px-10 lg:px-20 py-16 text-white md:mt-[10rem]">
       <div className="md:flex items-center justify-between">
         <span className="md:flex items-center mt-10 md:mt-0 md:gap-20  gap-36">
-          <p className="w-[90%] md:w-fit">
+          <p className="w-[90%] lg:w-fit">
             1345 Norma Eddy Ln, Halifax, NS B3J 1B6
           </p>
           <img
             src={InLogo}
             alt="d-logo"
-            className="mt-6 md:mt-0 cursor-pointer hidden md:block"
+            className="mt-6 md:mt-0 cursor-pointer hidden lg:block"
           />
         </span>
-        <span className=" md:hidden flex items-center justify-between w-full pr-8 my-4">
+        <span className=" lg:hidden flex items-center justify-between w-full pr-8 my-4">
           <img
             src={InLogo}
             alt="d-logo"
@@ -33,7 +33,7 @@ export const Footer: FC = () => {
           <img
             src={MediumLogo}
             alt="mediumlogo"
-            className="mt-6 md:mt-0 cursor-pointer hidden md:block"
+            className="mt-6 md:mt-0 cursor-pointer hidden lg:block"
           />
           <p className="w-[40%] md:w-fit mt-6 md:mt-0">
             contact@detectinspections.com

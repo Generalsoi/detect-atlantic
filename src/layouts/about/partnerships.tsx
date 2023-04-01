@@ -13,7 +13,7 @@ export const Partnerships: FC = () => {
       initial={{ y: 100, opacity: 0 }}
       transition={{ type: "spring", stiffness: 20 }}
     >
-      <div className="px-4 md:px-60 py-10 ">
+      <div className="px-4 lg:px-60 py-10 ">
         <h4 className="text-3xl md:text-5xl font-bold">Partnerships</h4>
 
         <span className="hidden md:flex items-center justify-center flex-wrap md:flex-nowrap gap-16 md:gap-20 mt-20">

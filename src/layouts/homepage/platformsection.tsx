@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 export const Platformsection: FC = () => {
   return (
-    <div className="md:px-20 text-left flex flex-col items-center justify-center text-white mt-16 md:mt-60 ">
+    <div className="md:px-10 lg:px-20 text-left flex flex-col items-center justify-center text-white mt-16 md:mt-60 ">
       <motion.div
         whileInView={{ y: 0, opacity: 1 }}
         initial={{ y: 100, opacity: 0 }}
@@ -15,9 +15,13 @@ export const Platformsection: FC = () => {
       >
         <h3 className="uppercase text-xl ">Platform</h3>
         <span className="">
-          <p className="md:text-6xl font-bold text-3xl">See your data come</p>
-          <p className="md:text-6xl font-bold text-3xl">to life with our</p>
-          <p className="md:text-6xl font-bold text-3xl">platform</p>
+          <p className="md:text-5xl lg:text-6xl font-bold text-3xl">
+            See your data come
+          </p>
+          <p className="md:text-5xl lg:text-6xl font-bold text-3xl">
+            to life with our
+          </p>
+          <p className="md:text-5xl lg:text-6xl font-bold text-3xl">platform</p>
         </span>
       </motion.div>
       <motion.div

@@ -6,17 +6,17 @@ import { Link } from "react-router-dom";
 export const WhatWeDo: FC = () => {
   return (
     <div
-      className="text-white md:mt-40 md:flex items-start justify-center px-4 md:pl-20  md:gap-16 font-ibmPlexMono"
+      className="text-white md:mt-40 md:flex items-start justify-center px-4 lg:pl-20  md:gap-16 font-ibmPlexMono"
       id="whatwedo"
     >
       <h4 className=" md:hidden text-2xl uppercase mb-6">our services</h4>
       <motion.span
-        className="md:w-[50%] md:text-center"
+        className="md:w-[30%] lg:w-[50%] md:text-left lg:text-center"
         whileInView={{ y: 0, opacity: 1 }}
         initial={{ y: 100, opacity: 0 }}
         transition={{ type: "spring", stiffness: 20 }}
       >
-        <h1 className="text-5xl md:text-7xl font-bold">What we do</h1>
+        <h1 className="text-5xl lg:text-7xl font-bold">What we do</h1>
       </motion.span>
 
       <motion.div
@@ -28,7 +28,7 @@ export const WhatWeDo: FC = () => {
         <h4 className="hidden md:block text-xl md:text-3xl uppercase">
           our services
         </h4>
-        <p className="text-lg my-8">
+        <p className="md:text-sm lg:text-lg my-8">
           We offer a combination of expert drone
           <br /> pilots & flight missions; certified <br /> inspection analysis
           and a data & <br /> artificial intelligence platform <br />

@@ -6,15 +6,15 @@ import { FaLinkedinIn } from "react-icons/fa";
 export const Team = () => {
   return (
     <div className="py-10 md:py-20 px-4 md:px-40 mt-20">
-      <h1 className="text-center uppercase text-4xl md:text-8xl font-bold">
+      <h1 className="text-center uppercase text-4xl md:text-5xl lg:text-8xl font-bold">
         meet the team
       </h1>
 
-      <div className="px-8 md:px-0 md:flex items-start justify-center gap-20 mt-20">
+      <div className="px-8 md:px-0 lg:flex items-start justify-center gap-20 mt-20">
         {team.map((member, index) => (
           <motion.div
             key={index}
-            className="w-full md:w-[23%] mb-20"
+            className="w-full lg:w-[23%] mb-20"
             whileInView={{ y: 0, opacity: 1 }}
             initial={{ y: 100, opacity: 0 }}
             transition={{ type: "spring", stiffness: 20 }}

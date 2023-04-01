@@ -14,7 +14,7 @@ export const Energy: FC = () => {
       <Navbar />
 
       <motion.div
-        className="md:px-20 w-full md:h-screen flex items-center  relative overflow-hidden mt-16 md:mt-20"
+        className="md:px-10 lg:px-20 w-full lg:h-screen flex items-center  relative overflow-hidden mt-16 md:mt-28 lg:mt-20"
         whileInView={{ y: 0, opacity: 1 }}
         initial={{ y: 100, opacity: 0 }}
         transition={{ type: "spring", stiffness: 20 }}
@@ -24,7 +24,7 @@ export const Energy: FC = () => {
         </video>
       </motion.div>
 
-      <div className="md:px-20 hidden md:flex items-center justify-center gap-20  md:py-40">
+      <div className="md:px-20 hidden lg:flex items-center justify-center gap-20  md:py-40">
         <motion.div
           whileInView={{ y: 0, opacity: 1 }}
           initial={{ y: 100, opacity: 0 }}
@@ -83,7 +83,7 @@ export const Energy: FC = () => {
         </motion.div>
       </div>
 
-      <div className="block md:hidden mt-16 md:mt-20 py-20">
+      <div className="block md:px-20 lg:hidden mt-16 md:mt-20 py-20">
         <motion.div
           whileInView={{ y: 0, opacity: 1 }}
           initial={{ y: 100, opacity: 0 }}

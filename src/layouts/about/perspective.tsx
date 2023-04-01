@@ -7,9 +7,9 @@ import { Link } from "react-router-dom";
 
 export const Perspective: FC = () => {
   return (
-    <div className="hidden md:flex my-32 px-40 items-center justify-center text-white">
+    <div className="hidden md:flex my-32 md:px-10 lg:px-40 items-center justify-center text-white">
       <motion.div
-        className="w-[80%] h-[30rem] text-center flex items-center relative"
+        className="w-full lg:w-[80%] h-[30rem] text-center flex items-center relative"
         whileInView={{ y: 0, opacity: 1 }}
         initial={{ y: 100, opacity: 0 }}
         transition={{ type: "spring", stiffness: 20 }}
@@ -22,7 +22,7 @@ export const Perspective: FC = () => {
           className="md:w-[50%] h-[30rem]"
           style={{ background: `url(${PerspectiveTwo})` }}
         ></div>
-        <div className="flex flex-col items-center justify-center absolute top-[35%] left-[30%]">
+        <div className="flex flex-col items-center justify-center absolute top-[35%] md:left-[21%] lg:left-[30%]">
           <span>
             <h2 className="text-5xl font-bold">Perspective is</h2>
             <h2 className="text-5xl font-bold">everything</h2>

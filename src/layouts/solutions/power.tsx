@@ -31,11 +31,11 @@ export const Power: FC = () => {
         initial={{ y: 100, opacity: 0 }}
         transition={{ type: "spring", stiffness: 20 }}
       >
-        <h2 className="md:w-[50%] text-5xl md:text-8xl font-bold">
+        <h2 className="lg:w-[50%] text-5xl md:text-7xl lg:text-8xl font-bold">
           Full Service Inspection
         </h2>
       </motion.div>
-      <div className="flex flex-col items-center justify-center mt-8 md:mt-20 py-10 h-screen">
+      <div className="flex flex-col items-center justify-center mt-8 lg:mt-20 py-10 lg:h-screen">
         <img
           src={Media4}
           alt="mediafour"
@@ -102,7 +102,7 @@ export const Power: FC = () => {
         </div>
       </div> */}
       <motion.div
-        className="mb-32 md:mb-40 md:px-40 text-sm md:text-lg px-4"
+        className="mb-32 md:mb-40 md:px-20 lg::px-40 text-sm md:text-lg px-4"
         whileInView={{ y: 0, opacity: 1 }}
         initial={{ y: 100, opacity: 0 }}
         transition={{ type: "spring", stiffness: 20 }}
