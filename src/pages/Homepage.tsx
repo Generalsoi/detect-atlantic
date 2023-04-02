@@ -71,7 +71,7 @@ export const Homepage = () => {
         <video autoPlay muted playsInline loop>
           <source src={HomePageVid} type="video/mp4" />
         </video>
-        <div className="md:absolute md:top-[8rem] lg:top-[20rem] lg:px-40 w-full hidden md:flex items-center justify-center ">
+        {/* <div className="md:absolute md:top-[8rem] lg:top-[20rem] lg:px-40 w-full hidden md:flex items-center justify-center ">
           <div className="bg-black p-8 rounded-lg">
             <h1 className=" lg:text-2xl text-white">
               Detect can provide you with insightful actions to
@@ -88,12 +88,12 @@ export const Homepage = () => {
             </h1>
             <h1 className=" lg:text-2xl text-white">analysis.</h1>
           </div>
-        </div>
+        </div> */}
       </motion.div>
 
       <div className="text-white mt-28 py-10  text-center">
         <motion.p
-          className="block md:hidden md:px-10 lg:px-40 px-4 lg:text-xl"
+          className=" md:px-10 lg:px-40 px-4 lg:text-xl"
           whileInView={{ y: 0, opacity: 1 }}
           initial={{ y: 80, opacity: 0 }}
           transition={{ type: "spring", stiffness: 20 }}
