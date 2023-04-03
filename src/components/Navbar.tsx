@@ -39,7 +39,7 @@ export const NavLink: FC<navLink> = ({ name, link, sublinks }) => {
     >
       <span
         onClick={handleDropDown}
-        className="flex items-center gap-1 relative md:text-md lg:text-lg"
+        className="flex items-center gap-1 relative mt-16 md:mt-0 md:text-md lg:text-lg"
       >
         {name}{" "}
         {!!sublinks.length && <IoMdArrowDropdown className="text-[#FF6108]" />}
@@ -114,7 +114,11 @@ export const Navbar: FC = () => {
         )}
       </span>
 
-      <span className={`md:flex md:gap-10 lg:gap-20  `}>
+      <span
+        className={`md:flex pb-16 md:pb-0 md:gap-10 lg:gap-20 ${
+          open ? "block" : "hidden"
+        } `}
+      >
         {navLinks.map(({ name, index, link, sublinks }) => (
           <NavLink key={index} name={name} link={link} sublinks={sublinks} />
         ))}
