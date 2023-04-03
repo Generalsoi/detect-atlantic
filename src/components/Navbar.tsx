@@ -59,7 +59,7 @@ export const NavLink: FC<navLink> = ({ name, link, sublinks }) => {
         </span>
         {sublinks.length ? (
           <motion.div
-            className={`flex flex-col md:absolute top-15 rounded-xl bg-[#000000] p-6 h-fit w-full md:w-48 lg:w-56 ${
+            className={`flex flex-col md:absolute top-15 rounded-tr-none rounded-tl-none rounded-bl-lg rounded-br-lg bg-[#000000] p-6 h-fit w-full md:w-48 lg:w-56 ${
               dropdown ? "block" : "hidden"
             }`}
           >
