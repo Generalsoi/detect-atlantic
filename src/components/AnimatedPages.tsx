@@ -9,6 +9,7 @@ import { Solutions } from "./../pages/Solutions";
 import { About } from "./../pages/About";
 import { Energy } from "./../layouts/solutions/energy";
 import { AnimatePresence } from "framer-motion";
+import { Calendly } from "../layouts/contact/calendly";
 
 export const AnimatedPages: FC = () => {
   const location = useLocation();
@@ -25,6 +26,7 @@ export const AnimatedPages: FC = () => {
         </Route>
 
         <Route element={<Contact />} path="/contact" />
+        <Route element={<Calendly />} path="/calendly" />
       </Routes>
     </AnimatePresence>
   );

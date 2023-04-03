@@ -3,7 +3,7 @@ import { Footer } from "../components/Footer";
 import { Navbar } from "../components/Navbar";
 import Uparrow from "../assets/images/uparrow.png";
 import { motion } from "framer-motion";
-import { InlineWidget } from "react-calendly";
+import { Link } from "react-router-dom";
 
 export const Contact: FC = () => {
   return (
@@ -80,21 +80,16 @@ export const Contact: FC = () => {
             ></textarea>
           </div>
           <div>
-            <button className="w-full py-4 mt-20 uppercase bg-[#FF6108] border-none rounded-lg flex items-center justify-center gap-6 hover:scale-105 transition-all ease-in-out duration-300">
-              send
-              <img src={Uparrow} alt="up-arrow" className="animate-bounce" />
-            </button>
+            <Link to="/calendly">
+              <button className="w-full py-4 mt-20 uppercase bg-[#FF6108] border-none rounded-lg flex items-center justify-center gap-6 hover:scale-105 transition-all ease-in-out duration-300">
+                send
+                <img src={Uparrow} alt="up-arrow" className="animate-bounce" />
+              </button>
+            </Link>
           </div>
         </form>
       </div>
-      <InlineWidget
-        url="https://calendly.com/ikhinobelesuccess"
-        styles={{
-          height: "30rem",
-          width: "50rem",
-          scrollbarColor: "#000000",
-        }}
-      />
+
       <div className="flex items-center justify-center px-4 md:px-20 mt-8 md:mt-40">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2838.7972850504084!2d-63.57596229028401!3d44.642059982508044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b5a223414266c19%3A0xfc639809513b8892!2s1345%20Norma%20Eddy%20Ln%2C%20Halifax%2C%20NS%20B3J%201B6%2C%20Canada!5e0!3m2!1sen!2sng!4v1677445065168!5m2!1sen!2sng"
