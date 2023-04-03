@@ -14,7 +14,7 @@ export const Energy: FC = () => {
       <Navbar />
 
       <motion.div
-        className="md:px-10 lg:px-20 w-full lg:h-screen flex items-center  relative overflow-hidden mt-16 md:mt-28 lg:mt-20"
+        className="md:px-10 lg:px-20 w-full lg:h-screen flex items-center  relative overflow-hidden mt-20 md:mt-28 lg:mt-20"
         whileInView={{ y: 0, opacity: 1 }}
         initial={{ y: 100, opacity: 0 }}
         transition={{ type: "spring", stiffness: 20 }}
