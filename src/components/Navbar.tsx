@@ -33,40 +33,25 @@ export const NavLink: FC<navLink> = ({ name, link, sublinks }) => {
       to={sublinks.length ? "#" : link}
       className={
         isActive
-          ? "font-ibmPlexMono mt-16 md:mt-0 border border-x-0 border-t-0 border-neutral-500 w-full md:w-44 md:-translate-x-16 transition duration-500 ease-in-out text-md md:text-xs uppercase"
-          : "font-ibmPlexMono mt-16 md:mt-0 border border-x-0 border-t-0 border-neutral-500 w-full md:w-28 text-md md:text-xs uppercase"
+          ? "font-ibmPlexMono mt-16 md:mt-0 border-4 border-x-0 border-t-0 border-neutral-500  transition duration-500 ease-in-out text-md md:text-xs uppercase"
+          : "font-ibmPlexMono mt-16 md:mt-0  text-md md:text-xs uppercase"
       }
-      style={{ borderBottomWidth: "0.1px" }}
     >
       <span
         onClick={handleDropDown}
-        className="flex items-center gap-1 relative"
+        className="flex items-center gap-1 relative md:text-md lg:text-lg"
       >
         {name}{" "}
         {!!sublinks.length && <IoMdArrowDropdown className="text-[#FF6108]" />}
       </span>
       {sublinks.length && dropdown ? (
-        <motion.div
-          className="flex flex-col ml-10"
-          initial={{ height: "100%", opacity: 0 }}
-          animate={
-            dropdown
-              ? {
-                  height: "100%",
-                  opacity: 1,
-                  y: 0,
-                  transition: { type: "spring", stiffness: 20 },
-                }
-              : {
-                  opacity: 0,
-                  y: "100px",
-                  transition: { type: "spring", stiffness: 20 },
-                }
-          }
-          exit={{ height: "100%" }}
-        >
+        <motion.div className="flex flex-col md:absolute top-20 rounded-xl bg-[#000000] p-6 h-fit w-full md:w-48">
           {sublinks.map((sublink, index) => (
-            <Link key={index} to={sublink.sublink} className="mt-4 md:mt-1">
+            <Link
+              key={index}
+              to={sublink.sublink}
+              className="mt-4 md:mt-4 lg:text-[15px]"
+            >
               {sublink.name}
             </Link>
           ))}
@@ -113,7 +98,7 @@ export const Navbar: FC = () => {
   // ];
 
   return (
-    <div className="text-[#fff] md:flex items-start justify-between px-4 md:px-10 lg:px-20 py-4 fixed top-0 bg-[#000000] w-full z-20 transition-all ease-in-out duration-300">
+    <div className="text-[#fff] md:flex items-center justify-between px-4 md:px-10 lg:px-20 py-4 fixed top-0 bg-[#000000] w-full z-20 transition-all ease-in-out duration-300">
       <Link to="/">
         <img src={Dlogo} alt="d-logo" />
       </Link>
@@ -129,9 +114,7 @@ export const Navbar: FC = () => {
         )}
       </span>
 
-      <span
-        className={`flex flex-col  ${open ? "block h-fit" : "hidden md:flex"}`}
-      >
+      <span className={`md:flex md:gap-10 lg:gap-20  `}>
         {navLinks.map(({ name, index, link, sublinks }) => (
           <NavLink key={index} name={name} link={link} sublinks={sublinks} />
         ))}
