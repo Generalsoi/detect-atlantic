@@ -133,7 +133,7 @@ export const Navbar: FC = () => {
       </span>
 
       <span
-        className={`md:flex pb-16 md:pb-0 md:gap-10 lg:gap-20 ${
+        className={`md:flex pb-16 md:pb-0 md:gap-10 lg:gap-16 ${
           open ? "block" : "hidden"
         } `}
       >
