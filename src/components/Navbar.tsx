@@ -41,7 +41,7 @@ export const NavLink: FC<navLink> = ({ name, link, sublinks }) => {
     <div
       className={
         isActive
-          ? "font-ibmPlexMono mt-16 md:mt-0 border-4 border-x-0 border-t-0 border-[#FF6108]  transition duration-500 ease-in-out text-md md:text-xs uppercase"
+          ? "font-ibmPlexMono mt-16 md:mt-0 border-2 border-x-0 border-t-0 border-[#FF6108]  transition duration-500 ease-in-out text-md md:text-xs uppercase"
           : "font-ibmPlexMono mt-16 md:mt-0  text-md md:text-xs uppercase"
       }
       onMouseLeave={handleMouseLeave}
