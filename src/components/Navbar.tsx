@@ -28,36 +28,54 @@ export const NavLink: FC<navLink> = ({ name, link, sublinks }) => {
     }
   };
 
+  const handleMouseOver = (): void => {
+    if (sublinks.length) {
+      setDropDown(true);
+    }
+  };
+  const handleMouseLeave = (): void => {
+    setDropDown(false);
+  };
+
   return (
-    <Link
-      to={sublinks.length ? "#" : link}
+    <div
       className={
         isActive
-          ? "font-ibmPlexMono mt-16 md:mt-0 border-4 border-x-0 border-t-0 border-neutral-500  transition duration-500 ease-in-out text-md md:text-xs uppercase"
+          ? "font-ibmPlexMono mt-16 md:mt-0 border-4 border-x-0 border-t-0 border-[#FF6108]  transition duration-500 ease-in-out text-md md:text-xs uppercase"
           : "font-ibmPlexMono mt-16 md:mt-0  text-md md:text-xs uppercase"
       }
+      onMouseLeave={handleMouseLeave}
     >
-      <span
-        onClick={handleDropDown}
-        className="flex items-center gap-1 relative mt-16 md:mt-0 md:text-md lg:text-lg"
-      >
-        {name}{" "}
-        {!!sublinks.length && <IoMdArrowDropdown className="text-[#FF6108]" />}
-      </span>
-      {sublinks.length && dropdown ? (
-        <motion.div className="flex flex-col md:absolute top-20 rounded-xl bg-[#000000] p-6 h-fit w-full md:w-48">
-          {sublinks.map((sublink, index) => (
-            <Link
-              key={index}
-              to={sublink.sublink}
-              className="mt-4 md:mt-4 lg:text-[15px]"
-            >
-              {sublink.name}
-            </Link>
-          ))}
-        </motion.div>
-      ) : null}
-    </Link>
+      <Link to={sublinks.length ? "#" : link}>
+        <span
+          onClick={handleDropDown}
+          onMouseEnter={handleMouseOver}
+          className="flex items-center gap-1 relative mt-16 md:mt-0 md:text-md lg:text-lg"
+        >
+          {name}{" "}
+          {!!sublinks.length && (
+            <IoMdArrowDropdown className="text-[#FF6108]" />
+          )}
+        </span>
+        {sublinks.length ? (
+          <motion.div
+            className={`flex flex-col md:absolute top-15 rounded-xl bg-[#000000] p-6 h-fit w-full md:w-48 lg:w-56 ${
+              dropdown ? "block" : "hidden"
+            }`}
+          >
+            {sublinks.map((sublink, index) => (
+              <Link
+                key={index}
+                to={sublink.sublink}
+                className="mt-4 md:mt-4 lg:text-[15px] hover:text-[#FF6108]"
+              >
+                {sublink.name}
+              </Link>
+            ))}
+          </motion.div>
+        ) : null}
+      </Link>
+    </div>
   );
 };
 
