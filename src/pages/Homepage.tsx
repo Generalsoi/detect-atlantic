@@ -31,7 +31,7 @@ export const Homepage = () => {
       className="font-ibmPlexMono scroll-smooth"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      exit={{ opacity: 0, transition: { duration: 0.1 } }}
+      exit={{ opacity: 0, transition: { duration: 0.4 } }}
     >
       <Navbar />
       {/* <div className="text-left md:flex flex-col lg:h-screen items-center justify-center text-white px-4 py-10 mt-16 md:mt-20">

@@ -22,7 +22,7 @@ export const Power: FC = () => {
       className="font-ibmPlexMono scroll-smooth text-white"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      exit={{ opacity: 0, transition: { duration: 0.1 } }}
+      exit={{ opacity: 0, transition: { duration: 0.4 } }}
     >
       <Navbar />
       <motion.div

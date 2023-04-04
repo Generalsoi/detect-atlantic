@@ -13,7 +13,12 @@ import { Link } from "react-router-dom";
 
 export const OnDemand: FC = () => {
   return (
-    <div className="font-ibmPlexMono scroll-smooth text-white">
+    <motion.div
+      className="font-ibmPlexMono scroll-smooth text-white"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0, transition: { duration: 0.4 } }}
+    >
       <Navbar />
 
       <motion.div
@@ -109,6 +114,6 @@ export const OnDemand: FC = () => {
       </motion.div>
 
       <Footer />
-    </div>
+    </motion.div>
   );
 };

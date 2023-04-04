@@ -19,7 +19,12 @@ export const Platform: FC = () => {
   };
 
   return (
-    <div className="font-ibmPlexMono scroll-smooth text-white">
+    <motion.div
+      className="font-ibmPlexMono scroll-smooth text-white"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0, transition: { duration: 0.4 } }}
+    >
       <Navbar />
 
       <div className="mt-20 md:mt-20 md:px-20 lg:px-[15%] py-10 md:py-20 flex flex-col">
@@ -206,6 +211,6 @@ export const Platform: FC = () => {
       </div> */}
 
       <Footer />
-    </div>
+    </motion.div>
   );
 };
