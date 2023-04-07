@@ -67,24 +67,6 @@ export const Platform: FC = () => {
             security; we built a platform in record pace to monitor and protect
             the digital version of your critical physical infrastructure.{" "}
           </p>
-          {/* <p className="text-justify mt-4">
-            We believe that knowing the health of every energy transmission and
-            distribution source is table stakes in today’s data age. It’s why we
-            built SCOPE. Architected with AI and machine learning technologies
-            to automate the mind-numbing process of making raw data usable,
-            readily available and easy to find to take action. We’re
-            passionately reimagining the industry standard of using data built
-            on three core principles:
-          </p>
-
-          <ol className="list-decimal text-justify mt-4 md:pl-8">
-            <li>Automation... To keep your cost low</li>
-            <li>Real-time... to make decisions when it's happening</li>
-            <li>
-              Connectivity... so information can be seamlessly transferred into
-              your current workflow.
-            </li>
-          </ol> */}
           <p className="text-justify mt-4">Here's how it works:</p>
         </motion.div>
       </div>
@@ -135,61 +117,17 @@ export const Platform: FC = () => {
         </div>
       </div>
 
-      <div className="mt-10">
-        <motion.h2
-          className="px-4 md:px-20 lg:px-32 text-3xl md:text-7xl"
-          whileInView={{ y: 0, opacity: 1 }}
-          initial={{ y: 100, opacity: 0 }}
-          transition={{ type: "spring", stiffness: 20 }}
-        >
-          Data Command Center
-        </motion.h2>
-
+      <div>
         <div className="lg:flex flex-col items-center justify-center gap-10 w-full">
-          <div className=" w-full ">
-            <motion.img
-              className="px-0 md:px-32 mt-20 w-full aspect-auto"
-              src={PlatformImgTwo}
-              alt="platform image two "
-              whileInView={{ y: 0, opacity: 1 }}
-              initial={{ y: 100, opacity: 0 }}
-              transition={{ type: "spring", stiffness: 20 }}
-            />
-          </div>
-
           <motion.div
             className="text-sm px-4 md:px-20 lg:px-32 mt-20 w-full lg:w-[70%] text-justify"
             whileInView={{ y: 0, opacity: 1 }}
             initial={{ y: 100, opacity: 0 }}
             transition={{ type: "spring", stiffness: 20 }}
           >
-            <p>Our functional web-based platforms can:</p>
-            <ul className="mt-4 list-disc px-4 md:px-10">
-              <li>
-                Store and manage inspections in a customer profile’s searchable
-                database
-              </li>
-              <li>
-                Show annotations from our certified Powerline Technicians for
-                every structure
-              </li>
-              <li>Filter detected issues by severity or type</li>
-              <li>Automatically generate a PDF report for offline use</li>
-            </ul>
-            <p className="mt-4 w-full lg:w-[80%]">
-              Any GPS-tagged imagery and notes can be used Using SCOPE, Detect
-              can build a timeline for each asset - its life story.
-            </p>
-            <p className="mt-4 w-full lg:w-[80%]">
-              Using rich data and this story, Detect will be able to determine
-              long-term trends and extrapolate that to other
-              structures/equipment, and fix defects before they become a
-              critical risk to the network.
-            </p>
-
             <div className="w-full flex items-center justify-center mt-10">
               <Link to="/contact">
-                <button className="flex items-center justify-center gap-4 bg-[#FF6108] text-white px-6 py-4 border-none rounded-lg mt-10">
+                <button className="flex items-center justify-center gap-4 bg-[#FF6108] text-white px-6 py-4 md:px-10 md:py-6 border-none rounded-lg mt-10">
                   Book now{" "}
                   <img
                     src={UpArrow}
@@ -202,13 +140,6 @@ export const Platform: FC = () => {
           </motion.div>
         </div>
       </div>
-
-      {/* <div className="px-4 md:px-32 py-20 ">
-        <button className="flex items-center justify-center gap-4 bg-[#FF6108] text-white px-6 py-4 border-none rounded-lg">
-          Book now{" "}
-          <img src={UpArrow} alt="up arrow" className="animate-bounce" />
-        </button>
-      </div> */}
 
       <Footer />
     </motion.div>
