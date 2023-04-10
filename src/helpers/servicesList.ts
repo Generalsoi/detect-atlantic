@@ -1,6 +1,6 @@
 import Power from '../assets/images/powerimg.png'
 import Energy from '../assets/images/energyimg.jpg'
-import Platform from '../assets/images/platformimg.png'
+import Platform from '../assets/images/platformimg.jpg'
 import Ondemand from '../assets/images/ondemandimg.jpg'
 import Plan from '../assets/images/plan.png'
 import Onboard from '../assets/images/onboard.png'
