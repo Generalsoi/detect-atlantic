@@ -10,7 +10,7 @@ import { platformServicesList } from "../../helpers/servicesList";
 import { MdKeyboardArrowRight, MdKeyboardArrowDown } from "react-icons/md";
 
 export const Platform: FC = () => {
-  const [openAccordion, setOpenAccordion] = useState<boolean>(false);
+  const [openAccordion, setOpenAccordion] = useState<boolean>(true);
   const [currentId, setCurrentId] = useState<number>(1);
 
   const handleOpenAccordion = (id: number): void => {
@@ -87,13 +87,13 @@ export const Platform: FC = () => {
             >
               <h4 className="flex items-center gap-2 uppercase text-2xl">
                 {service.name}
-                {currentId === service.index ? (
+                {currentId === service.index && openAccordion ? (
                   <MdKeyboardArrowDown />
                 ) : (
                   <MdKeyboardArrowRight />
                 )}
               </h4>
-              {currentId === service.index && (
+              {currentId === service.index && openAccordion && (
                 <motion.div
                   className="md:flex items-center gap-20"
                   initial={{ opacity: 0, y: "-10%" }}

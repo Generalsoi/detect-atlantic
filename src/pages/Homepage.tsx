@@ -18,7 +18,7 @@ import { HashLink } from "react-router-hash-link";
 import { Link } from "react-router-dom";
 
 export const Homepage = () => {
-  const [openAccordion, setOpenAccordion] = useState<boolean>(false);
+  const [openAccordion, setOpenAccordion] = useState<boolean>(true);
   const [currentId, setCurrentId] = useState<number>(1);
 
   const handleOpenAccordion = (id: number): void => {
@@ -98,13 +98,13 @@ export const Homepage = () => {
             >
               <h4 className="flex items-center gap-2 uppercase text-2xl">
                 {service.name}
-                {currentId === service.index ? (
+                {openAccordion && currentId === service.index ? (
                   <MdKeyboardArrowDown />
                 ) : (
                   <MdKeyboardArrowRight />
                 )}
               </h4>
-              {currentId === service.index && (
+              {currentId === service.index && openAccordion ? (
                 <motion.div
                   className="md:flex items-start lg:gap-32 justify-between"
                   initial={{ opacity: 0, y: "-10%" }}
@@ -126,7 +126,7 @@ export const Homepage = () => {
                     alt={service.img}
                   />
                 </motion.div>
-              )}
+              ) : null}
             </div>
           ))}
         </div>
