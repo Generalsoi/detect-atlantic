@@ -23,7 +23,7 @@ export const ColletAnnotateScroll: FC = () => {
           <p className="uppercase text-xs font-bold text-[#AAAAAA]">Refine</p>
           <img src={ArrowRight} alt="arrow-right" />
           <p className="uppercase text-xs font-bold text-[#AAAAAA]">Enhance</p>
-
+          <img src={ArrowRight} alt="arrow-right" />
           <p className="uppercase text-xs font-bold text-[#AAAAAA]">
             Visualize
           </p>
@@ -39,7 +39,7 @@ export const ColletAnnotateScroll: FC = () => {
           <p className="uppercase text-xs font-bold text-[#AAAAAA]">Refine</p>
           <img src={ArrowRight} alt="arrow-right" />
           <p className="uppercase text-xs font-bold text-[#AAAAAA]">Enhance</p>
-
+          <img src={ArrowRight} alt="arrow-right" />
           <p className="uppercase text-xs font-bold text-[#AAAAAA]">
             Visualize
           </p>
@@ -55,7 +55,7 @@ export const ColletAnnotateScroll: FC = () => {
           <p className="uppercase text-xs font-bold text-[#AAAAAA]">Refine</p>
           <img src={ArrowRight} alt="arrow-right" />
           <p className="uppercase text-xs font-bold text-[#AAAAAA]">Enhance</p>
-
+          <img src={ArrowRight} alt="arrow-right" />
           <p className="uppercase text-xs font-bold text-[#AAAAAA]">
             Visualize
           </p>
@@ -71,7 +71,7 @@ export const ColletAnnotateScroll: FC = () => {
           <p className="uppercase text-xs font-bold text-[#AAAAAA]">Refine</p>
           <img src={ArrowRight} alt="arrow-right" />
           <p className="uppercase text-xs font-bold text-[#AAAAAA]">Enhance</p>
-
+          <img src={ArrowRight} alt="arrow-right" />
           <p className="uppercase text-xs font-bold text-[#AAAAAA]">
             Visualize
           </p>
@@ -87,7 +87,7 @@ export const ColletAnnotateScroll: FC = () => {
           <p className="uppercase text-xs font-bold text-[#AAAAAA]">Refine</p>
           <img src={ArrowRight} alt="arrow-right" />
           <p className="uppercase text-xs font-bold text-[#AAAAAA]">Enhance</p>
-
+          <img src={ArrowRight} alt="arrow-right" />
           <p className="uppercase text-xs font-bold text-[#AAAAAA]">
             Visualize
           </p>
@@ -103,7 +103,7 @@ export const ColletAnnotateScroll: FC = () => {
           <p className="uppercase text-xs font-bold text-[#AAAAAA]">Refine</p>
           <img src={ArrowRight} alt="arrow-right" />
           <p className="uppercase text-xs font-bold text-[#AAAAAA]">Enhance</p>
-
+          <img src={ArrowRight} alt="arrow-right" />
           <p className="uppercase text-xs font-bold text-[#AAAAAA]">
             Visualize
           </p>

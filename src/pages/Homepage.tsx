@@ -59,7 +59,7 @@ export const Homepage = () => {
           <br /> analysis.
         </motion.p>
 
-        <span className="flex flex-col md:flex-row items-center gap-8 justify-center my-20 px-4 md:px-48">
+        {/* <span className="flex flex-col md:flex-row items-center gap-8 justify-center my-20 px-4 md:px-48">
           <HashLink smooth={true} to="#whatwedo">
             <button className="mt-4 md:mt-0 w-56 lg:w-fit px-3 md:px-6 lg:px-8 py-6 md:py-5 border border-white rounded-lg uppercase flex items-center justify-center gap-5 hover:translate-y-3 transition-all duration-300">
               learn more{" "}
@@ -76,7 +76,7 @@ export const Homepage = () => {
               try our platform <img src={UpArrow} alt="up-arrow" />
             </button>
           </Link>
-        </span>
+        </span> */}
       </div>
       <Infrastructurescroll />
 
@@ -96,7 +96,7 @@ export const Homepage = () => {
                 borderColor: "#AAAAAA",
               }}
             >
-              <h4 className="flex items-center gap-2 uppercase text-2xl">
+              <h4 className="flex items-center gap-2 uppercase text-2xl lg:text-3xl">
                 {service.name}
                 {openAccordion && currentId === service.index ? (
                   <MdKeyboardArrowDown />
@@ -112,7 +112,9 @@ export const Homepage = () => {
                   transition={{ type: "spring", stiffness: 40 }}
                 >
                   <motion.span className="w-full md:w-[40%]">
-                    <p className="my-8 text-sm">{service.description}</p>
+                    <p className="my-8 text-sm lg:text-md">
+                      {service.description}
+                    </p>
                     <a
                       href={service.link}
                       className="text-[#FF6108] uppercase flex items-center gap-3"

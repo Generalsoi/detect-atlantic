@@ -1,4 +1,4 @@
-import Power from '../assets/images/powerimg.png'
+import Power from '../assets/images/powerimg.jpg'
 import Energy from '../assets/images/energyimg.jpg'
 import Platform from '../assets/images/platformimg.jpg'
 import Ondemand from '../assets/images/ondemandimg.jpg'
@@ -31,30 +31,30 @@ type service = {
 export const servicesList: service[] = [
     {
       index: 1,
-      name: "Powerlines",
+      name: "Power",
       description:
-        "Digitize & risk assess your high, medium and low voltage infrastructure with the help of our team of experts.",
+        "Digitize & assess risk for your electrical infrastructure with the help of our team of experts",
       link: "/solutions/powerlineinspectionservices",
       img: Power
     },
     {
       index: 2,
-      name: "Renewable Energy",
+      name: "Energy",
       description:
-        "Automate your solar module monitoring with  RGB and infrared scans.",
+        "Automate your energy asset monitoring with RGB and infrared scans.",
       link: "/solutions/solarandwindinspectionservices",
       img: Energy
     },
+    // {
+    //   index: 3,
+    //   name: "Platform",
+    //   description:
+    //     "Create clean datasets to quickly find what you need; run complex models to determine long-term trends and fix defects before they become a critical risk to the network.",
+    //   link: "/solutions/aisoftware",
+    //   img: Platform
+    // },
     {
       index: 3,
-      name: "Platform",
-      description:
-        "Create clean datasets to quickly find what you need; run complex models to determine long-term trends and fix defects before they become a critical risk to the network.",
-      link: "/solutions/aisoftware",
-      img: Platform
-    },
-    {
-      index: 4,
       name: "On Demand",
       description:
         "Meeting needs across areas such as monitoring vegetation growth, stringing conductors and inspecting damage from Storms.",
