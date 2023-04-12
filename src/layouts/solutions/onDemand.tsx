@@ -5,10 +5,6 @@ import { Footer } from "./../../components/Footer";
 import { motion } from "framer-motion";
 import { ConstructionMonitoringScroll } from "./constructionMonitoringScroll";
 import OnDemandVid from "../../assets/videos/ondemand.mp4";
-import OnDemandImg from "../../assets/images/ondemandimg.jpg";
-import OnDemandImg2 from "../../assets/images/ondemandimg2.jpg";
-import OnDemandImg3 from "../../assets/images/ondemandimg3.jpg";
-import OnDemandImg4 from "../../assets/images/ondemandimg4.jpg";
 import { Link } from "react-router-dom";
 
 export const OnDemand: FC = () => {
@@ -21,33 +17,42 @@ export const OnDemand: FC = () => {
     >
       <Navbar />
 
-      <motion.div
-        className="md:px-20 mt-32 md:mt-40 w-full lg:h-screen flex items-center  relative overflow-hidden"
-        whileInView={{ y: 0, opacity: 1 }}
-        initial={{ y: 100, opacity: 0 }}
-        transition={{ type: "spring", stiffness: 20 }}
-      >
-        <video autoPlay muted playsInline loop>
-          <source src={OnDemandVid} type="video/mp4" />
-        </video>
-      </motion.div>
-
-      <motion.div
-        className="my-10 md:my-28 text-center px-4 md:px-20 py-10"
-        whileInView={{ y: 0, opacity: 1 }}
-        initial={{ y: 100, opacity: 0 }}
-        transition={{ type: "spring", stiffness: 20 }}
-      >
-        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold">
-          Do you have an idea on how leveraging
-        </h2>
-        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold">
-          data with Detect could help your
-        </h2>
-        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold">
-          business?
-        </h2>
-      </motion.div>
+      <div className="mt-20 md:mt-20 md:px-20 lg:px-[15%] py-10 md:py-20 flex flex-col">
+        <div className="mb-10 md:mb-20 text-left px-4">
+          <motion.h1
+            className="text-4xl md:text-6xl text-center font-bold uppercase"
+            whileInView={{ y: 0, opacity: 1 }}
+            initial={{ y: 100, opacity: 0 }}
+            transition={{ type: "spring", stiffness: 20 }}
+          >
+            We can inspect
+          </motion.h1>
+          <motion.h1
+            className="text-4xl md:text-6xl text-center font-bold uppercase"
+            whileInView={{ y: 0, opacity: 1 }}
+            initial={{ y: 100, opacity: 0 }}
+            transition={{ type: "spring", stiffness: 20 }}
+          >
+            more than you think
+          </motion.h1>
+        </div>
+        <motion.div
+          className="mb-20  text-center px-4 md:px-20 py-10"
+          whileInView={{ y: 0, opacity: 1 }}
+          initial={{ y: 100, opacity: 0 }}
+          transition={{ type: "spring", stiffness: 20 }}
+        >
+          <h2 className="text-2xl md:text-2xl lg:text-3xl font-bold">
+            Do you have an idea on how leveraging
+          </h2>
+          <h2 className="text-2xl md:text-2xl lg:text-3xl font-bold">
+            data with Detect could help your
+          </h2>
+          <h2 className="text-2xl md:text-2xl lg:text-3xl font-bold">
+            business?
+          </h2>
+        </motion.div>
+      </div>
 
       <ConstructionMonitoringScroll />
 
