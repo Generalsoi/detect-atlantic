@@ -8,37 +8,124 @@ export const ConstructionMonitoringScroll: FC = () => {
       <div className="absolute w-[200%] top-0 left-0 right-0 flex h-24 border-none">
         <section className="flex items-center gap-6 py-4 w-[50%] animate-swipe">
           <img src={ArrowRight} alt="arrow-right" className="ml-6" />
-          <p className=" text-lg text-[#AAAAAA] font-bold">Growth monitoring</p>
-          <img src={ArrowRight} alt="arrow-right" />
-          <p className=" text-lg text-[#AAAAAA] font-bold">
+          <p className=" text-sm text-[#AAAAAA] font-bold">
+            Vegetation Growth monitoring
+          </p>
+          <img src={ArrowRight} alt="arrow-right" className="ml-6" />
+          <p className=" text-sm text-[#AAAAAA] font-bold">
             Predictive analysis
           </p>
           <img src={ArrowRight} alt="arrow-right" className="ml-6" />
-          <p className=" text-lg text-[#AAAAAA] font-bold">
-            Construction monitoring
-          </p>
-
-          <img src={ArrowRight} alt="arrow-right" />
-          <p className=" text-lg text-[#AAAAAA] font-bold">Access planning</p>
-          <img src={ArrowRight} alt="arrow-right" className="ml-6" />
-          <p className=" text-lg text-[#AAAAAA] font-bold">Growth monitoring</p>
-        </section>
-        <section className="flex items-center gap-6 py-4 w-[50%] animate-swipe">
-          <img src={ArrowRight} alt="arrow-right" className="" />
-          <p className=" text-lg text-[#AAAAAA] font-bold">
-            Predictive analysis
-          </p>
-          <img src={ArrowRight} alt="arrow-right" className="ml-6" />
-          <p className=" text-lg text-[#AAAAAA] font-bold">
+          <p className=" text-sm text-[#AAAAAA] font-bold">
             Construction monitoring
           </p>
           <img src={ArrowRight} alt="arrow-right" />
-          <p className=" text-lg text-[#AAAAAA] font-bold">Access planning</p>
+          <p className=" text-sm text-[#AAAAAA] font-bold">Access planning</p>
+          <img src={ArrowRight} alt="arrow-right" />
+          <p className=" text-sm text-[#AAAAAA] font-bold">
+            Building Inspection
+          </p>
+          <img src={ArrowRight} alt="arrow-right" />
+          <p className=" text-sm text-[#AAAAAA] font-bold">
+            Aggregate Pile Volume Estimation
+          </p>
+          <img src={ArrowRight} alt="arrow-right" />
+          <p className=" text-sm text-[#AAAAAA] font-bold">
+            Mission Live streaming
+          </p>
+          <img src={ArrowRight} alt="arrow-right" />
+          <p className=" text-sm text-[#AAAAAA] font-bold">
+            Conductor Stringing
+          </p>
           <img src={ArrowRight} alt="arrow-right" className="ml-6" />
-          <p className=" text-lg text-[#AAAAAA] font-bold">Growth monitoring</p>
+          <p className=" text-sm text-[#AAAAAA] font-bold">
+            Vegetation Growth monitoring
+          </p>
           <img src={ArrowRight} alt="arrow-right" className="ml-6" />
-          <p className=" text-lg text-[#AAAAAA] font-bold">
+          <p className=" text-sm text-[#AAAAAA] font-bold">
             Predictive analysis
+          </p>
+          <img src={ArrowRight} alt="arrow-right" className="ml-6" />
+          <p className=" text-sm text-[#AAAAAA] font-bold">
+            Construction monitoring
+          </p>
+          <img src={ArrowRight} alt="arrow-right" />
+          <p className=" text-sm text-[#AAAAAA] font-bold">Access planning</p>
+          <img src={ArrowRight} alt="arrow-right" />
+          <p className=" text-sm text-[#AAAAAA] font-bold">
+            Building Inspection
+          </p>
+          <img src={ArrowRight} alt="arrow-right" />
+          <p className=" text-sm text-[#AAAAAA] font-bold">
+            Aggregate Pile Volume Estimation
+          </p>
+          <img src={ArrowRight} alt="arrow-right" />
+          <p className=" text-sm text-[#AAAAAA] font-bold">
+            Mission Live streaming
+          </p>
+          <img src={ArrowRight} alt="arrow-right" />
+          <p className=" text-sm text-[#AAAAAA] font-bold">
+            Conductor Stringing
+          </p>
+          <img src={ArrowRight} alt="arrow-right" className="ml-6" />
+          <p className=" text-sm text-[#AAAAAA] font-bold">
+            Vegetation Growth monitoring
+          </p>
+          <img src={ArrowRight} alt="arrow-right" className="ml-6" />
+          <p className=" text-sm text-[#AAAAAA] font-bold">
+            Predictive analysis
+          </p>
+          <img src={ArrowRight} alt="arrow-right" className="ml-6" />
+          <p className=" text-sm text-[#AAAAAA] font-bold">
+            Construction monitoring
+          </p>
+          <img src={ArrowRight} alt="arrow-right" />
+          <p className=" text-sm text-[#AAAAAA] font-bold">Access planning</p>
+          <img src={ArrowRight} alt="arrow-right" />
+          <p className=" text-sm text-[#AAAAAA] font-bold">
+            Building Inspection
+          </p>
+          <img src={ArrowRight} alt="arrow-right" />
+          <p className=" text-sm text-[#AAAAAA] font-bold">
+            Aggregate Pile Volume Estimation
+          </p>
+          <img src={ArrowRight} alt="arrow-right" />
+          <p className=" text-sm text-[#AAAAAA] font-bold">
+            Mission Live streaming
+          </p>
+          <img src={ArrowRight} alt="arrow-right" />
+          <p className=" text-sm text-[#AAAAAA] font-bold">
+            Conductor Stringing
+          </p>
+          <img src={ArrowRight} alt="arrow-right" className="ml-6" />
+          <p className=" text-sm text-[#AAAAAA] font-bold">
+            Vegetation Growth monitoring
+          </p>
+          <img src={ArrowRight} alt="arrow-right" className="ml-6" />
+          <p className=" text-sm text-[#AAAAAA] font-bold">
+            Predictive analysis
+          </p>
+          <img src={ArrowRight} alt="arrow-right" className="ml-6" />
+          <p className=" text-sm text-[#AAAAAA] font-bold">
+            Construction monitoring
+          </p>
+          <img src={ArrowRight} alt="arrow-right" />
+          <p className=" text-sm text-[#AAAAAA] font-bold">Access planning</p>
+          <img src={ArrowRight} alt="arrow-right" />
+          <p className=" text-sm text-[#AAAAAA] font-bold">
+            Building Inspection
+          </p>
+          <img src={ArrowRight} alt="arrow-right" />
+          <p className=" text-sm text-[#AAAAAA] font-bold">
+            Aggregate Pile Volume Estimation
+          </p>
+          <img src={ArrowRight} alt="arrow-right" />
+          <p className=" text-sm text-[#AAAAAA] font-bold">
+            Mission Live streaming
+          </p>
+          <img src={ArrowRight} alt="arrow-right" />
+          <p className=" text-sm text-[#AAAAAA] font-bold">
+            Conductor Stringing
           </p>
         </section>
       </div>

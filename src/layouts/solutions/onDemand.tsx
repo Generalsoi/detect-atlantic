@@ -65,7 +65,7 @@ export const OnDemand: FC = () => {
         </Link>
       </motion.div>
 
-      <motion.div
+      {/* <motion.div
         className="flex flex-col items-center justify-center mt-16 md:mt-20 py-10 h-screen"
         whileInView={{ y: 0, opacity: 1 }}
         initial={{ y: 100, opacity: 0 }}
@@ -111,7 +111,7 @@ export const OnDemand: FC = () => {
             <img src={UpArrow} alt="up arrow" className="animate-bounce" />
           </button>
         </Link>
-      </motion.div>
+      </motion.div> */}
 
       <Footer />
     </motion.div>
