@@ -26,21 +26,20 @@ export const About: FC = () => {
         <span>
           <p className="uppercase md:text-3xl">our mission</p>
           <h1 className="text-xl md:text-3xl lg:text-6xl font-bold mt-1">
-            Digitize the world's critical
+            Digitize the world's physical
           </h1>
           <h1 className="text-xl md:text-3xl lg:text-6xl font-bold">
-            physical infrastructure to
+            infrastructure to address
           </h1>
           <h1 className="text-xl md:text-3xl lg:text-6xl font-bold">
-            action faults before they
+            defects before they fail
           </h1>
-          <h1 className="text-xl md:text-3xl lg:text-6xl font-bold">occur</h1>
         </span>
       </motion.div>
 
       <AboutUs />
       <Partnerships />
-      <Team />
+      {/* <Team /> */}
       <Perspective />
       <Footer />
     </motion.div>

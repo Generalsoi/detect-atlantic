@@ -6,25 +6,51 @@ import { motion } from "framer-motion";
 import UpArrow from "../../assets/images/uparrow.png";
 import { Footer } from "../../components/Footer";
 import { Link } from "react-router-dom";
-import EnergyVid from "../../assets/videos/energyvid.mp4";
 
 export const Energy: FC = () => {
   return (
     <div className="font-ibmPlexMono scroll-smooth text-white">
       <Navbar />
 
-      <motion.div
-        className="md:px-10 lg:px-20 w-full lg:h-screen flex items-center  relative overflow-hidden mt-20 md:mt-28 lg:mt-20"
-        whileInView={{ y: 0, opacity: 1 }}
-        initial={{ y: 100, opacity: 0 }}
-        transition={{ type: "spring", stiffness: 20 }}
-      >
-        <video autoPlay muted playsInline loop>
-          <source src={EnergyVid} type="video/mp4" />
-        </video>
-      </motion.div>
+      <div className="mt-20 md:mt-20 md:px-20 lg:px-[15%] py-10 md:py-20 flex flex-col">
+        <div className="mb-10 md:mb-20 text-left px-4">
+          <motion.h1
+            className="text-4xl md:text-6xl font-bold uppercase"
+            whileInView={{ y: 0, opacity: 1 }}
+            initial={{ y: 100, opacity: 0 }}
+            transition={{ type: "spring", stiffness: 20 }}
+          >
+            Maximize your
+          </motion.h1>
+          <motion.h1
+            className="text-4xl md:text-6xl font-bold uppercase"
+            whileInView={{ y: 0, opacity: 1 }}
+            initial={{ y: 100, opacity: 0 }}
+            transition={{ type: "spring", stiffness: 20 }}
+          >
+            Energy operations with
+          </motion.h1>
+          <motion.h1
+            className="text-4xl md:text-6xl font-bold uppercase"
+            whileInView={{ y: 0, opacity: 1 }}
+            initial={{ y: 100, opacity: 0 }}
+            transition={{ type: "spring", stiffness: 20 }}
+          >
+            automated asset monitoring
+          </motion.h1>
+        </div>
 
-      <div className="md:px-20 hidden lg:flex items-center justify-center gap-20  md:py-40">
+        <motion.div
+          className="mb-10 md:mb-20 text-sm md:text-lg px-4"
+          whileInView={{ y: 0, opacity: 1 }}
+          initial={{ y: 100, opacity: 0 }}
+          transition={{ type: "spring", stiffness: 20 }}
+        >
+          <p className="text-justify md:text-xl"> </p>
+        </motion.div>
+      </div>
+
+      <div className="lg:px-10 hidden lg:flex items-center justify-center gap-20  md:py-40">
         <motion.div
           whileInView={{ y: 0, opacity: 1 }}
           initial={{ y: 100, opacity: 0 }}
