@@ -42,15 +42,9 @@ export const OnDemand: FC = () => {
           initial={{ y: 100, opacity: 0 }}
           transition={{ type: "spring", stiffness: 20 }}
         >
-          <h2 className="text-2xl md:text-2xl lg:text-3xl font-bold">
-            Do you have an idea on how leveraging
-          </h2>
-          <h2 className="text-2xl md:text-2xl lg:text-3xl font-bold">
-            data with Detect could help your
-          </h2>
-          <h2 className="text-2xl md:text-2xl lg:text-3xl font-bold">
-            business?
-          </h2>
+          <h2 className="text-xl ">Do you have an idea on how leveraging</h2>
+          <h2 className="text-xl ">data with Detect could help your</h2>
+          <h2 className="text-xl ">business?</h2>
         </motion.div>
       </div>
 

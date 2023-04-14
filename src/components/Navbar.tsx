@@ -101,11 +101,11 @@ export const Navbar: FC = () => {
           name: "Energy",
           sublink: "/solutions/solarandwindinspectionservices",
         },
-        { name: "Platform", sublink: "/solutions/aisoftware" },
         { name: "On Demand", sublink: "/solutions/ondemand" },
       ],
     },
-    { index: 4, name: "Contact", link: "/contact", sublinks: [] },
+    { index: 4, name: "Platform", link: "/platform", sublinks: [] },
+    { index: 5, name: "Contact", link: "/contact", sublinks: [] },
   ];
 
   // const subLinks: sublink[] = [

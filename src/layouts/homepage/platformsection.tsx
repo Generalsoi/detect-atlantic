@@ -12,7 +12,9 @@ export const Platformsection: FC = () => {
         className=" md:flex items-start justify-center md:gap-16 font-ibmPlexMono"
         id="whatwedo"
       >
-        <h4 className=" md:hidden text-2xl uppercase mb-6">our services</h4>
+        <h4 className=" md:hidden text-2xl uppercase mb-6">
+          See your data come to life
+        </h4>
         <motion.span
           className="md:w-[30%] lg:w-[50%] md:text-left lg:text-center"
           whileInView={{ y: 0, opacity: 1 }}
@@ -37,12 +39,6 @@ export const Platformsection: FC = () => {
             long-term trends and fix defects before <br /> they become a
             critical risk to the network.
           </p>
-          <Link to="https://detect-inspections.com" target={"_blank"}>
-            <button className="flex items-center uppercase gap-4 bg-[#FF6108] border-none rounded-lg px-6 py-4 hover:translate-y-3 transition-all duration-300">
-              Try Now{" "}
-              <img src={UpArrow} alt="up-arrow" className="animate-bounce" />{" "}
-            </button>
-          </Link>
         </motion.div>
       </div>
       <motion.div
@@ -78,7 +74,7 @@ export const Platformsection: FC = () => {
         </p>
       </div>
 
-      <Link to="/solutions/aisoftware">
+      <Link to="https://detect-inspections.com" target={"_blank"}>
         <button className="uppercase bg-[#FF6108] px-8 py-3 border-none rounded-lg flex items-center gap-3 mt-8">
           try now <img src={UpArrow} alt="uparrow" className="animate-bounce" />
         </button>
