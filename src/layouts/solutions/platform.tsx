@@ -79,21 +79,17 @@ export const Platform: FC = () => {
               className={`py-8 border border-x-0 border-red cursor-pointer border-neutral-400 ${
                 service.index === 4 ? "border-b-1" : "border-b-0"
               } border-[#AAAAAA] transition ease-linear duration-500 text-white`}
-              onClick={() => handleOpenAccordion(service.index)}
+              // onClick={() => handleOpenAccordion(service.index)}
               style={{
                 borderTopWidth: "0.1px",
+                borderBottomWidth: "0.1px",
                 borderColor: "#AAAAAA",
               }}
             >
               <h4 className="flex items-center gap-2 uppercase text-2xl">
                 {service.name}
-                {currentId === service.index && openAccordion ? (
-                  <MdKeyboardArrowDown />
-                ) : (
-                  <MdKeyboardArrowRight />
-                )}
               </h4>
-              {currentId === service.index && openAccordion && (
+              {
                 <motion.div
                   className="md:flex items-center gap-20"
                   initial={{ opacity: 0, y: "-10%" }}
@@ -111,7 +107,7 @@ export const Platform: FC = () => {
                     />
                   </div>
                 </motion.div>
-              )}
+              }
             </div>
           ))}
         </div>
