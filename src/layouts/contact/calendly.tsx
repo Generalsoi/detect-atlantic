@@ -8,7 +8,7 @@ export const Calendly: FC = () => {
       <Navbar />
       <div className="w-full h-screen flex items-center justify-center mt-32">
         <InlineWidget
-          url="https://calendly.com/ikhinobelesuccess"
+          url="https://calendly.com/detect_inspections"
           styles={{
             height: "30rem",
             width: "50rem",
