@@ -155,7 +155,7 @@ export const Energy: FC = () => {
       </div>
 
       <div className="flex items-center justify-center py-20 ">
-        <Link to="/contact">
+        <Link to="/calendly">
           <button className="flex items-center justify-center gap-4 bg-[#FF6108] text-white px-6 py-4 border-none rounded-lg">
             Book now{" "}
             <img src={UpArrow} alt="up arrow" className="animate-bounce" />

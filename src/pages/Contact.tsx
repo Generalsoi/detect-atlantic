@@ -89,7 +89,7 @@ export const Contact: FC = () => {
           </div>
           <div>
             <Link to="/calendly">
-              <button className="w-full py-4 mt-10 uppercase bg-[#FF6108] border-none rounded-lg flex items-center justify-center gap-6 hover:scale-105 transition-all ease-in-out duration-300">
+              <button className="w-full py-4 mt-10 uppercase bg-transparent hover:bg-[#FF6108] border-2 hover:border-none rounded-lg flex items-center justify-center gap-6 hover:scale-105 transition-all ease-in-out duration-300">
                 book now
                 <img src={Uparrow} alt="up-arrow" className="animate-bounce" />
               </button>
