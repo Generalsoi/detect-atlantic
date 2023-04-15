@@ -19,7 +19,7 @@ export const ConstructionMonitoringScroll: FC = () => {
         </p>
         <img src={ArrowRight} alt="arrow-right" className="mx-6" />
         <p className=" text-lg text-[#AAAAAA] font-bold">Access planning</p>
-        <img src={ArrowRight} alt="arrow-right" />
+        <img src={ArrowRight} alt="arrow-right" className="mx-6" />
 
         <p className=" text-lg text-[#AAAAAA] font-bold">Building Inspection</p>
         <img src={ArrowRight} alt="arrow-right" className="mx-6" />
