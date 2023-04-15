@@ -63,20 +63,21 @@ export const Power: FC = () => {
             terrains.{" "}
           </p>
         </motion.div>
-        <div className="w-full flex items-center justify-center mt-10">
-          <Link to="/solutions/solarandwindinspectionservices">
-            <button className="flex items-center justify-center gap-4 bg-[#FF6108] text-white px-6 py-4 border-none rounded-lg mt-10">
-              Energy
-              <img src={UpArrow} alt="up arrow" className="animate-bounce" />
-            </button>
-          </Link>
-        </div>
       </div>
 
       <ColletAnnotateScroll />
 
       <Flightplanning />
       <Stormsupport />
+
+      <div className="w-full flex items-center justify-center mt-10">
+        <Link to="/solutions/solarandwindinspectionservices">
+          <button className="flex items-center justify-center gap-4 bg-[#FF6108] text-white px-6 py-4 border-none rounded-lg mt-10">
+            Energy
+            <img src={UpArrow} alt="up arrow" className="animate-bounce" />
+          </button>
+        </Link>
+      </div>
 
       <Footer />
     </motion.div>

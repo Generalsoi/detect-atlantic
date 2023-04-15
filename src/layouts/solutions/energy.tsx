@@ -46,7 +46,14 @@ export const Energy: FC = () => {
           initial={{ y: 100, opacity: 0 }}
           transition={{ type: "spring", stiffness: 20 }}
         >
-          <p className="text-justify md:text-xl"> </p>
+          <p className="text-justify md:text-xl">
+            Automating renewable energy asset inspections with drones and
+            repeatable flight patterns can significantly reduce inspection time
+            and costs while increasing accuracy and safety. By using drones to
+            inspect wind turbines, solar panels, and other renewable energy
+            infrastructure, you can quickly identify and address issues,
+            ensuring optimal performance and reducing downtime.
+          </p>
         </motion.div>
       </div>
 

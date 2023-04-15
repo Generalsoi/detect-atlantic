@@ -87,7 +87,7 @@ export const Homepage = () => {
                   transition={{ type: "spring", stiffness: 40 }}
                 >
                   <motion.span className="w-full md:w-[40%]">
-                    <p className="my-8 text-sm lg:text-md">
+                    <p className="my-8 text-sm lg:text-lg">
                       {service.description}
                     </p>
                     <a

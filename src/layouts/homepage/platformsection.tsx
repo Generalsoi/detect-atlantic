@@ -8,10 +8,7 @@ import { Link } from "react-router-dom";
 export const Platformsection: FC = () => {
   return (
     <div className="md:px-10 lg:px-20 text-left flex flex-col items-center justify-center text-white mt-16 md:mt-60 ">
-      <div
-        className="px-4 md:flex items-start justify-center md:gap-16 font-ibmPlexMono"
-        id="whatwedo"
-      >
+      <div className="px-4 md:flex items-start justify-center md:gap-16 lg:gap-32 font-ibmPlexMono">
         <h4 className=" md:hidden text-2xl uppercase mb-6">
           See your data come to life
         </h4>
@@ -74,11 +71,20 @@ export const Platformsection: FC = () => {
         </p>
       </div>
 
-      <Link to="https://detect-inspections.com" target={"_blank"}>
-        <button className="uppercase bg-[#FF6108] px-8 py-3 border-none rounded-lg flex items-center gap-3 mt-8">
-          try now <img src={UpArrow} alt="uparrow" className="animate-bounce" />
-        </button>
-      </Link>
+      <div className="flex flex-col md:flex-row items-center md:gap-10">
+        <Link to="/platform">
+          <button className="uppercase bg-transparent hover:bg-[#FF6108] px-8 py-3 border-2 hover:border-none rounded-lg flex items-center gap-3 mt-8">
+            learn more{" "}
+            <img src={UpArrow} alt="uparrow" className="animate-bounce" />
+          </button>
+        </Link>
+        <Link to="https://detect-inspections.com" target={"_blank"}>
+          <button className="uppercase bg-[#FF6108] px-8 py-3 border-none rounded-lg flex items-center gap-3 mt-8">
+            try now{" "}
+            <img src={UpArrow} alt="uparrow" className="animate-bounce" />
+          </button>
+        </Link>
+      </div>
     </div>
   );
 };

@@ -56,8 +56,11 @@ export const Platform: FC = () => {
             security; we built a platform in record pace to monitor and protect
             the digital version of your critical physical infrastructure.{" "}
           </p>
-          <p className="text-justify mt-4">How it works:</p>
         </motion.div>
+      </div>
+
+      <div className="mt-10 md:px-10 lg:px-20 py-10 md:py-20">
+        <p className="text-justify text-3xl font-bold">Our Process</p>
       </div>
 
       <div className="md:flex px-6 md:px-10 lg:px-20 pb-8 mt-8 md:mt-20 md:mb-40  ">
