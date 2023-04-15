@@ -22,7 +22,6 @@ export const NavLink: FC<navLink> = ({ name, link, sublinks }) => {
   const [dropdown, setDropDown] = useState<boolean>(false);
   const isActive = useMatch(link + "/*");
   const handleDropDown = (): void => {
-    // setDropDown(!dropdown);
     if (sublinks.length) {
       setDropDown(!dropdown);
     }
@@ -107,13 +106,6 @@ export const Navbar: FC = () => {
     { index: 4, name: "Platform", link: "/platform", sublinks: [] },
     { index: 5, name: "Contact", link: "/contact", sublinks: [] },
   ];
-
-  // const subLinks: sublink[] = [
-  //   { name: "Power", sublink: "/solutions" },
-  //   { name: "Energy", sublink: "solutions/energy" },
-  //   { name: "Platform", sublink: "solutions/platform" },
-  //   { name: "On Demand", sublink: "solutions/ondemand" },
-  // ];
 
   return (
     <div className="text-[#fff] md:flex items-center justify-between px-4 md:px-10 lg:px-20 py-4 fixed top-0 bg-[#000000] w-full z-20 transition-all ease-in-out duration-300">

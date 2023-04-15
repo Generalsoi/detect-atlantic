@@ -7,13 +7,6 @@ type cursorPosition = {
 
 export const Cursor: FC = () => {
   const [position, setPosition] = useState<cursorPosition>({ x: 0, y: 0 });
-  // const [cursorx, setCursorx] = useState<number>();
-  // const [cursory, setCursory] = useState<number>();
-
-  // window.addEventListener("mousemove", (e) => {
-  //   setCursorx(e.pageX);
-  //   setCursory(e.pageY);
-  // });
 
   useEffect(() => {
     const addEventListeners = () => {
@@ -36,13 +29,10 @@ export const Cursor: FC = () => {
     <div
       className="hidden md:block cursor-dot-outline"
       id="cursor"
-      // style={{ left: cursorx + "px", top: cursory + "px" }}
       style={{
         left: `${position.x}px`,
         top: `${position.y}px`,
       }}
-    >
-      {/* <div className="cursor-dot"></div> */}
-    </div>
+    ></div>
   );
 };

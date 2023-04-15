@@ -1,23 +1,12 @@
-import React, { FC, useState } from "react";
+import React, { FC } from "react";
 import { Navbar } from "./../../components/Navbar";
-import PlatformImgTwo from "../../assets/images/platformimg.png";
 import { Footer } from "../../components/Footer";
 import { motion } from "framer-motion";
 import UpArrow from "../../assets/images/uparrow.png";
-import Earth from "../../assets/images/earth.png";
 import { Link } from "react-router-dom";
 import { platformServicesList } from "../../helpers/servicesList";
-import { MdKeyboardArrowRight, MdKeyboardArrowDown } from "react-icons/md";
 
 export const Platform: FC = () => {
-  const [openAccordion, setOpenAccordion] = useState<boolean>(true);
-  const [currentId, setCurrentId] = useState<number>(1);
-
-  const handleOpenAccordion = (id: number): void => {
-    setCurrentId(id);
-    setOpenAccordion(!openAccordion);
-  };
-
   return (
     <motion.div
       className="font-ibmPlexMono scroll-smooth text-white"
@@ -79,7 +68,6 @@ export const Platform: FC = () => {
               className={`py-8 border border-x-0 border-red cursor-pointer border-neutral-400 ${
                 service.index === 4 ? "border-b-1" : "border-b-0"
               } border-[#AAAAAA] transition ease-linear duration-500 text-white`}
-              // onClick={() => handleOpenAccordion(service.index)}
               style={{
                 borderTopWidth: "0.1px",
                 borderBottomWidth: "0.1px",

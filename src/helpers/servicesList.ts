@@ -45,14 +45,6 @@ export const servicesList: service[] = [
       link: "/solutions/solarandwindinspectionservices",
       img: Energy
     },
-    // {
-    //   index: 3,
-    //   name: "Platform",
-    //   description:
-    //     "Create clean datasets to quickly find what you need; run complex models to determine long-term trends and fix defects before they become a critical risk to the network.",
-    //   link: "/solutions/aisoftware",
-    //   img: Platform
-    // },
     {
       index: 3,
       name: "On Demand",

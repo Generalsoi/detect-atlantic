@@ -12,7 +12,7 @@ export const Infrastructurescroll: FC = () => {
         borderColor: "#AAAAAA",
       }}
     >
-      <Marquee gradientColor={[0, 0, 0]}>
+      <Marquee gradientColor={[0, 0, 0]} direction="right">
         <img src={ArrowRight} alt="arrow-right" className="mx-6" />
         <p className="uppercase text-lg text-[#AAAAAA] font-bold">
           a new perspective on data

@@ -1,5 +1,4 @@
-import React, { FC, useState } from "react";
-import Media4 from "../../assets/images/media4.png";
+import React, { FC } from "react";
 import { motion } from "framer-motion";
 import { Navbar } from "./../../components/Navbar";
 import { Footer } from "./../../components/Footer";
@@ -10,13 +9,6 @@ import { Link } from "react-router-dom";
 import UpArrow from "../../assets/images/uparrow.png";
 
 export const Power: FC = () => {
-  const [openAccordion, setOpenAccordion] = useState<boolean>(false);
-  const [currentId, setCurrentId] = useState<number>(1);
-
-  const handleOpenAccordion = (id: number): void => {
-    setCurrentId(id);
-    setOpenAccordion(!openAccordion);
-  };
   return (
     <motion.div
       className="font-ibmPlexMono scroll-smooth text-white"

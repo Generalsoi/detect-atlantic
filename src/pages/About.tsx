@@ -3,7 +3,6 @@ import { Navbar } from "../components/Navbar";
 import { motion } from "framer-motion";
 import { AboutUs } from "../layouts/about/aboutus";
 import { Partnerships } from "../layouts/about/partnerships";
-import { Team } from "../layouts/about/team";
 import { Perspective } from "../layouts/about/perspective";
 import { Footer } from "./../components/Footer";
 
@@ -39,7 +38,6 @@ export const About: FC = () => {
 
       <AboutUs />
       <Partnerships />
-      {/* <Team /> */}
       <Perspective />
       <Footer />
     </motion.div>

@@ -5,7 +5,7 @@ import ArrowRight from "../../assets/images/arrow-right.png";
 export const ConstructionMonitoringScroll: FC = () => {
   return (
     <div>
-      <Marquee gradientColor={[0, 0, 0]}>
+      <Marquee gradientColor={[0, 0, 0]} direction="right">
         <img src={ArrowRight} alt="arrow-right" className="mx-6" />
         <p className=" text-lg text-[#AAAAAA] font-bold">
           Vegetation Growth monitoring

@@ -1,11 +1,7 @@
 import React, { useState } from "react";
 import { Navbar } from "../components/Navbar";
-import MediaOne from "../assets/images/media1.png";
-import UpArrow from "../assets/images/uparrow.png";
-import DownArrow from "../assets/images/downarrow.png";
 import { Infrastructurescroll } from "../layouts/homepage/infrastructurescroll";
 import { WhatWeDo } from "../layouts/homepage/whatWeDo";
-import MediaTwo from "../assets/images/media2.png";
 import { servicesList } from "../helpers/servicesList";
 import { MdKeyboardArrowRight, MdKeyboardArrowDown } from "react-icons/md";
 import ArrowRight from "../assets/images/arrow-right.png";
@@ -14,8 +10,6 @@ import { motion } from "framer-motion";
 import { Platformsection } from "../layouts/homepage/platformsection";
 import { Footer } from "../components/Footer";
 import HomePageVid from "../assets/videos/detecthomepagevid.mp4";
-import { HashLink } from "react-router-hash-link";
-import { Link } from "react-router-dom";
 
 export const Homepage = () => {
   const [openAccordion, setOpenAccordion] = useState<boolean>(true);
@@ -58,25 +52,6 @@ export const Homepage = () => {
           <br /> by offering your selection of data collection, annotation, and
           <br /> analysis.
         </motion.p>
-
-        {/* <span className="flex flex-col md:flex-row items-center gap-8 justify-center my-20 px-4 md:px-48">
-          <HashLink smooth={true} to="#whatwedo">
-            <button className="mt-4 md:mt-0 w-56 lg:w-fit px-3 md:px-6 lg:px-8 py-6 md:py-5 border border-white rounded-lg uppercase flex items-center justify-center gap-5 hover:translate-y-3 transition-all duration-300">
-              learn more{" "}
-              <img
-                src={DownArrow}
-                alt="down-arrow"
-                className="animate-bounce"
-              />
-            </button>
-          </HashLink>
-
-          <Link to="/solutions/aisoftware">
-            <button className="mt-4 md:mt-0 w-56 lg:w-fit px-3 md:px-4 lg:px-10 py-6 md:py-5 border-none bg-[#FF6108] rounded-lg uppercase flex items-center justify-center gap-5 hover:translate-y-3 transition-all duration-300">
-              try our platform <img src={UpArrow} alt="up-arrow" />
-            </button>
-          </Link>
-        </span> */}
       </div>
       <Infrastructurescroll />
 
