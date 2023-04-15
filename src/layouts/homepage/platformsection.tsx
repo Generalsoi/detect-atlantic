@@ -9,7 +9,7 @@ export const Platformsection: FC = () => {
   return (
     <div className="md:px-10 lg:px-20 text-left flex flex-col items-center justify-center text-white mt-16 md:mt-60 ">
       <div
-        className=" md:flex items-start justify-center md:gap-16 font-ibmPlexMono"
+        className="px-4 md:flex items-start justify-center md:gap-16 font-ibmPlexMono"
         id="whatwedo"
       >
         <h4 className=" md:hidden text-2xl uppercase mb-6">
