@@ -1,8 +1,12 @@
 import React, { FC } from "react";
 import { Navbar } from "../../components/Navbar";
-import { InlineWidget } from "react-calendly";
+import { InlineWidget, useCalendlyEventListener } from "react-calendly";
 
 export const Calendly: FC = () => {
+  useCalendlyEventListener({
+    onEventScheduled: (e) => console.log(e.data.payload),
+  });
+
   return (
     <div>
       <Navbar />
@@ -10,9 +14,8 @@ export const Calendly: FC = () => {
         <InlineWidget
           url="https://calendly.com/detect_inspections"
           styles={{
-            height: "30rem",
+            height: "40rem",
             width: "50rem",
-            scrollbarColor: "#000000",
           }}
         />
       </div>
