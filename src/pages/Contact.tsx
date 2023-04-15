@@ -80,9 +80,17 @@ export const Contact: FC = () => {
             ></textarea>
           </div>
           <div>
-            <Link to="/calendly">
+            <Link to="">
               <button className="w-full py-4 mt-20 uppercase bg-[#FF6108] border-none rounded-lg flex items-center justify-center gap-6 hover:scale-105 transition-all ease-in-out duration-300">
                 send
+                <img src={Uparrow} alt="up-arrow" className="animate-bounce" />
+              </button>
+            </Link>
+          </div>
+          <div>
+            <Link to="/calendly">
+              <button className="w-full py-4 mt-10 uppercase bg-[#FF6108] border-none rounded-lg flex items-center justify-center gap-6 hover:scale-105 transition-all ease-in-out duration-300">
+                book now
                 <img src={Uparrow} alt="up-arrow" className="animate-bounce" />
               </button>
             </Link>
