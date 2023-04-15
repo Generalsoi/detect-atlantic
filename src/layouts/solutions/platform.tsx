@@ -110,7 +110,7 @@ export const Platform: FC = () => {
             transition={{ type: "spring", stiffness: 20 }}
           >
             <div className="w-full flex items-center justify-center mt-10">
-              <Link to="/contact">
+              <Link to="/calendly">
                 <button className="flex items-center justify-center gap-4 bg-[#FF6108] text-white px-6 py-4 md:px-10 md:py-6 border-none rounded-lg mt-10">
                   Book now{" "}
                   <img
