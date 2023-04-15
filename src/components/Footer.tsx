@@ -2,6 +2,7 @@ import React, { FC } from "react";
 import DLogo from "../assets/images/Dlogo.png";
 import InLogo from "../assets/images/inlogo.png";
 import MediumLogo from "../assets/images/mediumlogo.png";
+import { Link } from "react-router-dom";
 
 export const Footer: FC = () => {
   return (
@@ -11,30 +12,44 @@ export const Footer: FC = () => {
           <p className="w-[90%] lg:w-fit">
             1345 Norma Eddy Ln, Halifax, NS B3J 1B6
           </p>
-          <img
-            src={InLogo}
-            alt="d-logo"
-            className="mt-6 md:mt-0 cursor-pointer hidden lg:block"
-          />
+          <Link
+            to="https://www.linkedin.com/company/detect-inspections/"
+            target={"_blank"}
+          >
+            <img
+              src={InLogo}
+              alt="d-logo"
+              className="mt-6 md:mt-0 cursor-pointer hidden lg:block"
+            />
+          </Link>
         </span>
         <span className=" lg:hidden flex items-center justify-between w-full pr-8 my-4">
-          <img
-            src={InLogo}
-            alt="d-logo"
-            className="mt-6 md:mt-0 cursor-pointer "
-          />
-          <img
-            src={MediumLogo}
-            alt="mediumlogo"
-            className="mt-6 md:mt-0 cursor-pointer "
-          />
+          <Link
+            to="https://www.linkedin.com/company/detect-inspections/"
+            target={"_blank"}
+          >
+            <img
+              src={InLogo}
+              alt="d-logo"
+              className="mt-6 md:mt-0 cursor-pointer "
+            />
+          </Link>
+          <Link to="https://medium.com/detect-inspections" target={"_blank"}>
+            <img
+              src={MediumLogo}
+              alt="mediumlogo"
+              className="mt-6 md:mt-0 cursor-pointer "
+            />
+          </Link>
         </span>
         <span className="md:flex items-center mt-10 md:mt-0 md:gap-20  gap-36">
-          <img
-            src={MediumLogo}
-            alt="mediumlogo"
-            className="mt-6 md:mt-0 cursor-pointer hidden lg:block"
-          />
+          <Link to="https://medium.com/detect-inspections" target={"_blank"}>
+            <img
+              src={MediumLogo}
+              alt="mediumlogo"
+              className="mt-6 md:mt-0 cursor-pointer hidden lg:block"
+            />
+          </Link>
           <p className="w-[40%] md:w-fit mt-6 md:mt-0">
             contact@detectinspections.com
           </p>
