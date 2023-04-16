@@ -30,11 +30,10 @@ export const Platformsection: FC = () => {
           <h4 className="hidden md:block text-xl md:text-3xl uppercase">
             See your data come to life
           </h4>
-          <p className="md:text-sm lg:text-md my-8">
-            Create clean datasets to quickly find what
-            <br /> you need; run complex models to determine <br />
-            long-term trends and fix defects before <br /> they become a
-            critical risk to the network.
+          <p className="md:text-sm lg:text-lg my-8">
+            Create clean datasets to quickly find <br /> what you need; run
+            complex models to <br /> determine long-term trends and fix <br />{" "}
+            defects before they become a critical <br /> risk to the network.
           </p>
         </motion.div>
       </div>
