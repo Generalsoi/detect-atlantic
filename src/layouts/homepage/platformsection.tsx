@@ -77,7 +77,10 @@ export const Platformsection: FC = () => {
             <img src={UpArrow} alt="uparrow" className="animate-bounce" />
           </button>
         </Link>
-        <Link to="https://detect-inspections.com" target={"_blank"}>
+        <Link
+          to="https://detect-inspections.com/guest?token=KFSsOnW-jQCDfiEshXdndiaa0kYaNSoK"
+          target={"_blank"}
+        >
           <button className="uppercase bg-[#FF6108] px-8 py-3 border-none rounded-lg flex items-center gap-3 mt-8">
             try now{" "}
             <img src={UpArrow} alt="uparrow" className="animate-bounce" />
