@@ -59,7 +59,7 @@ export const Platform: FC = () => {
         </motion.div>
       </div>
 
-      <div className="mt-10 md:px-10 lg:px-20 py-10 md:py-20">
+      <div className="mt-10 px-4 md:px-10 lg:px-20 py-10 md:py-20">
         <p className="text-justify text-3xl font-bold">Our Process</p>
       </div>
 
