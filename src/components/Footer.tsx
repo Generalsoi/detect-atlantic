@@ -62,7 +62,9 @@ export const Footer: FC = () => {
       />
 
       <div className="flex items-center justify-between">
-        <p className="text-center">&copy; 2023 Detect</p>
+        <p className="text-center">
+          &copy; 2023 Detect Atlantic Inspection Services
+        </p>
         <img src={DLogo} alt="d-logo" />
       </div>
     </div>
